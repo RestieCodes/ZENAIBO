@@ -38,7 +38,7 @@
             // picBoxIcon
             // 
             this.picBoxIcon.Location = new System.Drawing.Point(20, 12);
-            this.picBoxIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picBoxIcon.Margin = new System.Windows.Forms.Padding(4);
             this.picBoxIcon.Name = "picBoxIcon";
             this.picBoxIcon.Size = new System.Drawing.Size(115, 95);
             this.picBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -87,9 +87,9 @@
             this.Controls.Add(this.lblDescript);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.picBoxIcon);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TaskBar";
-            this.Size = new System.Drawing.Size(725, 128);
+            this.Size = new System.Drawing.Size(735, 100);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
