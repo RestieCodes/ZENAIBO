@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.listBoxTaskType = new FINAL_PROJECT.CustomListBox();
             this.picBoxTaskTypeIcon = new System.Windows.Forms.PictureBox();
             this.btnAddTask = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -59,7 +60,6 @@
             this.checkBoxAcads = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.taskbarCtn = new System.Windows.Forms.FlowLayoutPanel();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTaskTypeIcon)).BeginInit();
             this.panel3.SuspendLayout();
@@ -93,6 +93,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(401, 606);
             this.panel2.TabIndex = 9;
+            // 
+            // kryptonTextBox1
+            // 
+            this.kryptonTextBox1.Location = new System.Drawing.Point(125, 146);
+            this.kryptonTextBox1.Name = "kryptonTextBox1";
+            this.kryptonTextBox1.Size = new System.Drawing.Size(239, 27);
+            this.kryptonTextBox1.TabIndex = 0;
+            this.kryptonTextBox1.Text = "kryptonTextBox1";
             // 
             // listBoxTaskType
             // 
@@ -468,14 +476,6 @@
             this.taskbarCtn.Name = "taskbarCtn";
             this.taskbarCtn.Size = new System.Drawing.Size(672, 606);
             this.taskbarCtn.TabIndex = 41;
-            // 
-            // kryptonTextBox1
-            // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(125, 146);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(239, 27);
-            this.kryptonTextBox1.TabIndex = 0;
-            this.kryptonTextBox1.Text = "kryptonTextBox1";
             // 
             // Deadline
             // 
