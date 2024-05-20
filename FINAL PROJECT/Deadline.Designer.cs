@@ -88,20 +88,15 @@
             this.panel2.Controls.Add(this.dtpSetDate);
             this.panel2.Controls.Add(this.txtBoxDescription);
             this.panel2.Controls.Add(this.txtBoxTitle);
-<<<<<<< HEAD
-            this.panel2.Location = new System.Drawing.Point(808, 92);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.panel2.Location = new System.Drawing.Point(718, 73);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(321, 485);
             this.panel2.TabIndex = 9;
             // 
             // listBoxTaskType
             // 
-<<<<<<< HEAD
+
             this.listBoxTaskType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.listBoxTaskType.FormattingEnabled = true;
             this.listBoxTaskType.ItemHeight = 40;
@@ -124,9 +119,6 @@
             // 
             // picBoxTaskTypeIcon
             // 
-            this.picBoxTaskTypeIcon.Location = new System.Drawing.Point(307, 206);
-            this.picBoxTaskTypeIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.kryptonTextBox1.Location = new System.Drawing.Point(100, 117);
             this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
@@ -138,7 +130,6 @@
             // 
             this.picBoxTaskTypeIcon.Location = new System.Drawing.Point(246, 165);
             this.picBoxTaskTypeIcon.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.picBoxTaskTypeIcon.Name = "picBoxTaskTypeIcon";
             this.picBoxTaskTypeIcon.Size = new System.Drawing.Size(67, 61);
             this.picBoxTaskTypeIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -147,17 +138,11 @@
             // 
             // btnAddTask
             // 
-<<<<<<< HEAD
-            this.btnAddTask.Location = new System.Drawing.Point(125, 544);
-            this.btnAddTask.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddTask.Name = "btnAddTask";
-            this.btnAddTask.Size = new System.Drawing.Size(147, 46);
-=======
             this.btnAddTask.Location = new System.Drawing.Point(100, 435);
             this.btnAddTask.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddTask.Name = "btnAddTask";
             this.btnAddTask.Size = new System.Drawing.Size(118, 37);
->>>>>>> 63831f3 (taskbar changed)
+
             this.btnAddTask.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
             this.btnAddTask.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
             this.btnAddTask.StateCommon.Border.Color1 = System.Drawing.Color.White;
@@ -173,13 +158,9 @@
             // 
             // kryptonLabel5
             // 
-<<<<<<< HEAD
-            this.kryptonLabel5.Location = new System.Drawing.Point(9, 494);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
+
             this.kryptonLabel5.Location = new System.Drawing.Point(7, 395);
             this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.kryptonLabel5.Name = "kryptonLabel5";
             this.kryptonLabel5.Size = new System.Drawing.Size(66, 19);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -189,13 +170,8 @@
             // 
             // kryptonLabel3
             // 
-<<<<<<< HEAD
-            this.kryptonLabel3.Location = new System.Drawing.Point(7, 203);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.kryptonLabel3.Location = new System.Drawing.Point(6, 162);
             this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(69, 19);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -205,13 +181,9 @@
             // 
             // kryptonLabel1
             // 
-<<<<<<< HEAD
-            this.kryptonLabel1.Location = new System.Drawing.Point(9, 106);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
+
             this.kryptonLabel1.Location = new System.Drawing.Point(7, 85);
             this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(87, 19);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -221,13 +193,8 @@
             // 
             // kryptonLabel2
             // 
-<<<<<<< HEAD
-            this.kryptonLabel2.Location = new System.Drawing.Point(15, 52);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.kryptonLabel2.Location = new System.Drawing.Point(12, 42);
             this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(42, 22);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -239,13 +206,8 @@
             // 
             this.dtpSetDate.CalendarForeColor = System.Drawing.Color.Red;
             this.dtpSetDate.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
-<<<<<<< HEAD
-            this.dtpSetDate.Location = new System.Drawing.Point(97, 494);
-            this.dtpSetDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.dtpSetDate.Location = new System.Drawing.Point(78, 395);
             this.dtpSetDate.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.dtpSetDate.Name = "dtpSetDate";
             this.dtpSetDate.Size = new System.Drawing.Size(193, 20);
             this.dtpSetDate.TabIndex = 8;
@@ -253,26 +215,16 @@
             // 
             // txtBoxDescription
             // 
-<<<<<<< HEAD
-            this.txtBoxDescription.Location = new System.Drawing.Point(125, 103);
-            this.txtBoxDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.txtBoxDescription.Location = new System.Drawing.Point(100, 82);
             this.txtBoxDescription.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.txtBoxDescription.Name = "txtBoxDescription";
             this.txtBoxDescription.Size = new System.Drawing.Size(192, 20);
             this.txtBoxDescription.TabIndex = 3;
             // 
             // txtBoxTitle
             // 
-<<<<<<< HEAD
-            this.txtBoxTitle.Location = new System.Drawing.Point(125, 52);
-            this.txtBoxTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.txtBoxTitle.Location = new System.Drawing.Point(100, 42);
             this.txtBoxTitle.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.txtBoxTitle.Name = "txtBoxTitle";
             this.txtBoxTitle.Size = new System.Drawing.Size(193, 20);
             this.txtBoxTitle.TabIndex = 1;
@@ -299,29 +251,17 @@
             this.panel3.Controls.Add(this.checkBox4);
             this.panel3.Controls.Add(this.checkBox3);
             this.panel3.Controls.Add(this.checkBoxAcads);
-<<<<<<< HEAD
-            this.panel3.Location = new System.Drawing.Point(695, 92);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(107, 606);
-=======
             this.panel3.Location = new System.Drawing.Point(628, 73);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(86, 486);
->>>>>>> 63831f3 (taskbar changed)
             this.panel3.TabIndex = 11;
             // 
             // pictureBox19
             // 
             this.pictureBox19.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023639_486;
-<<<<<<< HEAD
-            this.pictureBox19.Location = new System.Drawing.Point(39, 523);
-            this.pictureBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.pictureBox19.Location = new System.Drawing.Point(31, 418);
             this.pictureBox19.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(48, 40);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -331,13 +271,8 @@
             // pictureBox17
             // 
             this.pictureBox17.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T022644_520;
-<<<<<<< HEAD
-            this.pictureBox17.Location = new System.Drawing.Point(39, 144);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.pictureBox17.Location = new System.Drawing.Point(31, 115);
             this.pictureBox17.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(48, 40);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -347,13 +282,8 @@
             // pictureBox16
             // 
             this.pictureBox16.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023405_591;
-<<<<<<< HEAD
-            this.pictureBox16.Location = new System.Drawing.Point(39, 81);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.pictureBox16.Location = new System.Drawing.Point(31, 65);
             this.pictureBox16.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(48, 40);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -363,13 +293,8 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023527_334;
-<<<<<<< HEAD
-            this.pictureBox15.Location = new System.Drawing.Point(39, 464);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.pictureBox15.Location = new System.Drawing.Point(31, 371);
             this.pictureBox15.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(48, 40);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -379,13 +304,8 @@
             // pictureBox14
             // 
             this.pictureBox14.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T022658_810;
-<<<<<<< HEAD
-            this.pictureBox14.Location = new System.Drawing.Point(39, 400);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.pictureBox14.Location = new System.Drawing.Point(31, 320);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(48, 40);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -395,13 +315,8 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T022707_602;
-<<<<<<< HEAD
-            this.pictureBox13.Location = new System.Drawing.Point(40, 335);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.pictureBox13.Location = new System.Drawing.Point(32, 268);
             this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(48, 40);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -411,13 +326,8 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023254_961;
-<<<<<<< HEAD
-            this.pictureBox3.Location = new System.Drawing.Point(39, 204);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.pictureBox3.Location = new System.Drawing.Point(31, 163);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(48, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -427,13 +337,8 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T021726_290;
-<<<<<<< HEAD
-            this.pictureBox2.Location = new System.Drawing.Point(40, 268);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.pictureBox2.Location = new System.Drawing.Point(32, 214);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(48, 40);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -442,13 +347,8 @@
             // 
             // kryptonLabel4
             // 
-<<<<<<< HEAD
             this.kryptonLabel4.Location = new System.Drawing.Point(19, 36);
             this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
-            this.kryptonLabel4.Location = new System.Drawing.Point(15, 29);
-            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(55, 22);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
@@ -460,13 +360,8 @@
             // 
             this.checkBox10.AutoSize = true;
             this.checkBox10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.checkBox10.Location = new System.Drawing.Point(15, 415);
-            this.checkBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.checkBox10.Location = new System.Drawing.Point(12, 332);
             this.checkBox10.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkBox10.Size = new System.Drawing.Size(15, 14);
@@ -478,13 +373,8 @@
             // 
             this.checkBox9.AutoSize = true;
             this.checkBox9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.checkBox9.Location = new System.Drawing.Point(15, 353);
-            this.checkBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.checkBox9.Location = new System.Drawing.Point(12, 282);
             this.checkBox9.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkBox9.Size = new System.Drawing.Size(15, 14);
@@ -496,13 +386,8 @@
             // 
             this.checkBox8.AutoSize = true;
             this.checkBox8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.checkBox8.Location = new System.Drawing.Point(13, 286);
-            this.checkBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.checkBox8.Location = new System.Drawing.Point(10, 229);
             this.checkBox8.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkBox8.Size = new System.Drawing.Size(15, 14);
@@ -514,13 +399,8 @@
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
             this.checkBox6.Location = new System.Drawing.Point(15, 539);
             this.checkBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
-            this.checkBox6.Location = new System.Drawing.Point(12, 431);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkBox6.Size = new System.Drawing.Size(15, 14);
@@ -532,13 +412,8 @@
             // 
             this.checkBox7.AutoSize = true;
             this.checkBox7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.checkBox7.Location = new System.Drawing.Point(15, 479);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.checkBox7.Location = new System.Drawing.Point(12, 383);
             this.checkBox7.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkBox7.Size = new System.Drawing.Size(15, 14);
@@ -550,13 +425,8 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.checkBox4.Location = new System.Drawing.Point(13, 222);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.checkBox4.Location = new System.Drawing.Point(10, 178);
             this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkBox4.Size = new System.Drawing.Size(15, 14);
@@ -568,13 +438,8 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.checkBox3.Location = new System.Drawing.Point(13, 160);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.checkBox3.Location = new System.Drawing.Point(10, 128);
             this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkBox3.Size = new System.Drawing.Size(15, 14);
@@ -586,13 +451,8 @@
             // 
             this.checkBoxAcads.AutoSize = true;
             this.checkBoxAcads.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.checkBoxAcads.Location = new System.Drawing.Point(13, 100);
-            this.checkBoxAcads.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.checkBoxAcads.Location = new System.Drawing.Point(10, 80);
             this.checkBoxAcads.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 63831f3 (taskbar changed)
             this.checkBoxAcads.Name = "checkBoxAcads";
             this.checkBoxAcads.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkBoxAcads.Size = new System.Drawing.Size(15, 14);
@@ -606,12 +466,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Squada One", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SlateBlue;
-<<<<<<< HEAD
-            this.label1.Location = new System.Drawing.Point(21, 22);
-=======
             this.label1.Location = new System.Drawing.Point(17, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
->>>>>>> 63831f3 (taskbar changed)
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 34);
             this.label1.TabIndex = 40;
@@ -621,27 +477,13 @@
             // 
             this.taskbarCtn.AutoScroll = true;
             this.taskbarCtn.BackColor = System.Drawing.Color.Transparent;
-<<<<<<< HEAD
-            this.taskbarCtn.Location = new System.Drawing.Point(16, 92);
-            this.taskbarCtn.Margin = new System.Windows.Forms.Padding(4);
-            this.taskbarCtn.Name = "taskbarCtn";
-            this.taskbarCtn.Size = new System.Drawing.Size(672, 606);
-=======
             this.taskbarCtn.Location = new System.Drawing.Point(13, 74);
             this.taskbarCtn.Name = "taskbarCtn";
             this.taskbarCtn.Size = new System.Drawing.Size(611, 484);
->>>>>>> 63831f3 (taskbar changed)
             this.taskbarCtn.TabIndex = 41;
             // 
             // kryptonTextBox1
             // 
-<<<<<<< HEAD
-            this.kryptonTextBox1.Location = new System.Drawing.Point(125, 146);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(239, 27);
-            this.kryptonTextBox1.TabIndex = 0;
-            this.kryptonTextBox1.Text = "kryptonTextBox1";
-=======
             this.listBoxTaskType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.listBoxTaskType.FormattingEnabled = true;
             this.listBoxTaskType.ItemHeight = 40;
@@ -660,18 +502,13 @@
             this.listBoxTaskType.Size = new System.Drawing.Size(160, 164);
             this.listBoxTaskType.TabIndex = 0;
             this.listBoxTaskType.SelectedIndexChanged += new System.EventHandler(this.listBoxTaskType_SelectedIndexChanged_1);
->>>>>>> 63831f3 (taskbar changed)
             // 
             // Deadline
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1243, 729);
-=======
             this.ClientSize = new System.Drawing.Size(1054, 600);
->>>>>>> 63831f3 (taskbar changed)
             this.Controls.Add(this.taskbarCtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
