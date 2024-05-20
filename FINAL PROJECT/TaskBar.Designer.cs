@@ -84,7 +84,11 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.picBoxIcon);
             this.Name = "TaskBar";
+<<<<<<< HEAD
             this.Size = new System.Drawing.Size(481, 104);
+=======
+            this.Size = new System.Drawing.Size(587, 100);
+>>>>>>> 63831f3 (taskbar changed)
             ((System.ComponentModel.ISupportInitialize)(this.picBoxIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
