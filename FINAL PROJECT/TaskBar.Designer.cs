@@ -89,7 +89,7 @@
             this.Controls.Add(this.picBoxIcon);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TaskBar";
-            this.Size = new System.Drawing.Size(735, 100);
+            this.Size = new System.Drawing.Size(730, 119);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
