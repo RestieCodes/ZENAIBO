@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.listBoxTaskType = new FINAL_PROJECT.CustomListBox();
+            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.picBoxTaskTypeIcon = new System.Windows.Forms.PictureBox();
             this.btnAddTask = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -59,7 +59,7 @@
             this.checkBoxAcads = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.taskbarCtn = new System.Windows.Forms.FlowLayoutPanel();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.listBoxTaskType = new FINAL_PROJECT.CustomListBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTaskTypeIcon)).BeginInit();
             this.panel3.SuspendLayout();
@@ -88,50 +88,37 @@
             this.panel2.Controls.Add(this.dtpSetDate);
             this.panel2.Controls.Add(this.txtBoxDescription);
             this.panel2.Controls.Add(this.txtBoxTitle);
-            this.panel2.Location = new System.Drawing.Point(808, 92);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(719, 73);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(401, 606);
+            this.panel2.Size = new System.Drawing.Size(321, 485);
             this.panel2.TabIndex = 9;
             // 
-            // listBoxTaskType
+            // kryptonTextBox1
             // 
-            this.listBoxTaskType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.listBoxTaskType.FormattingEnabled = true;
-            this.listBoxTaskType.ItemHeight = 40;
-            this.listBoxTaskType.Items.AddRange(new object[] {
-            "ACADS",
-            "CAREER",
-            "WORKOUT",
-            "ENTERTAINMENT",
-            "HOME RESPONSIBILITY",
-            "APPOINTMENT",
-            "SMALL TASK",
-            "OTHERS"});
-            this.listBoxTaskType.LineHeight = 40;
-            this.listBoxTaskType.Location = new System.Drawing.Point(100, 206);
-            this.listBoxTaskType.Margin = new System.Windows.Forms.Padding(4);
-            this.listBoxTaskType.Name = "listBoxTaskType";
-            this.listBoxTaskType.Size = new System.Drawing.Size(199, 244);
-            this.listBoxTaskType.TabIndex = 0;
-            this.listBoxTaskType.SelectedIndexChanged += new System.EventHandler(this.listBoxTaskType_SelectedIndexChanged_1);
+            this.kryptonTextBox1.Location = new System.Drawing.Point(100, 117);
+            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonTextBox1.Name = "kryptonTextBox1";
+            this.kryptonTextBox1.Size = new System.Drawing.Size(191, 23);
+            this.kryptonTextBox1.TabIndex = 0;
+            this.kryptonTextBox1.Text = "kryptonTextBox1";
             // 
             // picBoxTaskTypeIcon
             // 
-            this.picBoxTaskTypeIcon.Location = new System.Drawing.Point(307, 206);
-            this.picBoxTaskTypeIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picBoxTaskTypeIcon.Location = new System.Drawing.Point(246, 165);
+            this.picBoxTaskTypeIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picBoxTaskTypeIcon.Name = "picBoxTaskTypeIcon";
-            this.picBoxTaskTypeIcon.Size = new System.Drawing.Size(84, 76);
+            this.picBoxTaskTypeIcon.Size = new System.Drawing.Size(67, 61);
             this.picBoxTaskTypeIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxTaskTypeIcon.TabIndex = 15;
             this.picBoxTaskTypeIcon.TabStop = false;
             // 
             // btnAddTask
             // 
-            this.btnAddTask.Location = new System.Drawing.Point(125, 544);
-            this.btnAddTask.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddTask.Location = new System.Drawing.Point(100, 435);
+            this.btnAddTask.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddTask.Name = "btnAddTask";
-            this.btnAddTask.Size = new System.Drawing.Size(147, 46);
+            this.btnAddTask.Size = new System.Drawing.Size(118, 37);
             this.btnAddTask.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
             this.btnAddTask.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
             this.btnAddTask.StateCommon.Border.Color1 = System.Drawing.Color.White;
@@ -147,10 +134,10 @@
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(9, 494);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel5.Location = new System.Drawing.Point(7, 395);
+            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(81, 23);
+            this.kryptonLabel5.Size = new System.Drawing.Size(66, 19);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel5.TabIndex = 13;
@@ -158,10 +145,10 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(7, 203);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel3.Location = new System.Drawing.Point(6, 162);
+            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(84, 23);
+            this.kryptonLabel3.Size = new System.Drawing.Size(69, 19);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.TabIndex = 12;
@@ -169,10 +156,10 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(9, 106);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel1.Location = new System.Drawing.Point(7, 85);
+            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(108, 23);
+            this.kryptonLabel1.Size = new System.Drawing.Size(87, 19);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 11;
@@ -180,10 +167,10 @@
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(15, 52);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel2.Location = new System.Drawing.Point(12, 42);
+            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(51, 27);
+            this.kryptonLabel2.Size = new System.Drawing.Size(42, 22);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.TabIndex = 10;
@@ -193,27 +180,27 @@
             // 
             this.dtpSetDate.CalendarForeColor = System.Drawing.Color.Red;
             this.dtpSetDate.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
-            this.dtpSetDate.Location = new System.Drawing.Point(97, 494);
-            this.dtpSetDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpSetDate.Location = new System.Drawing.Point(78, 395);
+            this.dtpSetDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpSetDate.Name = "dtpSetDate";
-            this.dtpSetDate.Size = new System.Drawing.Size(240, 22);
+            this.dtpSetDate.Size = new System.Drawing.Size(193, 20);
             this.dtpSetDate.TabIndex = 8;
             this.dtpSetDate.Value = new System.DateTime(2024, 5, 14, 17, 26, 49, 0);
             // 
             // txtBoxDescription
             // 
-            this.txtBoxDescription.Location = new System.Drawing.Point(125, 103);
-            this.txtBoxDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxDescription.Location = new System.Drawing.Point(100, 82);
+            this.txtBoxDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBoxDescription.Name = "txtBoxDescription";
-            this.txtBoxDescription.Size = new System.Drawing.Size(239, 22);
+            this.txtBoxDescription.Size = new System.Drawing.Size(192, 20);
             this.txtBoxDescription.TabIndex = 3;
             // 
             // txtBoxTitle
             // 
-            this.txtBoxTitle.Location = new System.Drawing.Point(125, 52);
-            this.txtBoxTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxTitle.Location = new System.Drawing.Point(100, 42);
+            this.txtBoxTitle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBoxTitle.Name = "txtBoxTitle";
-            this.txtBoxTitle.Size = new System.Drawing.Size(240, 22);
+            this.txtBoxTitle.Size = new System.Drawing.Size(193, 20);
             this.txtBoxTitle.TabIndex = 1;
             // 
             // panel3
@@ -238,19 +225,19 @@
             this.panel3.Controls.Add(this.checkBox4);
             this.panel3.Controls.Add(this.checkBox3);
             this.panel3.Controls.Add(this.checkBoxAcads);
-            this.panel3.Location = new System.Drawing.Point(695, 92);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(629, 73);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(107, 606);
+            this.panel3.Size = new System.Drawing.Size(86, 486);
             this.panel3.TabIndex = 11;
             // 
             // pictureBox19
             // 
             this.pictureBox19.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023639_486;
-            this.pictureBox19.Location = new System.Drawing.Point(39, 523);
-            this.pictureBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox19.Location = new System.Drawing.Point(31, 418);
+            this.pictureBox19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox19.Size = new System.Drawing.Size(48, 40);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox19.TabIndex = 39;
             this.pictureBox19.TabStop = false;
@@ -258,10 +245,10 @@
             // pictureBox17
             // 
             this.pictureBox17.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T022644_520;
-            this.pictureBox17.Location = new System.Drawing.Point(39, 144);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox17.Location = new System.Drawing.Point(31, 115);
+            this.pictureBox17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox17.Size = new System.Drawing.Size(48, 40);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox17.TabIndex = 37;
             this.pictureBox17.TabStop = false;
@@ -269,10 +256,10 @@
             // pictureBox16
             // 
             this.pictureBox16.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023405_591;
-            this.pictureBox16.Location = new System.Drawing.Point(39, 81);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox16.Location = new System.Drawing.Point(31, 65);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox16.Size = new System.Drawing.Size(48, 40);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 37;
             this.pictureBox16.TabStop = false;
@@ -280,10 +267,10 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023527_334;
-            this.pictureBox15.Location = new System.Drawing.Point(39, 464);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox15.Location = new System.Drawing.Point(31, 371);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox15.Size = new System.Drawing.Size(48, 40);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox15.TabIndex = 36;
             this.pictureBox15.TabStop = false;
@@ -291,10 +278,10 @@
             // pictureBox14
             // 
             this.pictureBox14.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T022658_810;
-            this.pictureBox14.Location = new System.Drawing.Point(39, 400);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox14.Location = new System.Drawing.Point(31, 320);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox14.Size = new System.Drawing.Size(48, 40);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 35;
             this.pictureBox14.TabStop = false;
@@ -302,10 +289,10 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T022707_602;
-            this.pictureBox13.Location = new System.Drawing.Point(40, 335);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox13.Location = new System.Drawing.Point(32, 268);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox13.Size = new System.Drawing.Size(48, 40);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 34;
             this.pictureBox13.TabStop = false;
@@ -313,10 +300,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023254_961;
-            this.pictureBox3.Location = new System.Drawing.Point(39, 204);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(31, 163);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(48, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 33;
             this.pictureBox3.TabStop = false;
@@ -324,20 +311,20 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T021726_290;
-            this.pictureBox2.Location = new System.Drawing.Point(40, 268);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(32, 214);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 40);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(19, 36);
-            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonLabel4.Location = new System.Drawing.Point(15, 29);
+            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(67, 27);
+            this.kryptonLabel4.Size = new System.Drawing.Size(55, 22);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel4.TabIndex = 16;
@@ -347,11 +334,11 @@
             // 
             this.checkBox10.AutoSize = true;
             this.checkBox10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBox10.Location = new System.Drawing.Point(15, 415);
-            this.checkBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBox10.Location = new System.Drawing.Point(12, 332);
+            this.checkBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox10.Size = new System.Drawing.Size(18, 17);
+            this.checkBox10.Size = new System.Drawing.Size(15, 14);
             this.checkBox10.TabIndex = 16;
             this.checkBox10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox10.UseVisualStyleBackColor = true;
@@ -360,11 +347,11 @@
             // 
             this.checkBox9.AutoSize = true;
             this.checkBox9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBox9.Location = new System.Drawing.Point(15, 353);
-            this.checkBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBox9.Location = new System.Drawing.Point(12, 282);
+            this.checkBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox9.Size = new System.Drawing.Size(18, 17);
+            this.checkBox9.Size = new System.Drawing.Size(15, 14);
             this.checkBox9.TabIndex = 15;
             this.checkBox9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox9.UseVisualStyleBackColor = true;
@@ -373,11 +360,11 @@
             // 
             this.checkBox8.AutoSize = true;
             this.checkBox8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBox8.Location = new System.Drawing.Point(13, 286);
-            this.checkBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBox8.Location = new System.Drawing.Point(10, 229);
+            this.checkBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox8.Size = new System.Drawing.Size(18, 17);
+            this.checkBox8.Size = new System.Drawing.Size(15, 14);
             this.checkBox8.TabIndex = 14;
             this.checkBox8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox8.UseVisualStyleBackColor = true;
@@ -386,11 +373,11 @@
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBox6.Location = new System.Drawing.Point(15, 539);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBox6.Location = new System.Drawing.Point(12, 431);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox6.Size = new System.Drawing.Size(18, 17);
+            this.checkBox6.Size = new System.Drawing.Size(15, 14);
             this.checkBox6.TabIndex = 15;
             this.checkBox6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox6.UseVisualStyleBackColor = true;
@@ -399,11 +386,11 @@
             // 
             this.checkBox7.AutoSize = true;
             this.checkBox7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBox7.Location = new System.Drawing.Point(15, 479);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBox7.Location = new System.Drawing.Point(12, 383);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox7.Size = new System.Drawing.Size(18, 17);
+            this.checkBox7.Size = new System.Drawing.Size(15, 14);
             this.checkBox7.TabIndex = 14;
             this.checkBox7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox7.UseVisualStyleBackColor = true;
@@ -412,11 +399,11 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBox4.Location = new System.Drawing.Point(13, 222);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBox4.Location = new System.Drawing.Point(10, 178);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox4.Size = new System.Drawing.Size(18, 17);
+            this.checkBox4.Size = new System.Drawing.Size(15, 14);
             this.checkBox4.TabIndex = 13;
             this.checkBox4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -425,11 +412,11 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBox3.Location = new System.Drawing.Point(13, 160);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBox3.Location = new System.Drawing.Point(10, 128);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox3.Size = new System.Drawing.Size(18, 17);
+            this.checkBox3.Size = new System.Drawing.Size(15, 14);
             this.checkBox3.TabIndex = 12;
             this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -438,14 +425,15 @@
             // 
             this.checkBoxAcads.AutoSize = true;
             this.checkBoxAcads.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxAcads.Location = new System.Drawing.Point(13, 100);
-            this.checkBoxAcads.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBoxAcads.Location = new System.Drawing.Point(10, 80);
+            this.checkBoxAcads.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBoxAcads.Name = "checkBoxAcads";
             this.checkBoxAcads.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxAcads.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxAcads.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAcads.TabIndex = 11;
             this.checkBoxAcads.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBoxAcads.UseVisualStyleBackColor = true;
+            this.checkBoxAcads.CheckedChanged += new System.EventHandler(this.checkBoxAcads_CheckedChanged);
             this.checkBoxAcads.Click += new System.EventHandler(this.checkBoxAcads_Click);
             // 
             // label1
@@ -453,9 +441,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Squada One", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SlateBlue;
-            this.label1.Location = new System.Drawing.Point(21, 22);
+            this.label1.Location = new System.Drawing.Point(17, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 42);
+            this.label1.Size = new System.Drawing.Size(121, 34);
             this.label1.TabIndex = 40;
             this.label1.Text = "DEADLINE";
             // 
@@ -463,32 +452,44 @@
             // 
             this.taskbarCtn.AutoScroll = true;
             this.taskbarCtn.BackColor = System.Drawing.Color.Transparent;
-            this.taskbarCtn.Location = new System.Drawing.Point(16, 92);
-            this.taskbarCtn.Margin = new System.Windows.Forms.Padding(4);
+            this.taskbarCtn.Location = new System.Drawing.Point(13, 74);
             this.taskbarCtn.Name = "taskbarCtn";
-            this.taskbarCtn.Size = new System.Drawing.Size(672, 606);
+            this.taskbarCtn.Size = new System.Drawing.Size(611, 484);
             this.taskbarCtn.TabIndex = 41;
             // 
-            // kryptonTextBox1
+            // listBoxTaskType
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(125, 146);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(239, 27);
-            this.kryptonTextBox1.TabIndex = 0;
-            this.kryptonTextBox1.Text = "kryptonTextBox1";
+            this.listBoxTaskType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.listBoxTaskType.FormattingEnabled = true;
+            this.listBoxTaskType.ItemHeight = 40;
+            this.listBoxTaskType.Items.AddRange(new object[] {
+            "ACADS",
+            "CAREER",
+            "WORKOUT",
+            "ENTERTAINMENT",
+            "HOME RESPONSIBILITY",
+            "APPOINTMENT",
+            "SMALL TASK",
+            "OTHERS"});
+            this.listBoxTaskType.LineHeight = 40;
+            this.listBoxTaskType.Location = new System.Drawing.Point(80, 165);
+            this.listBoxTaskType.Name = "listBoxTaskType";
+            this.listBoxTaskType.Size = new System.Drawing.Size(160, 164);
+            this.listBoxTaskType.TabIndex = 0;
+            this.listBoxTaskType.SelectedIndexChanged += new System.EventHandler(this.listBoxTaskType_SelectedIndexChanged_1);
             // 
             // Deadline
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ClientSize = new System.Drawing.Size(1243, 729);
+            this.ClientSize = new System.Drawing.Size(1054, 600);
             this.Controls.Add(this.taskbarCtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Deadline";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Deadline";

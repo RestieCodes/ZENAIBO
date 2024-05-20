@@ -80,5 +80,10 @@ namespace FINAL_PROJECT
                 taskBar.AcadsOnly();
             }
         }
+
+        private void checkBoxAcads_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
