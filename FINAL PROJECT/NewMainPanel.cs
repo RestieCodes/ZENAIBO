@@ -21,13 +21,81 @@ namespace FINAL_PROJECT
         private const int panelHeight = 743;
         private const int animationStep = 10; // The step size for each tick of the timer
 
+        private Dashboard dashboardForm;
+        private Calendar calendarForm;
+        private Deadline deadlineForm;
+        private User userForm;
+        private aboutUs aboutUsForm;
+        private Form previousClickedForm = new Dashboard();
+
         private List<KryptonButton> buttons;
         public NewMainPanel()
         {
             InitializeComponent();
+            InitializeForms();
             InitializeExpandCollapseTimer();
             panelbtnContainer.Size = new Size(collapsedWidth, panelHeight);
             LoadFormIntoPanel(new Dashboard());
+        }
+
+        private void InitializeForms()
+        {
+            dashboardForm = null;
+            calendarForm = null;
+            deadlineForm = null;
+            userForm = null;
+            aboutUsForm = null;
+        }
+
+        public Dashboard GetDashboardForm()
+        {
+            if (dashboardForm == null || dashboardForm.IsDisposed)
+            {
+                dashboardForm = new Dashboard();
+            }
+            return dashboardForm;
+
+        }
+
+        public Calendar GetCalendarForm()
+        {
+            if (calendarForm == null || calendarForm.IsDisposed)
+            {
+
+                calendarForm = new Calendar();
+            }
+            return calendarForm;
+        }
+
+        public Deadline GetDeadlineForm()
+        {
+            if (deadlineForm == null || deadlineForm.IsDisposed)
+            {
+
+                deadlineForm = new Deadline();
+                Deadline.Deadline_instance = deadlineForm;
+            }
+            return deadlineForm;
+        }
+
+        public User GetUserForm()
+        {
+            if (userForm == null || userForm.IsDisposed)
+            {
+
+                userForm = new User();
+            }
+            return userForm;
+        }
+
+        public aboutUs GetAboutUsForm()
+        {
+            if (aboutUsForm == null || aboutUsForm.IsDisposed)
+            {
+
+                aboutUsForm = new aboutUs();
+            }
+            return aboutUsForm;
         }
 
         private void InitializeExpandCollapseTimer()
@@ -104,13 +172,22 @@ namespace FINAL_PROJECT
 
             // Show the form
             form.Show();
-        }
+
+            if (previousClickedForm != form)
+            {
+                previousClickedForm.Dispose();
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+                GC.Collect();
+                previousClickedForm = form;
+            }
+        } 
 
         // Event handlers for the buttons
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
-            LoadFormIntoPanel(new Dashboard());
+            LoadFormIntoPanel(GetDashboardForm());
             SetButtonColors(btnDashboard, Color.Indigo, Color.BlueViolet);
 
         }
@@ -118,28 +195,28 @@ namespace FINAL_PROJECT
         private void btnCalendar_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
-            LoadFormIntoPanel(new Calendar());
+            LoadFormIntoPanel(GetCalendarForm());
             SetButtonColors(btnCalendar, Color.Indigo, Color.BlueViolet);
         }
 
         private void btn_Deadline_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
-            LoadFormIntoPanel(new Deadline()); 
+            LoadFormIntoPanel(GetDeadlineForm()); 
             SetButtonColors(btn_Deadline, Color.Indigo, Color.BlueViolet);
         }
 
         private void btn_Profile_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
-            LoadFormIntoPanel(new User());
+            LoadFormIntoPanel(GetUserForm());
             SetButtonColors(btn_Profile, Color.Indigo, Color.BlueViolet);
         }
 
         private void btn_aboutUs_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
-            LoadFormIntoPanel(new aboutUs());
+            LoadFormIntoPanel(GetAboutUsForm());
             SetButtonColors(btn_aboutUs, Color.Indigo, Color.BlueViolet);
         }
     

@@ -403,5 +403,17 @@
   <ItemGroup>
     <None Include="Resources\fpBlank.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleteIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circleIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
