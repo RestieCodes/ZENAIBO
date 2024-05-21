@@ -136,6 +136,16 @@ namespace FINAL_PROJECT
             }
         }
 
+        private void academicIcon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtboxMonthNow_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void DisplayIcon(UserControlDays uc, string month, int year, int[] arr )
         {
             string date = month + " " + year;

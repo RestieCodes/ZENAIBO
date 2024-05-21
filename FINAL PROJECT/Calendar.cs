@@ -76,18 +76,18 @@ namespace FINAL_PROJECT
 
 
 
-        private void btnWeek_Click(object sender, EventArgs e)
-        {
-            panelContainer.Controls.Clear();
-           
-        }
 
         private void btnMonth_Click(object sender, EventArgs e)
         {
             ShowForm(GetCalendarMonthForm());
         }
 
-        private void btnDays_Click(object sender, EventArgs e)
+        private void btnDay_Click(object sender, EventArgs e)
+        {
+            panelContainer.Controls.Clear();
+        }
+
+        private void btnWeek_Click_1(object sender, EventArgs e)
         {
             panelContainer.Controls.Clear();
         }
