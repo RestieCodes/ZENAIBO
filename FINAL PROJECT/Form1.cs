@@ -15,6 +15,8 @@ namespace FINAL_PROJECT
         public Login()
         {
             GC.Collect();
+            GC.WaitForPendingFinalizers();
+            GC.Collect();
             InitializeComponent();
         }
 
