@@ -58,7 +58,7 @@
             this.lblDescript.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblDescript.Location = new System.Drawing.Point(79, 50);
             this.lblDescript.Name = "lblDescript";
-            this.lblDescript.Size = new System.Drawing.Size(148, 29);
+            this.lblDescript.Size = new System.Drawing.Size(197, 36);
             this.lblDescript.TabIndex = 2;
             this.lblDescript.Text = "label2";
             // 
@@ -68,7 +68,7 @@
             this.lblDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblDate.Location = new System.Drawing.Point(326, 32);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(35, 13);
+            this.lblDate.Size = new System.Drawing.Size(44, 16);
             this.lblDate.TabIndex = 3;
             this.lblDate.Text = "label3";
             // 
@@ -128,7 +128,7 @@
             // 
             // TaskBar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
             this.Controls.Add(this.lblIndex);
