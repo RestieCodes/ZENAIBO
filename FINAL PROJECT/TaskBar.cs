@@ -14,13 +14,12 @@ namespace FINAL_PROJECT
 {
     public partial class TaskBar : UserControl
     {
-        public static bool doneTask;
         public TaskBar()
         {
             InitializeComponent();
         }
 
-        public void DisplayContent(Tuple<string, string, string, string, string, string, int> data)
+        public void DisplayContent(Tuple<string, string, string, string, string, string> data)
         {
             
             DateTime now = DateTime.Now;
@@ -33,7 +32,6 @@ namespace FINAL_PROJECT
 
             lblTitle.Text = data.Item1;
             lblDescript.Text = data.Item2;
-            lblIndex.Text = data.Item7.ToString();
 
             if (indicator <= 2 && numMonth - now.Month == 0)
             {
@@ -50,10 +48,9 @@ namespace FINAL_PROJECT
                 lblDate.ForeColor = Color.Green;
                 lblDate.Text = dayName + ", " + DateTimeFormatInfo.CurrentInfo.GetMonthName(numMonth) + " " + data.Item5 + " " + data.Item6;
             }
-
+                
             switch (data.Item3)
             {
-
                 case "ACADS":
                     picBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023405_591;
                     break;
@@ -88,166 +85,12 @@ namespace FINAL_PROJECT
             }
         }
 
-        public void AcadsOnly(Tuple<string, string, string, string, string, string, int> data)
-        {
-            if (data.Item3 != "ACADS")
+        public void AcadsOnly()
+        { 
+            if (picBoxIcon.Image != Properties.Resources.Untitled_design___2024_04_29T023405_591) 
             {
-                this.Hide();
+                picBoxIcon.Image = null;
             }
-        }
-
-        public void CareerOnly(Tuple<string, string, string, string, string, string, int> data)
-        {
-            if (data.Item3 != "CAREER")
-            {
-                this.Hide();
-            }
-        }
-
-        public void GymOnly(Tuple<string, string, string, string, string, string, int> data)
-        {
-            if (data.Item3 != "WORKOUT")
-            {
-                this.Hide();
-            }
-        }
-
-        public void EtnOnly(Tuple<string, string, string, string, string, string, int> data)
-        {
-            if (data.Item3 != "ENTERTAINMENT")
-            {
-                this.Hide();
-            }
-        }
-
-        public void HomeResOnly(Tuple<string, string, string, string, string, string, int> data)
-        {
-            if (data.Item3 != "HOME RESPONSIBILITY")
-            {
-                this.Hide();
-            }
-        }
-
-        public void AppointOnly(Tuple<string, string, string, string, string, string, int> data)
-        {
-            if (data.Item3 != "APPOINTMENT")
-            {
-                this.Hide();
-            }
-        }
-
-        public void SmallTaskOnly(Tuple<string, string, string, string, string, string, int> data)
-        {
-            if (data.Item3 != "SMALL TASK")
-            {
-                this.Hide();
-            }
-        }
-
-        public void OtherOnly(Tuple<string, string, string, string, string, string, int> data)
-        {
-            if (data.Item3 != "OTHERS")
-            {
-                this.Hide();
-            }
-        }
-
-       
-
-        private void editIcon_Click_1(object sender, EventArgs e)
-        {
-            this.BorderStyle = BorderStyle.Fixed3D;
-
-            Deadline.Deadline_instance.btnSaveChanges.Visible = true;
-            Deadline.Deadline_instance.btnAddTask.Visible = false;
-
-
-            Deadline.Deadline_instance.txtBoxTitle.Text = lblTitle.Text;
-            Deadline.Deadline_instance.txtBoxDescription.Text = lblDescript.Text;
-
-             
-
-            if (lblIndex.Text == "0")
-            {
-                Deadline.Deadline_instance.listBoxTaskType.SelectedIndex = 0;
-            }
-            else if (lblIndex.Text == "1")
-            {
-                Deadline.Deadline_instance.listBoxTaskType.SelectedIndex = 1;
-            }
-            else if (lblIndex.Text == "2")
-            {
-                Deadline.Deadline_instance.listBoxTaskType.SelectedIndex = 2;
-            }
-            else if (lblIndex.Text == "3")
-            {
-                Deadline.Deadline_instance.listBoxTaskType.SelectedIndex = 3;
-            }
-            else if (lblIndex.Text == "4")
-            {
-                Deadline.Deadline_instance.listBoxTaskType.SelectedIndex = 4;
-            }
-            else if (lblIndex.Text == "5")
-            {
-                Deadline.Deadline_instance.listBoxTaskType.SelectedIndex = 5;
-            }
-            else if (lblIndex.Text == "6")
-            {
-                Deadline.Deadline_instance.listBoxTaskType.SelectedIndex = 6;
-            }
-            else if (lblIndex.Text == "7")
-            {
-                Deadline.Deadline_instance.listBoxTaskType.SelectedIndex = 7;
-            }
-
-            char[] delimitersChar = { ' ', ',' };
-            string[] date = lblDate.Text.Split(delimitersChar, StringSplitOptions.RemoveEmptyEntries);
-            try
-            {
-                Deadline.Deadline_instance.dtpSetDate.Value = new DateTime(Convert.ToInt32(date[3]), GetMonthNumber(date[1]), Convert.ToInt32(date[2]), 0, 0, 0, 0);
-            }
-            catch (ArgumentOutOfRangeException) 
-            {
-                Deadline.Deadline_instance.dtpSetDate.Value = DateTime.Now;
-            }
-            Deadline.Deadline_instance.lblUserSearch.Text = lblDescript.Text;
-            Deadline.Deadline_instance.deleteIcon.Visible = true;
-
-            circleIcon.Visible = true;
-
-        }
-
-        private int GetMonthNumber(string month)
-        {
-            DateTimeFormatInfo dtfi = CultureInfo.CurrentCulture.DateTimeFormat;
-
-            string[] monthNames = dtfi.MonthNames;
-
-            for (int i = 0; i < monthNames.Length; i++)
-            {
-                if (monthNames[i].Equals(month, StringComparison.CurrentCultureIgnoreCase))
-                {
-
-                    return i + 1;
-                }
-            }
-
-            return -1;
-        }
-
-        private void circleIcon_Click(object sender, EventArgs e)
-        {
-            doneIcon.Visible = true;
-            circleIcon.Visible = false;
-            doneTask = true;
-        }
-
-        private void doneIcon_Click(object sender, EventArgs e)
-        {
-            circleIcon.Visible = true;
-            doneIcon.Visible = false;
-            doneTask = false;
-
         }
     }
 }

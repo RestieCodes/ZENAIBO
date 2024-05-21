@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.picBoxTaskTypeIcon = new System.Windows.Forms.PictureBox();
             this.btnAddTask = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -38,17 +40,6 @@
             this.txtBoxDescription = new System.Windows.Forms.TextBox();
             this.txtBoxTitle = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.checkBoxAppointment = new System.Windows.Forms.CheckBox();
-            this.checkBoxHomeRes = new System.Windows.Forms.CheckBox();
-            this.checkBoxEntertainment = new System.Windows.Forms.CheckBox();
-            this.checkBoxOther = new System.Windows.Forms.CheckBox();
-            this.checkBoxSmallTask = new System.Windows.Forms.CheckBox();
-            this.checkBoxGym = new System.Windows.Forms.CheckBox();
-            this.checkBoxCareer = new System.Windows.Forms.CheckBox();
-            this.checkBoxAcads = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.taskbarCtn = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
@@ -57,12 +48,20 @@
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.picBoxTaskTypeIcon = new System.Windows.Forms.PictureBox();
-            this.btnSaveChanges = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.lblUserSearch = new System.Windows.Forms.Label();
+            this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAcads = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.taskbarCtn = new System.Windows.Forms.FlowLayoutPanel();
             this.listBoxTaskType = new FINAL_PROJECT.CustomListBox();
-            this.deleteIcon = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxTaskTypeIcon)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
@@ -72,17 +71,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxTaskTypeIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.deleteIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
-            this.panel2.Controls.Add(this.deleteIcon);
-            this.panel2.Controls.Add(this.lblUserSearch);
-            this.panel2.Controls.Add(this.btnSaveChanges);
+            this.panel2.Controls.Add(this.kryptonTextBox1);
             this.panel2.Controls.Add(this.listBoxTaskType);
             this.panel2.Controls.Add(this.picBoxTaskTypeIcon);
             this.panel2.Controls.Add(this.btnAddTask);
@@ -99,9 +94,28 @@
             this.panel2.Size = new System.Drawing.Size(401, 606);
             this.panel2.TabIndex = 9;
             // 
+            // kryptonTextBox1
+            // 
+            this.kryptonTextBox1.Location = new System.Drawing.Point(100, 117);
+            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonTextBox1.Name = "kryptonTextBox1";
+            this.kryptonTextBox1.Size = new System.Drawing.Size(191, 23);
+            this.kryptonTextBox1.TabIndex = 0;
+            this.kryptonTextBox1.Text = "kryptonTextBox1";
+            // 
+            // picBoxTaskTypeIcon
+            // 
+            this.picBoxTaskTypeIcon.Location = new System.Drawing.Point(246, 165);
+            this.picBoxTaskTypeIcon.Margin = new System.Windows.Forms.Padding(2);
+            this.picBoxTaskTypeIcon.Name = "picBoxTaskTypeIcon";
+            this.picBoxTaskTypeIcon.Size = new System.Drawing.Size(67, 61);
+            this.picBoxTaskTypeIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxTaskTypeIcon.TabIndex = 15;
+            this.picBoxTaskTypeIcon.TabStop = false;
+            // 
             // btnAddTask
             // 
-            this.btnAddTask.Location = new System.Drawing.Point(100, 430);
+            this.btnAddTask.Location = new System.Drawing.Point(100, 435);
             this.btnAddTask.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddTask.Name = "btnAddTask";
             this.btnAddTask.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
@@ -177,14 +191,12 @@
             // 
             this.dtpSetDate.CalendarForeColor = System.Drawing.Color.Red;
             this.dtpSetDate.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
-            this.dtpSetDate.CustomFormat = "";
             this.dtpSetDate.Location = new System.Drawing.Point(78, 395);
             this.dtpSetDate.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpSetDate.MinDate = new System.DateTime(2024, 5, 21, 0, 0, 0, 0);
             this.dtpSetDate.Name = "dtpSetDate";
-            this.dtpSetDate.Size = new System.Drawing.Size(194, 20);
+            this.dtpSetDate.Size = new System.Drawing.Size(193, 20);
             this.dtpSetDate.TabIndex = 8;
-            this.dtpSetDate.Value = new System.DateTime(2024, 5, 21, 0, 0, 0, 0);
+            this.dtpSetDate.Value = new System.DateTime(2024, 5, 14, 17, 26, 49, 0);
             // 
             // txtBoxDescription
             // 
@@ -216,163 +228,19 @@
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.kryptonLabel4);
-            this.panel3.Controls.Add(this.checkBoxAppointment);
-            this.panel3.Controls.Add(this.checkBoxHomeRes);
-            this.panel3.Controls.Add(this.checkBoxEntertainment);
-            this.panel3.Controls.Add(this.checkBoxOther);
-            this.panel3.Controls.Add(this.checkBoxSmallTask);
-            this.panel3.Controls.Add(this.checkBoxGym);
-            this.panel3.Controls.Add(this.checkBoxCareer);
+            this.panel3.Controls.Add(this.checkBox10);
+            this.panel3.Controls.Add(this.checkBox9);
+            this.panel3.Controls.Add(this.checkBox8);
+            this.panel3.Controls.Add(this.checkBox6);
+            this.panel3.Controls.Add(this.checkBox7);
+            this.panel3.Controls.Add(this.checkBox4);
+            this.panel3.Controls.Add(this.checkBox3);
             this.panel3.Controls.Add(this.checkBoxAcads);
             this.panel3.Location = new System.Drawing.Point(785, 91);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(106, 606);
             this.panel3.TabIndex = 11;
-            // 
-            // kryptonLabel4
-            // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(15, 29);
-            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(2);
-            this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(55, 22);
-            this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel4.TabIndex = 16;
-            this.kryptonLabel4.Values.Text = "SHOW";
-            // 
-            // checkBoxAppointment
-            // 
-            this.checkBoxAppointment.AutoSize = true;
-            this.checkBoxAppointment.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxAppointment.Location = new System.Drawing.Point(12, 332);
-            this.checkBoxAppointment.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxAppointment.Name = "checkBoxAppointment";
-            this.checkBoxAppointment.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxAppointment.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxAppointment.TabIndex = 16;
-            this.checkBoxAppointment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxAppointment.UseVisualStyleBackColor = true;
-            this.checkBoxAppointment.CheckedChanged += new System.EventHandler(this.checkBoxAppointment_CheckedChanged);
-            // 
-            // checkBoxHomeRes
-            // 
-            this.checkBoxHomeRes.AutoSize = true;
-            this.checkBoxHomeRes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxHomeRes.Location = new System.Drawing.Point(12, 282);
-            this.checkBoxHomeRes.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxHomeRes.Name = "checkBoxHomeRes";
-            this.checkBoxHomeRes.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxHomeRes.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxHomeRes.TabIndex = 15;
-            this.checkBoxHomeRes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxHomeRes.UseVisualStyleBackColor = true;
-            this.checkBoxHomeRes.CheckedChanged += new System.EventHandler(this.checkBoxHomeRes_CheckedChanged);
-            // 
-            // checkBoxEntertainment
-            // 
-            this.checkBoxEntertainment.AutoSize = true;
-            this.checkBoxEntertainment.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxEntertainment.Location = new System.Drawing.Point(10, 229);
-            this.checkBoxEntertainment.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxEntertainment.Name = "checkBoxEntertainment";
-            this.checkBoxEntertainment.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxEntertainment.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxEntertainment.TabIndex = 14;
-            this.checkBoxEntertainment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxEntertainment.UseVisualStyleBackColor = true;
-            this.checkBoxEntertainment.CheckedChanged += new System.EventHandler(this.checkBoxEntertainment_CheckedChanged);
-            // 
-            // checkBoxOther
-            // 
-            this.checkBoxOther.AutoSize = true;
-            this.checkBoxOther.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxOther.Location = new System.Drawing.Point(12, 431);
-            this.checkBoxOther.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxOther.Name = "checkBoxOther";
-            this.checkBoxOther.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxOther.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxOther.TabIndex = 15;
-            this.checkBoxOther.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxOther.UseVisualStyleBackColor = true;
-            this.checkBoxOther.CheckedChanged += new System.EventHandler(this.checkBoxOther_CheckedChanged);
-            // 
-            // checkBoxSmallTask
-            // 
-            this.checkBoxSmallTask.AutoSize = true;
-            this.checkBoxSmallTask.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxSmallTask.Location = new System.Drawing.Point(12, 383);
-            this.checkBoxSmallTask.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxSmallTask.Name = "checkBoxSmallTask";
-            this.checkBoxSmallTask.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxSmallTask.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxSmallTask.TabIndex = 14;
-            this.checkBoxSmallTask.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxSmallTask.UseVisualStyleBackColor = true;
-            this.checkBoxSmallTask.CheckedChanged += new System.EventHandler(this.checkBoxSmallTask_CheckedChanged);
-            // 
-            // checkBoxGym
-            // 
-            this.checkBoxGym.AutoSize = true;
-            this.checkBoxGym.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxGym.Location = new System.Drawing.Point(10, 178);
-            this.checkBoxGym.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxGym.Name = "checkBoxGym";
-            this.checkBoxGym.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxGym.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxGym.TabIndex = 13;
-            this.checkBoxGym.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxGym.UseVisualStyleBackColor = true;
-            this.checkBoxGym.CheckedChanged += new System.EventHandler(this.checkBoxGym_CheckedChanged);
-            // 
-            // checkBoxCareer
-            // 
-            this.checkBoxCareer.AutoSize = true;
-            this.checkBoxCareer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxCareer.Location = new System.Drawing.Point(10, 128);
-            this.checkBoxCareer.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxCareer.Name = "checkBoxCareer";
-            this.checkBoxCareer.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxCareer.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxCareer.TabIndex = 12;
-            this.checkBoxCareer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxCareer.UseVisualStyleBackColor = true;
-            this.checkBoxCareer.CheckedChanged += new System.EventHandler(this.checkBoxCareer_CheckedChanged);
-            // 
-            // checkBoxAcads
-            // 
-            this.checkBoxAcads.AutoSize = true;
-            this.checkBoxAcads.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxAcads.Location = new System.Drawing.Point(10, 80);
-            this.checkBoxAcads.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxAcads.Name = "checkBoxAcads";
-            this.checkBoxAcads.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxAcads.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxAcads.TabIndex = 11;
-            this.checkBoxAcads.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxAcads.UseVisualStyleBackColor = true;
-            this.checkBoxAcads.CheckedChanged += new System.EventHandler(this.checkBoxAcads_CheckedChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Squada One", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SlateBlue;
-            this.label1.Location = new System.Drawing.Point(17, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 34);
-            this.label1.TabIndex = 40;
-            this.label1.Text = "DEADLINE";
-            // 
-            // taskbarCtn
-            // 
-            this.taskbarCtn.AutoScroll = true;
-            this.taskbarCtn.BackColor = System.Drawing.Color.Transparent;
-            this.taskbarCtn.Location = new System.Drawing.Point(13, 74);
-            this.taskbarCtn.Name = "taskbarCtn";
-            this.taskbarCtn.Size = new System.Drawing.Size(611, 484);
-            this.taskbarCtn.TabIndex = 41;
             // 
             // pictureBox19
             // 
@@ -462,46 +330,143 @@
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
-            // picBoxTaskTypeIcon
+            // kryptonLabel4
             // 
-            this.picBoxTaskTypeIcon.Location = new System.Drawing.Point(246, 165);
-            this.picBoxTaskTypeIcon.Margin = new System.Windows.Forms.Padding(2);
-            this.picBoxTaskTypeIcon.Name = "picBoxTaskTypeIcon";
-            this.picBoxTaskTypeIcon.Size = new System.Drawing.Size(67, 61);
-            this.picBoxTaskTypeIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxTaskTypeIcon.TabIndex = 15;
-            this.picBoxTaskTypeIcon.TabStop = false;
+            this.kryptonLabel4.Location = new System.Drawing.Point(15, 29);
+            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(2);
+            this.kryptonLabel4.Name = "kryptonLabel4";
+            this.kryptonLabel4.Size = new System.Drawing.Size(55, 22);
+            this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel4.TabIndex = 16;
+            this.kryptonLabel4.Values.Text = "SHOW";
             // 
-            // btnSaveChanges
+            // checkBox10
             // 
-            this.btnSaveChanges.Location = new System.Drawing.Point(100, 431);
-            this.btnSaveChanges.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSaveChanges.Name = "btnSaveChanges";
-            this.btnSaveChanges.Size = new System.Drawing.Size(118, 37);
-            this.btnSaveChanges.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
-            this.btnSaveChanges.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
-            this.btnSaveChanges.StateCommon.Border.Color1 = System.Drawing.Color.White;
-            this.btnSaveChanges.StateCommon.Border.Color2 = System.Drawing.Color.White;
-            this.btnSaveChanges.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSaveChanges.StateCommon.Border.Rounding = 13;
-            this.btnSaveChanges.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnSaveChanges.TabIndex = 16;
-            this.btnSaveChanges.Values.Text = "Save Changes";
-            this.btnSaveChanges.Visible = false;
-            this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.checkBox10.Location = new System.Drawing.Point(12, 332);
+            this.checkBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBox10.Size = new System.Drawing.Size(15, 14);
+            this.checkBox10.TabIndex = 16;
+            this.checkBox10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox10.UseVisualStyleBackColor = true;
             // 
-            // lblUserSearch
+            // checkBox9
             // 
-            this.lblUserSearch.AutoSize = true;
-            this.lblUserSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
-            this.lblUserSearch.Location = new System.Drawing.Point(162, 130);
-            this.lblUserSearch.Name = "lblUserSearch";
-            this.lblUserSearch.Size = new System.Drawing.Size(35, 13);
-            this.lblUserSearch.TabIndex = 17;
-            this.lblUserSearch.Text = "label2";
-            this.lblUserSearch.Visible = false;
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.checkBox9.Location = new System.Drawing.Point(12, 282);
+            this.checkBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBox9.Size = new System.Drawing.Size(15, 14);
+            this.checkBox9.TabIndex = 15;
+            this.checkBox9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.checkBox8.Location = new System.Drawing.Point(10, 229);
+            this.checkBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBox8.Size = new System.Drawing.Size(15, 14);
+            this.checkBox8.TabIndex = 14;
+            this.checkBox8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.checkBox6.Location = new System.Drawing.Point(12, 431);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBox6.Size = new System.Drawing.Size(15, 14);
+            this.checkBox6.TabIndex = 15;
+            this.checkBox6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.checkBox7.Location = new System.Drawing.Point(12, 383);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBox7.Size = new System.Drawing.Size(15, 14);
+            this.checkBox7.TabIndex = 14;
+            this.checkBox7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.checkBox4.Location = new System.Drawing.Point(10, 178);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBox4.Size = new System.Drawing.Size(15, 14);
+            this.checkBox4.TabIndex = 13;
+            this.checkBox4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.checkBox3.Location = new System.Drawing.Point(10, 128);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBox3.Size = new System.Drawing.Size(15, 14);
+            this.checkBox3.TabIndex = 12;
+            this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAcads
+            // 
+            this.checkBoxAcads.AutoSize = true;
+            this.checkBoxAcads.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.checkBoxAcads.Location = new System.Drawing.Point(10, 80);
+            this.checkBoxAcads.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBoxAcads.Name = "checkBoxAcads";
+            this.checkBoxAcads.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkBoxAcads.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxAcads.TabIndex = 11;
+            this.checkBoxAcads.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBoxAcads.UseVisualStyleBackColor = true;
+            this.checkBoxAcads.CheckedChanged += new System.EventHandler(this.checkBoxAcads_CheckedChanged);
+            this.checkBoxAcads.Click += new System.EventHandler(this.checkBoxAcads_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Squada One", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.SlateBlue;
+            this.label1.Location = new System.Drawing.Point(17, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 34);
+            this.label1.TabIndex = 40;
+            this.label1.Text = "DEADLINE";
+            // 
+            // taskbarCtn
+            // 
+            this.taskbarCtn.AutoScroll = true;
+            this.taskbarCtn.BackColor = System.Drawing.Color.Transparent;
+            this.taskbarCtn.Location = new System.Drawing.Point(13, 74);
+            this.taskbarCtn.Name = "taskbarCtn";
+            this.taskbarCtn.Size = new System.Drawing.Size(611, 484);
+            this.taskbarCtn.TabIndex = 41;
             // 
             // listBoxTaskType
             // 
@@ -525,23 +490,11 @@
             this.listBoxTaskType.TabIndex = 0;
             this.listBoxTaskType.SelectedIndexChanged += new System.EventHandler(this.listBoxTaskType_SelectedIndexChanged_1);
             // 
-            // deleteIcon
-            // 
-            this.deleteIcon.Image = global::FINAL_PROJECT.Properties.Resources.deleteIcon;
-            this.deleteIcon.Location = new System.Drawing.Point(259, 423);
-            this.deleteIcon.Name = "deleteIcon";
-            this.deleteIcon.Size = new System.Drawing.Size(59, 50);
-            this.deleteIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.deleteIcon.TabIndex = 18;
-            this.deleteIcon.TabStop = false;
-            this.deleteIcon.Visible = false;
-            this.deleteIcon.Click += new System.EventHandler(this.deleteIcon_Click);
-            // 
             // Deadline
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(18)))), ((int)(((byte)(22)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.ClientSize = new System.Drawing.Size(1054, 600);
             this.Controls.Add(this.taskbarCtn);
             this.Controls.Add(this.label1);
@@ -552,9 +505,9 @@
             this.Name = "Deadline";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Deadline";
-            this.Load += new System.EventHandler(this.Deadline_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxTaskTypeIcon)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
@@ -565,8 +518,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxTaskTypeIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.deleteIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -574,20 +525,25 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtBoxTitle;
+        private System.Windows.Forms.TextBox txtBoxDescription;
+        private System.Windows.Forms.DateTimePicker dtpSetDate;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.CheckBox checkBoxAppointment;
-        private System.Windows.Forms.CheckBox checkBoxHomeRes;
-        private System.Windows.Forms.CheckBox checkBoxEntertainment;
-        private System.Windows.Forms.CheckBox checkBoxOther;
-        private System.Windows.Forms.CheckBox checkBoxSmallTask;
-        private System.Windows.Forms.CheckBox checkBoxGym;
-        private System.Windows.Forms.CheckBox checkBoxCareer;
+        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBoxAcads;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnAddTask;
+        private System.Windows.Forms.PictureBox picBoxTaskTypeIcon;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox14;
@@ -598,14 +554,7 @@
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel taskbarCtn;
-        public System.Windows.Forms.TextBox txtBoxTitle;
-        public ComponentFactory.Krypton.Toolkit.KryptonButton btnSaveChanges;
-        public System.Windows.Forms.TextBox txtBoxDescription;
-        public System.Windows.Forms.DateTimePicker dtpSetDate;
-        public ComponentFactory.Krypton.Toolkit.KryptonButton btnAddTask;
-        public System.Windows.Forms.PictureBox picBoxTaskTypeIcon;
-        public CustomListBox listBoxTaskType;
-        public System.Windows.Forms.Label lblUserSearch;
-        public System.Windows.Forms.PictureBox deleteIcon;
+        private CustomListBox listBoxTaskType;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
     }
 }

@@ -22,9 +22,6 @@ namespace FINAL_PROJECT
         public void label4_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-            GC.Collect();
             Login login = new Login();
             login.Show();
             
