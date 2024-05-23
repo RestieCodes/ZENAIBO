@@ -37,7 +37,7 @@ namespace FINAL_PROJECT
 
             if (indicator <= 2 && numMonth - now.Month == 0)
             {
-                lblDate.ForeColor = Color.Red;
+                lblDate.ForeColor = Color.Crimson;
                 lblDate.Text = dayName + ", " + DateTimeFormatInfo.CurrentInfo.GetMonthName(numMonth) + " " + data.Item5 + " " + data.Item6;
             }
             else if ((indicator >= 3 && indicator <= 6)&& numMonth - now.Month == 0)
@@ -156,16 +156,14 @@ namespace FINAL_PROJECT
 
         private void editIcon_Click_1(object sender, EventArgs e)
         {
+            Deadline.Deadline_instance.lblHeader.Text = "EDIT TASK";
             this.BorderStyle = BorderStyle.Fixed3D;
 
             Deadline.Deadline_instance.btnSaveChanges.Visible = true;
             Deadline.Deadline_instance.btnAddTask.Visible = false;
 
-
-            Deadline.Deadline_instance.txtBoxTitle.Text = lblTitle.Text;
-            Deadline.Deadline_instance.txtBoxDescription.Text = lblDescript.Text;
-
-             
+            Deadline.Deadline_instance.txtBoxTitle1.Text = lblTitle.Text;
+            Deadline.Deadline_instance.txtBoxDescription1.Text = lblDescript.Text;
 
             if (lblIndex.Text == "0")
             {
@@ -247,6 +245,11 @@ namespace FINAL_PROJECT
             circleIcon.Visible = true;
             doneIcon.Visible = false;
             doneTask = false;
+
+        }
+
+        private void TaskBar_Load(object sender, EventArgs e)
+        {
 
         }
     }

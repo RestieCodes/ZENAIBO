@@ -415,5 +415,62 @@
   <ItemGroup>
     <None Include="Resources\circleIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aboutUs-ZenAibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aboutUS-ZenAibo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aboutUs-ZenAibo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check %28Done%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_edit %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Taskbar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Deadline-inputTask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Deadline-taskType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Deadline-taskList4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Deadline-taskList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Deadline-taskList2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Deadline-taskList3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_User-Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Profile-Accomplishement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Profile-accomplishmentList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Profile-accomplishementList2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_Upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_Trash %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

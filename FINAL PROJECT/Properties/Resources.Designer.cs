@@ -73,6 +73,36 @@ namespace FINAL_PROJECT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aboutUs_ZenAibo {
+            get {
+                object obj = ResourceManager.GetObject("aboutUs-ZenAibo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aboutUS_ZenAibo2 {
+            get {
+                object obj = ResourceManager.GetObject("aboutUS-ZenAibo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aboutUs_ZenAibo3 {
+            get {
+                object obj = ResourceManager.GetObject("aboutUs-ZenAibo3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aboutusPressed {
             get {
                 object obj = ResourceManager.GetObject("aboutusPressed", resourceCulture);
@@ -83,9 +113,129 @@ namespace FINAL_PROJECT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BG_Dark {
+            get {
+                object obj = ResourceManager.GetObject("BG_Dark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BG_Dashboard {
             get {
                 object obj = ResourceManager.GetObject("BG_Dashboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_Deadline_inputTask {
+            get {
+                object obj = ResourceManager.GetObject("BG_Deadline-inputTask", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_Deadline_taskList {
+            get {
+                object obj = ResourceManager.GetObject("BG_Deadline-taskList", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_Deadline_taskList2 {
+            get {
+                object obj = ResourceManager.GetObject("BG_Deadline-taskList2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_Deadline_taskList3 {
+            get {
+                object obj = ResourceManager.GetObject("BG_Deadline-taskList3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_Deadline_taskList4 {
+            get {
+                object obj = ResourceManager.GetObject("BG_Deadline-taskList4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_Deadline_taskType {
+            get {
+                object obj = ResourceManager.GetObject("BG_Deadline-taskType", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_Profile_Accomplishement {
+            get {
+                object obj = ResourceManager.GetObject("BG_Profile-Accomplishement", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_Profile_accomplishementList2 {
+            get {
+                object obj = ResourceManager.GetObject("BG_Profile-accomplishementList2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_Profile_accomplishmentList {
+            get {
+                object obj = ResourceManager.GetObject("BG_Profile-accomplishmentList", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_Taskbar2 {
+            get {
+                object obj = ResourceManager.GetObject("BG_Taskbar2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_User_Profile {
+            get {
+                object obj = ResourceManager.GetObject("BG_User-Profile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +286,16 @@ namespace FINAL_PROJECT.Properties {
         internal static System.Drawing.Bitmap btnPressed_Profile {
             get {
                 object obj = ResourceManager.GetObject("btnPressed_Profile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Check__Done_ {
+            get {
+                object obj = ResourceManager.GetObject("Check (Done)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +383,39 @@ namespace FINAL_PROJECT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ICON_edit__1_ {
+            get {
+                object obj = ResourceManager.GetObject("ICON_edit (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ICON_Lion {
             get {
                 object obj = ResourceManager.GetObject("ICON_Lion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_Trash__1_ {
+            get {
+                object obj = ResourceManager.GetObject("ICON_Trash (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ICON_Upload {
+            get {
+                object obj = ResourceManager.GetObject("ICON_Upload", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

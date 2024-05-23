@@ -17,6 +17,8 @@ namespace FINAL_PROJECT
         {
             InitializeComponent();
 
+            uploadPicture.BackColor = Color.Transparent;
+
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
@@ -61,30 +63,42 @@ namespace FINAL_PROJECT
         private void pictureBox14_Click(object sender, EventArgs e)
         {
             Calendar calendar = new Calendar();
-                calendar.Show();
+            calendar.Show();
             this.Hide();
         }
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = new Dashboard();  
+            Dashboard dashboard = new Dashboard();
             dashboard.Show();
             this.Hide();
         }
 
-        private void kryptonPanel1_Paint(object sender, PaintEventArgs e)
+        private void uploadPicture_Click(object sender, EventArgs e)
         {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Select a Profile Picture";
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+
+            // Show the dialog and get result
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Load the image from the selected file
+                string imagePath = openFileDialog.FileName;
+                Image profileImage = Image.FromFile(imagePath);
+
+                // Display the image in the PictureBox
+                pctProfile.Image = profileImage;
+                pctProfile.SizeMode = PictureBoxSizeMode.Zoom; // Adjust as necessary
+
+            }
+
 
         }
 
-        private void kryptonButton1_Click(object sender, EventArgs e)
+        private void deletePicture_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void kryptonPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
+            pctProfile.Image = FINAL_PROJECT.Properties.Resources.fpBlank;
         }
     }
 }

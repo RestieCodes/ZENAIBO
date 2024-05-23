@@ -73,13 +73,13 @@ namespace FINAL_PROJECT
 
         private void btnAddTask_Click(object sender, EventArgs e)
         {
-            if (txtBoxTitle.Text == string.Empty || txtBoxDescription.Text == string.Empty || listBoxTaskType.SelectedIndex == -1)
+            if (txtBoxTitle1.Text == string.Empty || txtBoxDescription1.Text == string.Empty || listBoxTaskType.SelectedIndex == -1)
             {
                 MessageBox.Show("Please Fill Up All the Information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                TempStorage.AddTask(txtBoxTitle.Text, txtBoxDescription.Text, listBoxTaskType.Text, dtpSetDate.Value.ToString("MM"), dtpSetDate.Value.ToString("dd"), dtpSetDate.Value.ToString("yyyy"), listBoxTaskType.SelectedIndex);
+                TempStorage.AddTask(txtBoxTitle1.Text, txtBoxDescription1.Text, listBoxTaskType.Text, dtpSetDate.Value.ToString("MM"), dtpSetDate.Value.ToString("dd"), dtpSetDate.Value.ToString("yyyy"), listBoxTaskType.SelectedIndex);
                 taskbarCtn.Controls.Clear();
                 for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
                 {
@@ -95,8 +95,8 @@ namespace FINAL_PROJECT
 
         private void ResetTextCtn()
         {
-            txtBoxTitle.Text = string.Empty;
-            txtBoxDescription.Text = string.Empty;
+            txtBoxTitle1.Text = string.Empty;
+            txtBoxDescription1.Text = string.Empty;
             picBoxTaskTypeIcon.Image = null;
             listBoxTaskType.SelectedIndex = -1;
         }
@@ -394,8 +394,10 @@ namespace FINAL_PROJECT
 
         private void btnSaveChanges_Click(object sender, EventArgs e)
         {
-            TempStorage.SaveChanges(txtBoxTitle.Text, txtBoxDescription.Text, listBoxTaskType.Text, dtpSetDate.Value.ToString("MM"), dtpSetDate.Value.ToString("dd"), dtpSetDate.Value.ToString("yyyy"), listBoxTaskType.SelectedIndex, lblUserSearch.Text);
+            Deadline.Deadline_instance.lblHeader.Text = "ADD TASK";
+            TempStorage.SaveChanges(txtBoxTitle1.Text, txtBoxDescription1.Text, listBoxTaskType.Text, dtpSetDate.Value.ToString("MM"), dtpSetDate.Value.ToString("dd"), dtpSetDate.Value.ToString("yyyy"), listBoxTaskType.SelectedIndex, lblUserSearch.Text);
             btnSaveChanges.Visible = false;
+            deleteIcon.Visible = false;
             btnAddTask.Visible = true;
             ResetTextCtn();
 
@@ -408,6 +410,7 @@ namespace FINAL_PROJECT
                 taskBar.DisplayContent(TempStorage.TaskStorage[i]);
                 taskbarCtn.Controls.Add(taskBar);
             }
+
         }
 
         private void deleteIcon_Click(object sender, EventArgs e)
@@ -427,6 +430,11 @@ namespace FINAL_PROJECT
                 taskBar.DisplayContent(TempStorage.TaskStorage[i]);
                 taskbarCtn.Controls.Add(taskBar);
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
