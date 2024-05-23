@@ -59,8 +59,9 @@ namespace FINAL_PROJECT
 
       
         }
+       
 
-        private void PrevButtonCalendar_Click(object sender, EventArgs e)
+        private void PrevButtonCalendar_Click_1(object sender, EventArgs e)
         {
             emptyPanel.Controls.Clear();
             if (month <= 1)
@@ -96,13 +97,11 @@ namespace FINAL_PROJECT
             }
         }
 
-        
-
-        private void NextButtonCalendar_Click(object sender, EventArgs e)
+        private void NextMonthCalendar_Click(object sender, EventArgs e)
         {
             emptyPanel.Controls.Clear();
 
-            if (month >= 12) 
+            if (month >= 12)
             {
                 year++;
                 month = 1;
@@ -110,7 +109,7 @@ namespace FINAL_PROJECT
             else
             {
                 month++;
-                
+
             }
             string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             txtboxMonthNow.Text = monthName + " " + year;
@@ -131,19 +130,9 @@ namespace FINAL_PROJECT
             {
                 UserControlDays ucDays = new UserControlDays();
                 ucDays.Days(i);
-                DisplayIcon(ucDays, "May", 2024,task);       
+                DisplayIcon(ucDays, "May", 2024, task);
                 emptyPanel.Controls.Add(ucDays);
             }
-        }
-
-        private void academicIcon_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtboxMonthNow_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void DisplayIcon(UserControlDays uc, string month, int year, int[] arr )

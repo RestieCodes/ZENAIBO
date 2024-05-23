@@ -127,11 +127,29 @@
     <Compile Include="Calendar.Designer.cs">
       <DependentUpon>Calendar.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalendarDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarDay.Designer.cs">
+      <DependentUpon>CalendarDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarDayTaskBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalendarDayTaskBar.Designer.cs">
+      <DependentUpon>CalendarDayTaskBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="CalendarMonth.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CalendarMonth.Designer.cs">
       <DependentUpon>CalendarMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarWeek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarWeek.Designer.cs">
+      <DependentUpon>CalendarWeek.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomListBox.cs">
       <SubType>Component</SubType>
@@ -216,8 +234,17 @@
     <EmbeddedResource Include="Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CalendarDay.resx">
+      <DependentUpon>CalendarDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarDayTaskBar.resx">
+      <DependentUpon>CalendarDayTaskBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CalendarMonth.resx">
       <DependentUpon>CalendarMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarWeek.resx">
+      <DependentUpon>CalendarWeek.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

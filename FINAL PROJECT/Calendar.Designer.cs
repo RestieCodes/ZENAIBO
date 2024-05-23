@@ -49,10 +49,10 @@
             // panelContainer
             // 
             this.panelContainer.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panelContainer.Location = new System.Drawing.Point(16, 93);
+            this.panelContainer.Location = new System.Drawing.Point(16, 78);
             this.panelContainer.Margin = new System.Windows.Forms.Padding(4);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1288, 644);
+            this.panelContainer.Size = new System.Drawing.Size(1288, 659);
             this.panelContainer.TabIndex = 0;
             // 
             // btnMonth

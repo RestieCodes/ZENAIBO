@@ -229,7 +229,7 @@
             this.taskbarCtn.BackColor = System.Drawing.Color.Transparent;
             this.taskbarCtn.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.BG_Profile_accomplishementList2;
             this.taskbarCtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.taskbarCtn.Location = new System.Drawing.Point(504, 169);
+            this.taskbarCtn.Location = new System.Drawing.Point(493, 161);
             this.taskbarCtn.Margin = new System.Windows.Forms.Padding(4);
             this.taskbarCtn.Name = "taskbarCtn";
             this.taskbarCtn.Size = new System.Drawing.Size(772, 547);
@@ -252,7 +252,7 @@
             this.panel1.Controls.Add(this.pictureBox18);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.kryptonLabel1);
-            this.panel1.Location = new System.Drawing.Point(35, 110);
+            this.panel1.Location = new System.Drawing.Point(24, 102);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(434, 621);
             this.panel1.TabIndex = 71;
@@ -276,7 +276,7 @@
             this.panel2.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.BG_Profile_Accomplishement;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(484, 110);
+            this.panel2.Location = new System.Drawing.Point(473, 102);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(811, 621);
             this.panel2.TabIndex = 72;

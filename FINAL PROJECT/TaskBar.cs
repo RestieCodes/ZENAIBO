@@ -157,7 +157,7 @@ namespace FINAL_PROJECT
         private void editIcon_Click_1(object sender, EventArgs e)
         {
             Deadline.Deadline_instance.lblHeader.Text = "EDIT TASK";
-            this.BorderStyle = BorderStyle.Fixed3D;
+           
 
             Deadline.Deadline_instance.btnSaveChanges.Visible = true;
             Deadline.Deadline_instance.btnAddTask.Visible = false;
