@@ -10,6 +10,7 @@ namespace FINAL_PROJECT
     internal class TempStorage
     {
         public static List<Tuple<string, string, string, string, string, string, int>> TaskStorage = new List<Tuple<string, string, string, string, string, string,int>>();
+        public static List<Tuple<string, string, string, string, string, string>> TaskDoneHistory = new List<Tuple<string, string, string, string, string, string>>();
 
         public static void AddTask(string title, string description, string taskType, string month, string day, string year, int index) 
         {
@@ -35,7 +36,8 @@ namespace FINAL_PROJECT
            
             var userIndex = TaskStorage.FindIndex(p => p.Item2.Equals(key));
             if (TaskBar.doneTask == true)
-            {
+            {           
+                TaskDoneHistory.Add(new Tuple<string, string, string, string, string, string>(title, description, taskType, month, day, year));
                 TaskStorage.Remove(TaskStorage[userIndex]);
             }
             else
@@ -48,6 +50,12 @@ namespace FINAL_PROJECT
         {
             var userIndex = TaskStorage.FindIndex(p => p.Item2.Equals(key));
             TaskStorage.Remove(TaskStorage[userIndex]);
+        }
+
+        public static void RemoveHistory(string title, string description)
+        {
+            var userIndex = TaskDoneHistory.FindIndex(p => p.Item1.Equals(title) && p.Item2.Equals(description));
+            TaskDoneHistory.Remove(TaskDoneHistory[userIndex]);
         }
     }
 }

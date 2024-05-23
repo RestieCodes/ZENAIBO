@@ -84,6 +84,7 @@ namespace FINAL_PROJECT
             {
 
                 userForm = new User();
+                User.user_intance = userForm;
             }
             return userForm;
         }

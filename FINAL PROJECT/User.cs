@@ -13,65 +13,13 @@ namespace FINAL_PROJECT
 {
     public partial class User : Form
     {
+        public static User user_intance;
         public User()
         {
             InitializeComponent();
 
             uploadPicture.BackColor = Color.Transparent;
 
-        }
-
-        private void pictureBox10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox11_Click(object sender, EventArgs e)
-        {
-            aboutUs about = new aboutUs();
-            about.Show();
-            this.Hide();
-        }
-
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox13_Click(object sender, EventArgs e)
-        {
-            Deadline deadline = new Deadline();
-            deadline.Show();
-            this.Hide();
-        }
-
-        private void pictureBox14_Click(object sender, EventArgs e)
-        {
-            Calendar calendar = new Calendar();
-            calendar.Show();
-            this.Hide();
-        }
-
-        private void pictureBox15_Click(object sender, EventArgs e)
-        {
-            Dashboard dashboard = new Dashboard();
-            dashboard.Show();
-            this.Hide();
         }
 
         private void uploadPicture_Click(object sender, EventArgs e)
@@ -99,6 +47,17 @@ namespace FINAL_PROJECT
         private void deletePicture_Click(object sender, EventArgs e)
         {
             pctProfile.Image = FINAL_PROJECT.Properties.Resources.fpBlank;
+        }
+
+        private void User_Load(object sender, EventArgs e)
+        {
+            for (int i = TempStorage.TaskDoneHistory.Count - 1; i >= 0; i--)
+            {
+                TaskAccomplishments taskFinished = new TaskAccomplishments();
+                taskFinished.DisplayHistory(TempStorage.TaskDoneHistory[i]);
+                taskDoneCTN.Controls.Add(taskFinished);
+
+            }
         }
     }
 }

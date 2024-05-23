@@ -203,6 +203,12 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaskAccomplishments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskAccomplishments.Designer.cs">
+      <DependentUpon>TaskAccomplishments.cs</DependentUpon>
+    </Compile>
     <Compile Include="TaskBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -271,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskAccomplishments.resx">
+      <DependentUpon>TaskAccomplishments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TaskBar.resx">
       <DependentUpon>TaskBar.cs</DependentUpon>
