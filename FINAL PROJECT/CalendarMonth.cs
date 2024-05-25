@@ -49,13 +49,13 @@ namespace FINAL_PROJECT
 
 
 
-            for (int i = 1; i <= days; i++)
+     /*       for (int i = 1; i <= days; i++)
             {
                 UserControlDays ucDays = new UserControlDays();
                 ucDays.Days(i);
                 DisplayIcon(ucDays, "May", 2024, task);
                 emptyPanel.Controls.Add(ucDays);
-            }
+            }*/
 
       
         }

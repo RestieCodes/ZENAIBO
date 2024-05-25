@@ -216,6 +216,18 @@
       <DependentUpon>TaskBar.cs</DependentUpon>
     </Compile>
     <Compile Include="TempStorage.cs" />
+    <Compile Include="UCWeekBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCWeekBlank.Designer.cs">
+      <DependentUpon>UCWeekBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCWeekDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCWeekDays.Designer.cs">
+      <DependentUpon>UCWeekDays.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -283,6 +295,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TaskBar.resx">
       <DependentUpon>TaskBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCWeekBlank.resx">
+      <DependentUpon>UCWeekBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCWeekDays.resx">
+      <DependentUpon>UCWeekDays.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>

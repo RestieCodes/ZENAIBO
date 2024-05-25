@@ -16,7 +16,9 @@ namespace FINAL_PROJECT
     public partial class Calendar : Form
     {
         private CalendarMonth calendarMonthForm;
-       
+        private CalendarDay calendarDayForm;
+        private CalendarWeek calendarWeekForm;
+
         public int Month;
         public Calendar()
         {
@@ -29,7 +31,9 @@ namespace FINAL_PROJECT
 
         private void InitializeForms()
         {
-            calendarMonthForm = null;        
+            calendarMonthForm = null;     
+            calendarDayForm = null;
+            calendarWeekForm = null;
         }
       
 
@@ -42,6 +46,28 @@ namespace FINAL_PROJECT
             }
 
             return calendarMonthForm;
+        }
+
+        public CalendarWeek GetCalendarWeekForm()
+        {
+            if (calendarWeekForm == null)
+            {
+
+                calendarWeekForm = new CalendarWeek();
+            }
+
+            return calendarWeekForm;
+        }
+
+        public CalendarDay GetCalendarDayForm()
+        {
+            if (calendarDayForm == null)
+            {
+
+                calendarDayForm = new CalendarDay();
+            }
+
+            return calendarDayForm;
         }
 
         private void Calendar_Load(object sender, EventArgs e)
@@ -84,12 +110,12 @@ namespace FINAL_PROJECT
 
         private void btnDay_Click(object sender, EventArgs e)
         {
-            panelContainer.Controls.Clear();
+            ShowForm(GetCalendarDayForm());
         }
 
         private void btnWeek_Click_1(object sender, EventArgs e)
         {
-            panelContainer.Controls.Clear();
+            ShowForm(GetCalendarWeekForm());
         }
     }
 }

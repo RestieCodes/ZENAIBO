@@ -139,8 +139,8 @@
   <data name="ICON_Upload" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ICON_Upload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Signup (GLOW)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Signup (GLOW).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mpICON_aboutUS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mpICON_aboutUS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BG_Deadline-taskList3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG_Deadline-taskList3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,6 +166,9 @@
   <data name="circleIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circleIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btnPressed_Calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnPressed_Calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Login (ShowPass)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login (ShowPass).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,9 +184,6 @@
   <data name="Check (Done)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Check (Done).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mpICON_aboutUS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mpICON_aboutUS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Logo w Name" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo w Name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -192,6 +192,9 @@
   </data>
   <data name="BG_Deadline-taskList2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG_Deadline-taskList2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICON_Trash (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICON_Trash (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BG_Deadline-taskList4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG_Deadline-taskList4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -216,9 +219,6 @@
   </data>
   <data name="BG_Deadline-inputTask" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG_Deadline-inputTask.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Login (Username)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login (Username).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BG_User-Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG_User-Profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,14 +256,20 @@
   <data name="aboutUs-ZenAibo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aboutUs-ZenAibo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="editICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\editICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Login (Username)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login (Username).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mpICON_Expand" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mpICON_Expand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Signup (NoGlow)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Signup (NoGlow).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="editICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\editICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Signup (GLOW)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Signup (GLOW).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fpJayniell" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fpJayniell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -276,9 +282,6 @@
   </data>
   <data name="BG_Profile-accomplishmentList" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG_Profile-accomplishmentList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnPressed_aboutUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnPressed_aboutUs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Untitled design - 2024-04-29T023254.961" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled design - 2024-04-29T023254.961.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,6 +301,9 @@
   <data name="-" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\-.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="EnlargedNewTimeLine-Wolf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnlargedNewTimeLine-Wolf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="aboutUS-ZenAibo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aboutUS-ZenAibo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -310,13 +316,10 @@
   <data name="BG_Dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG_Dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btnPressed_aboutUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnPressed_aboutUs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ICON_Wolf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ICON_Wolf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnPressed_Calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnPressed_Calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICON_Trash (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ICON_Trash (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
