@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -9,27 +11,9 @@ namespace FINAL_PROJECT
 {
     internal class TempStorage
     {
-        public static List<Tuple<string, string, string, string, string, string, int>> TaskStorage = new List<Tuple<string, string, string, string, string, string,int>>();
+        public static List<Tuple<string, string, string, string, string, string, int>> TaskStorage = new List<Tuple<string, string, string, string, string, string, int>>();
         public static List<Tuple<string, string, string, string, string, string>> TaskDoneHistory = new List<Tuple<string, string, string, string, string, string>>();
-        public static List<Tuple<int, int>> wolfSchedLoc = new List<Tuple<int, int>> 
-        {
-           new Tuple<int, int>(8,56),
-           new Tuple<int, int>(9,89),
-           new Tuple<int, int>(10,118),
-           new Tuple<int, int>(11,150),
-           new Tuple<int, int>(12,182),
-           new Tuple<int, int>(13,213),
-           new Tuple<int, int>(14,244),
-           new Tuple<int, int>(15,277),
-           new Tuple<int, int>(16,307),
-           new Tuple<int, int>(17,338),
-           new Tuple<int, int>(18,370),
-           new Tuple<int, int>(19,401),
-           new Tuple<int, int>(20,431),
-           new Tuple<int, int>(21,465),
-           new Tuple<int, int>(22,492),
-           new Tuple<int, int>(23,523)
-        };
+        public static List<Tuple<string, string, int, int, int,string>> TaskDaily = new List<Tuple<string, string, int, int, int, string>>();
        
         
         
@@ -79,14 +63,53 @@ namespace FINAL_PROJECT
             TaskDoneHistory.Remove(TaskDoneHistory[userIndex]);
         }
 
-        public static int ReturnLoc(int key)
+        public static void SaveTask(string title, string descipt, int taskType, int timeStart, int timeEnd, string date)
         {
-            int loc = wolfSchedLoc.FindIndex(p => p.Item1.Equals(key));
-            try { 
-            return wolfSchedLoc[loc].Item2;
-            }catch (ArgumentOutOfRangeException) {
-                MessageBox.Show("Can't set task in your sleeping sched", "Invalid input", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return -1;
+            bool valid = true;
+            bool exist = false;
+            if (TaskDaily.Count > 0)
+            {
+                foreach (var a in TempStorage.TaskDaily)
+                {
+                    if (a.Item6 == date)
+                    {
+                        for (int i = a.Item4; i < a.Item5; i++)
+                        {
+                            for (int j = timeStart; j < timeEnd; j++)
+                            {
+                                if (i == j)
+                                {
+                                    valid = false;
+                                }
+                            }
+                        }
+                    }                   
+                }
+
+                exist = TaskDaily.Any(t =>
+                t.Item1 == title &&
+                t.Item2 == descipt &&
+                t.Item3 == taskType &&
+                t.Item6 == date);
+   
+
+
+                if (valid && !exist) 
+                {
+                    TaskDaily.Add(new Tuple<string, string, int, int, int, string>(title, descipt, taskType, timeStart, timeEnd, date));
+                }
+                else if(exist) 
+                {
+                    MessageBox.Show("Task Already Exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if(!valid)
+                {
+                    MessageBox.Show("Overlapping Schedule", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                TaskDaily.Add(new Tuple<string, string, int, int, int, string>(title,descipt,taskType,timeStart,timeEnd, date));
             }
         }
     }

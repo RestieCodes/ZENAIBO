@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panelTotalTask = new System.Windows.Forms.Panel();
-            this.lblDay_Sunday = new System.Windows.Forms.Label();
+            this.lblDay = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtBoxTimeEnd = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtBoxTimeStart = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblClear = new System.Windows.Forms.Label();
             this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.lblHeader = new System.Windows.Forms.Label();
             this.listBoxTaskType = new FINAL_PROJECT.CustomListBox();
@@ -46,14 +46,16 @@
             this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.NextMonthCalendar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.PrevButtonCalendar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.NextDayCalendar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.PrevDayCalendar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.emptyPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelTaskContainer = new System.Windows.Forms.Panel();
             this.panelTotalTask.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTaskTypeIcon)).BeginInit();
             this.emptyPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTotalTask
@@ -61,27 +63,27 @@
             this.panelTotalTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
             this.panelTotalTask.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelTotalTask.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelTotalTask.Controls.Add(this.lblDay_Sunday);
+            this.panelTotalTask.Controls.Add(this.lblDay);
             this.panelTotalTask.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
             this.panelTotalTask.Location = new System.Drawing.Point(44, 11);
             this.panelTotalTask.Name = "panelTotalTask";
             this.panelTotalTask.Size = new System.Drawing.Size(574, 35);
             this.panelTotalTask.TabIndex = 51;
             // 
-            // lblDay_Sunday
+            // lblDay
             // 
-            this.lblDay_Sunday.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDay_Sunday.AutoSize = true;
-            this.lblDay_Sunday.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDay_Sunday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.lblDay_Sunday.Location = new System.Drawing.Point(144, 0);
-            this.lblDay_Sunday.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDay_Sunday.Name = "lblDay_Sunday";
-            this.lblDay_Sunday.Size = new System.Drawing.Size(281, 29);
-            this.lblDay_Sunday.TabIndex = 52;
-            this.lblDay_Sunday.Text = "WEEK | MONTH 00 0000";
+            this.lblDay.AutoSize = true;
+            this.lblDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.lblDay.Location = new System.Drawing.Point(144, 0);
+            this.lblDay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDay.Name = "lblDay";
+            this.lblDay.Size = new System.Drawing.Size(281, 29);
+            this.lblDay.TabIndex = 52;
+            this.lblDay.Text = "WEEK | MONTH 00 0000";
             // 
             // panel2
             // 
@@ -90,7 +92,7 @@
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.txtBoxTimeEnd);
             this.panel2.Controls.Add(this.txtBoxTimeStart);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lblClear);
             this.panel2.Controls.Add(this.kryptonLabel4);
             this.panel2.Controls.Add(this.lblHeader);
             this.panel2.Controls.Add(this.listBoxTaskType);
@@ -143,20 +145,22 @@
             this.txtBoxTimeStart.TabIndex = 54;
             this.txtBoxTimeStart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label1
+            // lblClear
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblClear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
-            this.label1.Location = new System.Drawing.Point(281, 461);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 17);
-            this.label1.TabIndex = 53;
-            this.label1.Text = "CLEAR";
+            this.lblClear.AutoSize = true;
+            this.lblClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblClear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
+            this.lblClear.Location = new System.Drawing.Point(281, 461);
+            this.lblClear.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblClear.Name = "lblClear";
+            this.lblClear.Size = new System.Drawing.Size(50, 17);
+            this.lblClear.TabIndex = 53;
+            this.lblClear.Text = "CLEAR";
+            this.lblClear.Click += new System.EventHandler(this.lblClear_Click);
             // 
             // kryptonLabel4
             // 
@@ -175,7 +179,7 @@
             this.lblHeader.BackColor = System.Drawing.Color.Transparent;
             this.lblHeader.Font = new System.Drawing.Font("Squada One", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblHeader.Location = new System.Drawing.Point(128, 11);
+            this.lblHeader.Location = new System.Drawing.Point(132, 11);
             this.lblHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(131, 36);
@@ -206,6 +210,7 @@
             this.listBoxTaskType.Name = "listBoxTaskType";
             this.listBoxTaskType.Size = new System.Drawing.Size(243, 197);
             this.listBoxTaskType.TabIndex = 0;
+            this.listBoxTaskType.SelectedIndexChanged += new System.EventHandler(this.listBoxTaskType_SelectedIndexChanged);
             // 
             // txtBoxTitle1
             // 
@@ -339,76 +344,78 @@
             this.kryptonLabel2.TabIndex = 10;
             this.kryptonLabel2.Values.Text = "TITLE";
             // 
-            // NextMonthCalendar
+            // NextDayCalendar
             // 
-            this.NextMonthCalendar.Location = new System.Drawing.Point(623, 228);
-            this.NextMonthCalendar.Margin = new System.Windows.Forms.Padding(2);
-            this.NextMonthCalendar.Name = "NextMonthCalendar";
-            this.NextMonthCalendar.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
-            this.NextMonthCalendar.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
-            this.NextMonthCalendar.OverrideDefault.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
-            this.NextMonthCalendar.OverrideDefault.Border.Color2 = System.Drawing.Color.DarkSlateBlue;
-            this.NextMonthCalendar.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.NextDayCalendar.Location = new System.Drawing.Point(621, 228);
+            this.NextDayCalendar.Margin = new System.Windows.Forms.Padding(2);
+            this.NextDayCalendar.Name = "NextDayCalendar";
+            this.NextDayCalendar.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.NextDayCalendar.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.NextDayCalendar.OverrideDefault.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.NextDayCalendar.OverrideDefault.Border.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.NextDayCalendar.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.NextMonthCalendar.Size = new System.Drawing.Size(22, 78);
-            this.NextMonthCalendar.StateCommon.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
-            this.NextMonthCalendar.StateCommon.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
-            this.NextMonthCalendar.StateCommon.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
-            this.NextMonthCalendar.StateCommon.Border.Color2 = System.Drawing.Color.DarkSlateBlue;
-            this.NextMonthCalendar.StateCommon.Border.ColorAngle = 50F;
-            this.NextMonthCalendar.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.NextDayCalendar.Size = new System.Drawing.Size(22, 78);
+            this.NextDayCalendar.StateCommon.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.NextDayCalendar.StateCommon.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.NextDayCalendar.StateCommon.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.NextDayCalendar.StateCommon.Border.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.NextDayCalendar.StateCommon.Border.ColorAngle = 50F;
+            this.NextDayCalendar.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.NextMonthCalendar.StateCommon.Border.Rounding = 10;
-            this.NextMonthCalendar.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.NextMonthCalendar.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.NextMonthCalendar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextMonthCalendar.StateTracking.Back.Color1 = System.Drawing.Color.SlateBlue;
-            this.NextMonthCalendar.StateTracking.Back.Color2 = System.Drawing.Color.SlateBlue;
-            this.NextMonthCalendar.StateTracking.Border.Color1 = System.Drawing.Color.White;
-            this.NextMonthCalendar.StateTracking.Border.Color2 = System.Drawing.Color.White;
-            this.NextMonthCalendar.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.NextDayCalendar.StateCommon.Border.Rounding = 10;
+            this.NextDayCalendar.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.NextDayCalendar.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.NextDayCalendar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextDayCalendar.StateTracking.Back.Color1 = System.Drawing.Color.SlateBlue;
+            this.NextDayCalendar.StateTracking.Back.Color2 = System.Drawing.Color.SlateBlue;
+            this.NextDayCalendar.StateTracking.Border.Color1 = System.Drawing.Color.White;
+            this.NextDayCalendar.StateTracking.Border.Color2 = System.Drawing.Color.White;
+            this.NextDayCalendar.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.NextMonthCalendar.TabIndex = 74;
-            this.NextMonthCalendar.Values.Text = ">";
+            this.NextDayCalendar.TabIndex = 74;
+            this.NextDayCalendar.Values.Text = ">";
+            this.NextDayCalendar.Click += new System.EventHandler(this.NextDayCalendar_Click);
             // 
-            // PrevButtonCalendar
+            // PrevDayCalendar
             // 
-            this.PrevButtonCalendar.Location = new System.Drawing.Point(16, 228);
-            this.PrevButtonCalendar.Margin = new System.Windows.Forms.Padding(2);
-            this.PrevButtonCalendar.Name = "PrevButtonCalendar";
-            this.PrevButtonCalendar.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
-            this.PrevButtonCalendar.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
-            this.PrevButtonCalendar.OverrideDefault.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
-            this.PrevButtonCalendar.OverrideDefault.Border.Color2 = System.Drawing.Color.DarkSlateBlue;
-            this.PrevButtonCalendar.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.PrevDayCalendar.Location = new System.Drawing.Point(16, 228);
+            this.PrevDayCalendar.Margin = new System.Windows.Forms.Padding(2);
+            this.PrevDayCalendar.Name = "PrevDayCalendar";
+            this.PrevDayCalendar.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevDayCalendar.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevDayCalendar.OverrideDefault.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevDayCalendar.OverrideDefault.Border.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevDayCalendar.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.PrevButtonCalendar.Size = new System.Drawing.Size(22, 78);
-            this.PrevButtonCalendar.StateCommon.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
-            this.PrevButtonCalendar.StateCommon.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
-            this.PrevButtonCalendar.StateCommon.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
-            this.PrevButtonCalendar.StateCommon.Border.Color2 = System.Drawing.Color.DarkSlateBlue;
-            this.PrevButtonCalendar.StateCommon.Border.ColorAngle = 50F;
-            this.PrevButtonCalendar.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.PrevDayCalendar.Size = new System.Drawing.Size(22, 78);
+            this.PrevDayCalendar.StateCommon.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevDayCalendar.StateCommon.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevDayCalendar.StateCommon.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevDayCalendar.StateCommon.Border.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevDayCalendar.StateCommon.Border.ColorAngle = 50F;
+            this.PrevDayCalendar.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.PrevButtonCalendar.StateCommon.Border.Rounding = 10;
-            this.PrevButtonCalendar.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-2, -1, -1, -1);
-            this.PrevButtonCalendar.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.PrevButtonCalendar.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.PrevButtonCalendar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrevButtonCalendar.StateTracking.Back.Color1 = System.Drawing.Color.SlateBlue;
-            this.PrevButtonCalendar.StateTracking.Back.Color2 = System.Drawing.Color.SlateBlue;
-            this.PrevButtonCalendar.StateTracking.Border.Color1 = System.Drawing.Color.White;
-            this.PrevButtonCalendar.StateTracking.Border.Color2 = System.Drawing.Color.White;
-            this.PrevButtonCalendar.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.PrevDayCalendar.StateCommon.Border.Rounding = 10;
+            this.PrevDayCalendar.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-2, -1, -1, -1);
+            this.PrevDayCalendar.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.PrevDayCalendar.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.PrevDayCalendar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrevDayCalendar.StateTracking.Back.Color1 = System.Drawing.Color.SlateBlue;
+            this.PrevDayCalendar.StateTracking.Back.Color2 = System.Drawing.Color.SlateBlue;
+            this.PrevDayCalendar.StateTracking.Border.Color1 = System.Drawing.Color.White;
+            this.PrevDayCalendar.StateTracking.Border.Color2 = System.Drawing.Color.White;
+            this.PrevDayCalendar.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.PrevButtonCalendar.TabIndex = 73;
-            this.PrevButtonCalendar.Values.Text = "<";
+            this.PrevDayCalendar.TabIndex = 73;
+            this.PrevDayCalendar.Values.Text = "<";
+            this.PrevDayCalendar.Click += new System.EventHandler(this.PrevDayCalendar_Click);
             // 
             // emptyPanel
             // 
@@ -422,12 +429,21 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.EnlargedNewTimeLine_Wolf;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.EnlargedNewTimeLineForWolf;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.panelTaskContainer);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(554, 639);
+            this.panel1.Size = new System.Drawing.Size(551, 1249);
             this.panel1.TabIndex = 0;
+            // 
+            // panelTaskContainer
+            // 
+            this.panelTaskContainer.BackColor = System.Drawing.Color.Transparent;
+            this.panelTaskContainer.Location = new System.Drawing.Point(127, 87);
+            this.panelTaskContainer.Name = "panelTaskContainer";
+            this.panelTaskContainer.Size = new System.Drawing.Size(412, 811);
+            this.panelTaskContainer.TabIndex = 0;
             // 
             // CalendarDay
             // 
@@ -436,8 +452,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1030, 527);
             this.Controls.Add(this.emptyPanel);
-            this.Controls.Add(this.NextMonthCalendar);
-            this.Controls.Add(this.PrevButtonCalendar);
+            this.Controls.Add(this.NextDayCalendar);
+            this.Controls.Add(this.PrevDayCalendar);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelTotalTask);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -445,12 +461,14 @@
             this.Name = "CalendarDay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CalendarDay";
+            this.Load += new System.EventHandler(this.CalendarDay_Load);
             this.panelTotalTask.ResumeLayout(false);
             this.panelTotalTask.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTaskTypeIcon)).EndInit();
             this.emptyPanel.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -458,7 +476,7 @@
         #endregion
 
         public System.Windows.Forms.Panel panelTotalTask;
-        private System.Windows.Forms.Label lblDay_Sunday;
+        private System.Windows.Forms.Label lblDay;
         private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.Label lblHeader;
         public CustomListBox listBoxTaskType;
@@ -472,12 +490,13 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
         public ComponentFactory.Krypton.Toolkit.KryptonButton btnSave;
-        private System.Windows.Forms.Label label1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton NextMonthCalendar;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton PrevButtonCalendar;
+        private System.Windows.Forms.Label lblClear;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton NextDayCalendar;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton PrevDayCalendar;
         private System.Windows.Forms.FlowLayoutPanel emptyPanel;
         public ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBoxTimeEnd;
         public ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBoxTimeStart;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelTaskContainer;
     }
 }
