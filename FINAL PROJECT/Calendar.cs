@@ -20,12 +20,12 @@ namespace FINAL_PROJECT
         public int Month;
         public Calendar()
         {
-            
             InitializeComponent();
-            InitializeForms();  
+            InitializeForms();
+            this.btnMonth.StateCommon.Back.Color1 = Color.FromArgb(108, 23, 180);
+            this.btnMonth.StateCommon.Back.Color2 = Color.FromArgb(108, 23, 180);
+            this.btnMonth.StateCommon.Content.ShortText.Color1 = Color.White;
         }
-    
-  
 
         private void InitializeForms()
         {
@@ -85,6 +85,7 @@ namespace FINAL_PROJECT
         private void btnDay_Click(object sender, EventArgs e)
         {
             panelContainer.Controls.Clear();
+
         }
 
         private void btnWeek_Click_1(object sender, EventArgs e)

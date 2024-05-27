@@ -44,6 +44,7 @@
             this.btnSignup = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBoxChronotype = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.glowChronotype = new System.Windows.Forms.PictureBox();
             this.circleChronotype = new System.Windows.Forms.PictureBox();
@@ -62,9 +63,9 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxChronotype = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.chronotypeBox)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChronotype)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.glowChronotype)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circleChronotype)).BeginInit();
@@ -83,7 +84,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChronotype)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -95,7 +95,7 @@
             this.label1.Location = new System.Drawing.Point(599, 59);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(293, 32);
+            this.label1.Size = new System.Drawing.Size(305, 34);
             this.label1.TabIndex = 11;
             this.label1.Text = "Let\'s Get Started!";
             // 
@@ -351,6 +351,16 @@
             this.panel1.Size = new System.Drawing.Size(972, 584);
             this.panel1.TabIndex = 71;
             // 
+            // pictureBoxChronotype
+            // 
+            this.pictureBoxChronotype.Location = new System.Drawing.Point(768, 188);
+            this.pictureBoxChronotype.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxChronotype.Name = "pictureBoxChronotype";
+            this.pictureBoxChronotype.Size = new System.Drawing.Size(115, 81);
+            this.pictureBoxChronotype.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxChronotype.TabIndex = 47;
+            this.pictureBoxChronotype.TabStop = false;
+            // 
             // pictureBox9
             // 
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Left;
@@ -499,6 +509,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 48;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox1
             // 
@@ -572,16 +583,6 @@
             this.pictureBox3.TabIndex = 24;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBoxChronotype
-            // 
-            this.pictureBoxChronotype.Location = new System.Drawing.Point(768, 188);
-            this.pictureBoxChronotype.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxChronotype.Name = "pictureBoxChronotype";
-            this.pictureBoxChronotype.Size = new System.Drawing.Size(115, 81);
-            this.pictureBoxChronotype.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxChronotype.TabIndex = 47;
-            this.pictureBoxChronotype.TabStop = false;
-            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -628,6 +629,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chronotypeBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChronotype)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.glowChronotype)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circleChronotype)).EndInit();
@@ -646,7 +648,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChronotype)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -151,6 +151,12 @@
     <Compile Include="CalendarWeek.Designer.cs">
       <DependentUpon>CalendarWeek.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChronotypeExplanation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChronotypeExplanation.Designer.cs">
+      <DependentUpon>ChronotypeExplanation.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomListBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -171,6 +177,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoalPanelDashboardDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GoalPanelDashboardDisplay.Designer.cs">
+      <DependentUpon>GoalPanelDashboardDisplay.cs</DependentUpon>
     </Compile>
     <Compile Include="MainPanel.cs">
       <SubType>Form</SubType>
@@ -252,6 +264,9 @@
     <EmbeddedResource Include="CalendarWeek.resx">
       <DependentUpon>CalendarWeek.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChronotypeExplanation.resx">
+      <DependentUpon>ChronotypeExplanation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoalPanelDashboardDisplay.resx">
+      <DependentUpon>GoalPanelDashboardDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPanel.resx">
       <DependentUpon>MainPanel.cs</DependentUpon>
@@ -507,6 +525,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ICON_Trash %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutUs_Pipol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutUs_Pipol1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutUs_Pipol2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_DashboardGoals.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_DashboardGoals1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutUs_Pipol21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutUs_Pipol3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutUs_Credits.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELA PE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\423036643_424820603307224_5215437000114989819_n %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\342018830_768278394828232_8630967630097587536_n %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Motivation1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChronotypeExplanationFInalNa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile_Container.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_GOAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpICON_GOAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpICON_GOAL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpICON_GOAL2 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpICON_GOAL3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPressed_GOAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_CALENDARMay29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -160,7 +160,7 @@
             // 
             this.btn_Profile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Profile.Location = new System.Drawing.Point(1, 321);
-            this.btn_Profile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Profile.Margin = new System.Windows.Forms.Padding(0, 2, 3, 2);
             this.btn_Profile.Name = "btn_Profile";
             this.btn_Profile.OverrideDefault.Back.Color1 = System.Drawing.Color.Indigo;
             this.btn_Profile.OverrideDefault.Back.Color2 = System.Drawing.Color.BlueViolet;
@@ -174,7 +174,7 @@
             this.btn_Profile.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
             this.btn_Profile.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.btn_Profile.StateCommon.Back.Image = global::FINAL_PROJECT.Properties.Resources.mpICON_Profile;
-            this.btn_Profile.StateCommon.Back.ImageAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Local;
+            this.btn_Profile.StateCommon.Back.ImageAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Control;
             this.btn_Profile.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
             this.btn_Profile.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
             this.btn_Profile.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
@@ -201,13 +201,14 @@
             // 
             // btn_Deadline
             // 
+            this.btn_Deadline.AutoSize = true;
             this.btn_Deadline.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Deadline.Location = new System.Drawing.Point(1, 258);
             this.btn_Deadline.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Deadline.Name = "btn_Deadline";
             this.btn_Deadline.OverrideDefault.Back.Color1 = System.Drawing.Color.Indigo;
             this.btn_Deadline.OverrideDefault.Back.Color2 = System.Drawing.Color.BlueViolet;
-            this.btn_Deadline.OverrideDefault.Back.Image = global::FINAL_PROJECT.Properties.Resources.btnPressed_Deadline;
+            this.btn_Deadline.OverrideDefault.Back.Image = global::FINAL_PROJECT.Properties.Resources.btnPressed_GOAL;
             this.btn_Deadline.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
             this.btn_Deadline.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
             this.btn_Deadline.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -216,7 +217,7 @@
             this.btn_Deadline.Size = new System.Drawing.Size(282, 63);
             this.btn_Deadline.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
             this.btn_Deadline.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
-            this.btn_Deadline.StateCommon.Back.Image = global::FINAL_PROJECT.Properties.Resources.mpICON_Deadline;
+            this.btn_Deadline.StateCommon.Back.Image = global::FINAL_PROJECT.Properties.Resources.mpICON_GOAL3;
             this.btn_Deadline.StateCommon.Back.ImageAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Local;
             this.btn_Deadline.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterLeft;
             this.btn_Deadline.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(41)))));
@@ -232,14 +233,14 @@
             this.btn_Deadline.StatePressed.Back.Color2 = System.Drawing.Color.BlueViolet;
             this.btn_Deadline.StateTracking.Back.Color1 = System.Drawing.Color.Indigo;
             this.btn_Deadline.StateTracking.Back.Color2 = System.Drawing.Color.Indigo;
-            this.btn_Deadline.StateTracking.Back.Image = global::FINAL_PROJECT.Properties.Resources.btnPressed_Deadline;
+            this.btn_Deadline.StateTracking.Back.Image = global::FINAL_PROJECT.Properties.Resources.btnPressed_GOAL;
             this.btn_Deadline.StateTracking.Border.Color1 = System.Drawing.Color.Indigo;
             this.btn_Deadline.StateTracking.Border.Color2 = System.Drawing.Color.Indigo;
             this.btn_Deadline.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btn_Deadline.TabIndex = 34;
-            this.btn_Deadline.Values.Text = "DEADLINE";
+            this.btn_Deadline.Values.Text = "GOALS";
             this.btn_Deadline.Click += new System.EventHandler(this.btn_Deadline_Click);
             // 
             // panel4
@@ -442,6 +443,7 @@
             this.Text = "x";
             this.panel2.ResumeLayout(false);
             this.panelbtnContainer.ResumeLayout(false);
+            this.panelbtnContainer.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

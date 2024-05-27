@@ -33,6 +33,7 @@
             this.btnMonth = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnDay = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnWeek = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.SuspendLayout();
             // 
             // label1
@@ -48,8 +49,8 @@
             // 
             // panelContainer
             // 
-            this.panelContainer.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panelContainer.Location = new System.Drawing.Point(16, 78);
+            this.panelContainer.BackColor = System.Drawing.Color.Transparent;
+            this.panelContainer.Location = new System.Drawing.Point(16, 95);
             this.panelContainer.Margin = new System.Windows.Forms.Padding(4);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(1288, 659);
@@ -58,7 +59,7 @@
             // btnMonth
             // 
             this.btnMonth.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMonth.Location = new System.Drawing.Point(903, 32);
+            this.btnMonth.Location = new System.Drawing.Point(888, 43);
             this.btnMonth.Margin = new System.Windows.Forms.Padding(4);
             this.btnMonth.Name = "btnMonth";
             this.btnMonth.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
@@ -103,7 +104,7 @@
             // btnDay
             // 
             this.btnDay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDay.Location = new System.Drawing.Point(1157, 32);
+            this.btnDay.Location = new System.Drawing.Point(1142, 43);
             this.btnDay.Margin = new System.Windows.Forms.Padding(4);
             this.btnDay.Name = "btnDay";
             this.btnDay.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
@@ -148,7 +149,7 @@
             // btnWeek
             // 
             this.btnWeek.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnWeek.Location = new System.Drawing.Point(1030, 32);
+            this.btnWeek.Location = new System.Drawing.Point(1015, 43);
             this.btnWeek.Margin = new System.Windows.Forms.Padding(4);
             this.btnWeek.Name = "btnWeek";
             this.btnWeek.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
@@ -190,13 +191,41 @@
             this.btnWeek.Values.Text = "WEEK";
             this.btnWeek.Click += new System.EventHandler(this.btnWeek_Click_1);
             // 
+            // kryptonButton1
+            // 
+            this.kryptonButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonButton1.Location = new System.Drawing.Point(31, 89);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.Size = new System.Drawing.Size(1256, 5);
+            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(61)))), ((int)(((byte)(138)))));
+            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(61)))), ((int)(((byte)(138)))));
+            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1.StateCommon.Border.Rounding = 3;
+            this.kryptonButton1.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1.TabIndex = 75;
+            this.kryptonButton1.Values.Text = "kryptonButton1";
+            // 
             // Calendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.BG_Dashboard;
             this.ClientSize = new System.Drawing.Size(1317, 750);
+            this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.btnWeek);
             this.Controls.Add(this.btnDay);
             this.Controls.Add(this.btnMonth);
@@ -219,5 +248,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnMonth;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnDay;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnWeek;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
     }
 }

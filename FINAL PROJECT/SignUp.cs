@@ -389,6 +389,12 @@ namespace FINAL_PROJECT
             }
         }
 
-       
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            ChronotypeExplanation NewChronotypeExplanation = new ChronotypeExplanation();
+            NewChronotypeExplanation.Show();
+            this.Hide();
+           
+        }
     }
 }

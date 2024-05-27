@@ -28,177 +28,104 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxDolphin = new System.Windows.Forms.PictureBox();
-            this.pictureBoxBear = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLion = new System.Windows.Forms.PictureBox();
-            this.pictureBoxWolf = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.EditButton = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TypeOfPerson = new System.Windows.Forms.Label();
+            this.Chronotype = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pctChronotype = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDolphin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBear)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWolf)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.goalsContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.ShowTaskTomorrow = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EditButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctChronotype)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Squada One", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.label1.Location = new System.Drawing.Point(22, 25);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Squada One", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.label1.Location = new System.Drawing.Point(22, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 42);
+            this.label1.Size = new System.Drawing.Size(238, 53);
             this.label1.TabIndex = 2;
             this.label1.Text = "DASHBOARD";
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
-            this.panel2.Controls.Add(this.pictureBox13);
-            this.panel2.Controls.Add(this.pictureBoxDolphin);
-            this.panel2.Controls.Add(this.pictureBoxBear);
-            this.panel2.Controls.Add(this.pictureBoxLion);
-            this.panel2.Controls.Add(this.pictureBoxWolf);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.kryptonLabel1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(1014, 65);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(309, 406);
-            this.panel2.TabIndex = 3;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Location = new System.Drawing.Point(35, 295);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(115, 81);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 52;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBoxDolphin
-            // 
-            this.pictureBoxDolphin.Location = new System.Drawing.Point(35, 294);
-            this.pictureBoxDolphin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxDolphin.Name = "pictureBoxDolphin";
-            this.pictureBoxDolphin.Size = new System.Drawing.Size(115, 81);
-            this.pictureBoxDolphin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxDolphin.TabIndex = 51;
-            this.pictureBoxDolphin.TabStop = false;
-            // 
-            // pictureBoxBear
-            // 
-            this.pictureBoxBear.Location = new System.Drawing.Point(35, 294);
-            this.pictureBoxBear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxBear.Name = "pictureBoxBear";
-            this.pictureBoxBear.Size = new System.Drawing.Size(115, 81);
-            this.pictureBoxBear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxBear.TabIndex = 50;
-            this.pictureBoxBear.TabStop = false;
-            // 
-            // pictureBoxLion
-            // 
-            this.pictureBoxLion.Location = new System.Drawing.Point(35, 294);
-            this.pictureBoxLion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxLion.Name = "pictureBoxLion";
-            this.pictureBoxLion.Size = new System.Drawing.Size(115, 81);
-            this.pictureBoxLion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLion.TabIndex = 49;
-            this.pictureBoxLion.TabStop = false;
-            // 
-            // pictureBoxWolf
-            // 
-            this.pictureBoxWolf.Location = new System.Drawing.Point(35, 294);
-            this.pictureBoxWolf.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxWolf.Name = "pictureBoxWolf";
-            this.pictureBoxWolf.Size = new System.Drawing.Size(115, 81);
-            this.pictureBoxWolf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxWolf.TabIndex = 48;
-            this.pictureBoxWolf.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(107, 251);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "CHRONOTYPE";
-            // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(83, 222);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(151, 39);
-            this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel1.TabIndex = 3;
-            this.kryptonLabel1.Values.Text = "Username";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Location = new System.Drawing.Point(53, 31);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 185);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
-            this.panel3.Location = new System.Drawing.Point(1014, 481);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(309, 242);
-            this.panel3.TabIndex = 4;
             // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
-            this.panel4.Controls.Add(this.kryptonLabel3);
-            this.panel4.Location = new System.Drawing.Point(729, 360);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Location = new System.Drawing.Point(711, 359);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(265, 363);
+            this.panel4.Size = new System.Drawing.Size(259, 50);
             this.panel4.TabIndex = 5;
             // 
-            // kryptonLabel3
+            // label5
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(81, 12);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(108, 27);
-            this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel3.TabIndex = 6;
-            this.kryptonLabel3.Values.Text = "DEADLINES";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Yi Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.Location = new System.Drawing.Point(139, 11);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 15);
+            this.label5.TabIndex = 53;
+            this.label5.Text = "WITH";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Yi Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(139, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 15);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "DEADLINE";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Squada One", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.BlueViolet;
+            this.label4.Location = new System.Drawing.Point(58, 7);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 34);
+            this.label4.TabIndex = 52;
+            this.label4.Text = "GOALS";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
@@ -208,45 +135,276 @@
             this.label8.Size = new System.Drawing.Size(0, 16);
             this.label8.TabIndex = 9;
             // 
-            // kryptonButton2
+            // panel1
             // 
-            this.kryptonButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonButton2.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorStack;
-            this.kryptonButton2.Location = new System.Drawing.Point(729, 304);
-            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(265, 46);
-            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
-            this.kryptonButton2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton2.StateCommon.Border.Rounding = 7;
-            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.TabIndex = 11;
-            this.kryptonButton2.Values.Text = "         TOMORRROW\'S TASK";
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.Dashboard_Motivation1;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(980, 110);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(309, 415);
+            this.panel1.TabIndex = 5;
             // 
-            // kryptonLabel4
+            // panel2
             // 
-            this.kryptonLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonLabel4.Location = new System.Drawing.Point(831, 74);
-            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(61, 27);
-            this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel4.TabIndex = 7;
-            this.kryptonLabel4.Values.Text = "APRIL";
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.EditButton);
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.TypeOfPerson);
+            this.panel2.Controls.Add(this.Chronotype);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.pctChronotype);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Location = new System.Drawing.Point(5, 10);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(298, 396);
+            this.panel2.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(120, 324);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 15);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "CHRONOTYPE";
+            // 
+            // EditButton
+            // 
+            this.EditButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.EditButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EditButton.Image = global::FINAL_PROJECT.Properties.Resources.editICON;
+            this.EditButton.Location = new System.Drawing.Point(241, 14);
+            this.EditButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EditButton.Name = "EditButton";
+            this.EditButton.Size = new System.Drawing.Size(57, 53);
+            this.EditButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.EditButton.TabIndex = 54;
+            this.EditButton.TabStop = false;
+            this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBox1.Font = new System.Drawing.Font("Squada One", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.textBox1.Location = new System.Drawing.Point(17, 220);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(278, 35);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "USERNAMEQWQWQWQW";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TypeOfPerson
+            // 
+            this.TypeOfPerson.AutoSize = true;
+            this.TypeOfPerson.Font = new System.Drawing.Font("Squada One", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TypeOfPerson.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.TypeOfPerson.Location = new System.Drawing.Point(119, 347);
+            this.TypeOfPerson.Name = "TypeOfPerson";
+            this.TypeOfPerson.Size = new System.Drawing.Size(155, 23);
+            this.TypeOfPerson.TabIndex = 53;
+            this.TypeOfPerson.Text = "IRREGULAR PERSON";
+            this.TypeOfPerson.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Chronotype
+            // 
+            this.Chronotype.AutoSize = true;
+            this.Chronotype.Font = new System.Drawing.Font("Squada One", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Chronotype.ForeColor = System.Drawing.Color.BlueViolet;
+            this.Chronotype.Location = new System.Drawing.Point(115, 294);
+            this.Chronotype.Name = "Chronotype";
+            this.Chronotype.Size = new System.Drawing.Size(113, 34);
+            this.Chronotype.TabIndex = 51;
+            this.Chronotype.Text = "DOLPHIN";
+            this.Chronotype.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::FINAL_PROJECT.Properties.Resources.mpICON_Line;
+            this.pictureBox2.Location = new System.Drawing.Point(13, 255);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(270, 14);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 50;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pctChronotype
+            // 
+            this.pctChronotype.Image = global::FINAL_PROJECT.Properties.Resources.ICON_Dolphin;
+            this.pctChronotype.Location = new System.Drawing.Point(23, 292);
+            this.pctChronotype.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pctChronotype.Name = "pctChronotype";
+            this.pctChronotype.Size = new System.Drawing.Size(104, 92);
+            this.pctChronotype.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctChronotype.TabIndex = 48;
+            this.pctChronotype.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::FINAL_PROJECT.Properties.Resources.fpBlank;
+            this.pictureBox1.Location = new System.Drawing.Point(57, 30);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(184, 175);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
-            this.pictureBox3.Location = new System.Drawing.Point(728, 108);
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::FINAL_PROJECT.Properties.Resources.Dashboard_CALENDARMay29;
+            this.pictureBox3.Location = new System.Drawing.Point(710, 110);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(265, 182);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.BG_DashboardGoals;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Controls.Add(this.panel3);
+            this.panel5.Location = new System.Drawing.Point(708, 399);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(265, 323);
+            this.panel5.TabIndex = 12;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.goalsContainer);
+            this.panel3.Location = new System.Drawing.Point(4, 6);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(266, 314);
+            this.panel3.TabIndex = 78;
+            // 
+            // goalsContainer
+            // 
+            this.goalsContainer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.goalsContainer.AutoScroll = true;
+            this.goalsContainer.Location = new System.Drawing.Point(3, 5);
+            this.goalsContainer.Name = "goalsContainer";
+            this.goalsContainer.Size = new System.Drawing.Size(312, 306);
+            this.goalsContainer.TabIndex = 77;
+            this.goalsContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.goalsContainer_Paint);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(147)))), ((int)(((byte)(148)))));
+            this.pictureBox4.Location = new System.Drawing.Point(708, 356);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(265, 56);
+            this.pictureBox4.TabIndex = 13;
+            this.pictureBox4.TabStop = false;
+            // 
+            // ShowTaskTomorrow
+            // 
+            this.ShowTaskTomorrow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ShowTaskTomorrow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ShowTaskTomorrow.Location = new System.Drawing.Point(709, 301);
+            this.ShowTaskTomorrow.Name = "ShowTaskTomorrow";
+            this.ShowTaskTomorrow.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.ShowTaskTomorrow.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.ShowTaskTomorrow.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.ShowTaskTomorrow.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.ShowTaskTomorrow.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.ShowTaskTomorrow.Size = new System.Drawing.Size(265, 48);
+            this.ShowTaskTomorrow.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.ShowTaskTomorrow.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.ShowTaskTomorrow.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
+            this.ShowTaskTomorrow.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
+            this.ShowTaskTomorrow.StateCommon.Border.ColorAngle = 3F;
+            this.ShowTaskTomorrow.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.ShowTaskTomorrow.StateCommon.Border.Rounding = 5;
+            this.ShowTaskTomorrow.StateCommon.Border.Width = 5;
+            this.ShowTaskTomorrow.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-10, -16, -20, -20);
+            this.ShowTaskTomorrow.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.WhiteSmoke;
+            this.ShowTaskTomorrow.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Impact", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowTaskTomorrow.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.ShowTaskTomorrow.StateTracking.Back.Color2 = System.Drawing.Color.BlueViolet;
+            this.ShowTaskTomorrow.TabIndex = 14;
+            this.ShowTaskTomorrow.Values.Text = "TASK TOMORROW";
+            this.ShowTaskTomorrow.Click += new System.EventHandler(this.ShowTaskTomorrow_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(980, 529);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(309, 193);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 55;
+            this.pictureBox5.TabStop = false;
+            // 
+            // kryptonButton1
+            // 
+            this.kryptonButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonButton1.Location = new System.Drawing.Point(33, 91);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.Size = new System.Drawing.Size(1256, 5);
+            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1.StateCommon.Border.Rounding = 3;
+            this.kryptonButton1.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.kryptonButton1.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1.TabIndex = 74;
+            this.kryptonButton1.Values.Text = "kryptonButton1";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(33, 110);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(671, 606);
+            this.flowLayoutPanel1.TabIndex = 75;
             // 
             // Dashboard
             // 
@@ -254,32 +412,39 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ClientSize = new System.Drawing.Size(1335, 743);
-            this.Controls.Add(this.kryptonLabel4);
-            this.Controls.Add(this.kryptonButton2);
+            this.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.BG_Dashboard;
+            this.ClientSize = new System.Drawing.Size(1318, 750);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.kryptonButton1);
+            this.Controls.Add(this.ShowTaskTomorrow);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.pictureBox4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDolphin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBear)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWolf)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EditButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctChronotype)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,21 +452,29 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pctChronotype;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label Chronotype;
+        private System.Windows.Forms.Label TypeOfPerson;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox EditButton;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBoxDolphin;
-        private System.Windows.Forms.PictureBox pictureBoxBear;
-        private System.Windows.Forms.PictureBox pictureBoxLion;
-        private System.Windows.Forms.PictureBox pictureBoxWolf;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton ShowTaskTomorrow;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private System.Windows.Forms.FlowLayoutPanel goalsContainer;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

@@ -40,19 +40,19 @@
             this.NextMonthCalendar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.PrevButtonCalendar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.panelTotalTask.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -284,63 +284,6 @@
             this.panel1.Size = new System.Drawing.Size(163, 27);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(240, 64);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(163, 27);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(404, 64);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(163, 27);
-            this.panel3.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(568, 64);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(163, 27);
-            this.panel4.TabIndex = 3;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel5.Location = new System.Drawing.Point(732, 64);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(163, 27);
-            this.panel5.TabIndex = 4;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
-            this.panel6.Controls.Add(this.label6);
-            this.panel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel6.Location = new System.Drawing.Point(896, 64);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(163, 27);
-            this.panel6.TabIndex = 5;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
-            this.panel7.Controls.Add(this.label7);
-            this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel7.Location = new System.Drawing.Point(1060, 64);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(163, 27);
-            this.panel7.TabIndex = 6;
-            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -355,6 +298,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "SUNDAY";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(240, 64);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(163, 27);
+            this.panel2.TabIndex = 1;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -365,6 +317,15 @@
             this.label3.Size = new System.Drawing.Size(72, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "MONDAY";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Location = new System.Drawing.Point(404, 64);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(163, 27);
+            this.panel3.TabIndex = 2;
             // 
             // label4
             // 
@@ -377,6 +338,15 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "TUESDAY";
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Location = new System.Drawing.Point(568, 64);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(163, 27);
+            this.panel4.TabIndex = 3;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -388,25 +358,15 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "WEDNESDAY";
             // 
-            // label6
+            // panel5
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(51, 5);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 16);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "FRIDAY";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(38, 5);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 16);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "SATURDAY";
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel5.Location = new System.Drawing.Point(732, 64);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(163, 27);
+            this.panel5.TabIndex = 4;
             // 
             // label8
             // 
@@ -418,11 +378,52 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "THURSDAY";
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
+            this.panel6.Controls.Add(this.label6);
+            this.panel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel6.Location = new System.Drawing.Point(896, 64);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(163, 27);
+            this.panel6.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(51, 5);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 16);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "FRIDAY";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
+            this.panel7.Controls.Add(this.label7);
+            this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel7.Location = new System.Drawing.Point(1060, 64);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(163, 27);
+            this.panel7.TabIndex = 6;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(38, 5);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 16);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "SATURDAY";
+            // 
             // CalendarMonth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.BG_Dashboard;
             this.ClientSize = new System.Drawing.Size(1288, 659);
             this.ControlBox = false;
             this.Controls.Add(this.panel7);

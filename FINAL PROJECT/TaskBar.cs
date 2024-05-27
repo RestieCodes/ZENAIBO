@@ -156,7 +156,7 @@ namespace FINAL_PROJECT
 
         private void editIcon_Click_1(object sender, EventArgs e)
         {
-            Deadline.Deadline_instance.lblHeader.Text = "EDIT TASK";
+            Deadline.Deadline_instance.lblHeader.Text = "EDIT GOAL";
            
 
             Deadline.Deadline_instance.btnSaveChanges.Visible = true;

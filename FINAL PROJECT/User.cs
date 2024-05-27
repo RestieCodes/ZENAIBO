@@ -59,5 +59,21 @@ namespace FINAL_PROJECT
 
             }
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            NewMainPanel newMainPanel = new NewMainPanel();
+            newMainPanel.Close();
+
+            this.Dispose();
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+            GC.Collect();
+
+            Login login = new Login();
+            login.Show();
+
+            
+        }
     }
 }

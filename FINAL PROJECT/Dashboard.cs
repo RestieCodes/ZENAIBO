@@ -15,66 +15,55 @@ namespace FINAL_PROJECT
         public Dashboard()
         {
             InitializeComponent();
+
+           
+
+
+            for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
+            {
+                GoalPanelDashboardDisplay goalPanelDashboardDisplay = new GoalPanelDashboardDisplay();
+                goalPanelDashboardDisplay.BorderStyle = BorderStyle.None;
+                goalPanelDashboardDisplay.DisplayContent(TempStorage.TaskStorage[i]);
+                goalsContainer.Controls.Add(goalPanelDashboardDisplay);
+
+            }
+        }
+        private void ShowTaskTomorrow_Click(object sender, EventArgs e)
+        {
+            if (ShowTaskTomorrow.Text == "TASK TOMORROW")
+            {
+                ShowTaskTomorrow.Text = "TASK TODAY";
+                ShowTaskTomorrow.StateCommon.Content.ShortText.Color1 = Color.BlueViolet;
+                //change task display 
+            }
+            else
+            {
+                ShowTaskTomorrow.Text = "TASK TOMORROW";
+                ShowTaskTomorrow.StateCommon.Content.ShortText.Color1 = Color.WhiteSmoke;
+                //change task display 
+            }
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EditButton_Click(object sender, EventArgs e)
+        {
+            NewMainPanel MainPanleAccess = new NewMainPanel();  
+            User user = new User();
+
+        }
+
+        private void goalsContainer_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-    
-        }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            Calendar calendar = new Calendar();
-            calendar.Show();
-            this.Close();
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            Deadline deadline = new Deadline();
-            deadline.Show();
-            this.Hide();
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-            User user = new User();
-            user.Show();
-            this.Hide();
-        }
-
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-            aboutUs about = new aboutUs();
-            about.Show();
-            this.Hide();
-        }
-
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Maximized)
-            {
-                this.WindowState = FormWindowState.Normal; // Restore window if currently maximized
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Maximized; // Maximize window if currently not maximized
-            }
         }
     }
 }
