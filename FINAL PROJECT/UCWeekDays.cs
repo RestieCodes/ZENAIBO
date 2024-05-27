@@ -54,5 +54,10 @@ namespace FINAL_PROJECT
                     break;
             }
         }
+
+        public void DisplayTask(Tuple<string, string, int, int, int, string> data) 
+        {
+        
+        }
     }
 }

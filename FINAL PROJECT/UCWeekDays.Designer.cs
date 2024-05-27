@@ -33,6 +33,7 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanelTaskCtn = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -95,10 +96,18 @@
             this.panel4.Size = new System.Drawing.Size(134, 22);
             this.panel4.TabIndex = 88;
             // 
+            // flowLayoutPanelTaskCtn
+            // 
+            this.flowLayoutPanelTaskCtn.Location = new System.Drawing.Point(3, 48);
+            this.flowLayoutPanelTaskCtn.Name = "flowLayoutPanelTaskCtn";
+            this.flowLayoutPanelTaskCtn.Size = new System.Drawing.Size(128, 405);
+            this.flowLayoutPanelTaskCtn.TabIndex = 89;
+            // 
             // UCWeekDays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.flowLayoutPanelTaskCtn);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.lblDay);
             this.Margin = new System.Windows.Forms.Padding(0);
@@ -119,5 +128,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelTaskCtn;
     }
 }

@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "UserControlBlank";
-            this.Size = new System.Drawing.Size(95, 65);
+            this.Size = new System.Drawing.Size(129, 71);
             this.ResumeLayout(false);
 
         }

@@ -222,11 +222,11 @@
       <DependentUpon>TaskDaily.cs</DependentUpon>
     </Compile>
     <Compile Include="TempStorage.cs" />
-    <Compile Include="UCWeekBlank.cs">
+    <Compile Include="UCDailyTask.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCWeekBlank.Designer.cs">
-      <DependentUpon>UCWeekBlank.cs</DependentUpon>
+    <Compile Include="UCDailyTask.Designer.cs">
+      <DependentUpon>UCDailyTask.cs</DependentUpon>
     </Compile>
     <Compile Include="UCWeekDays.cs">
       <SubType>UserControl</SubType>
@@ -305,8 +305,8 @@
     <EmbeddedResource Include="TaskDaily.resx">
       <DependentUpon>TaskDaily.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCWeekBlank.resx">
-      <DependentUpon>UCWeekBlank.cs</DependentUpon>
+    <EmbeddedResource Include="UCDailyTask.resx">
+      <DependentUpon>UCDailyTask.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCWeekDays.resx">
       <DependentUpon>UCWeekDays.cs</DependentUpon>

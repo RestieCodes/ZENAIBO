@@ -28,6 +28,7 @@ namespace FINAL_PROJECT
         private void CalendarWeek_Load(object sender, EventArgs e)
         {
             DisplayLabels();
+            PrevWeekCalendar.Visible = false;
         }
 
         
@@ -37,7 +38,7 @@ namespace FINAL_PROJECT
             DateTime now = DateTime.Now;
             month = now.Month;
             year = now.Year;
-            day = 0;
+            day = now.Day - 1;
             blank = true;
 
             string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
@@ -49,19 +50,26 @@ namespace FINAL_PROJECT
             // Determine which day of the week the first day of the month falls on (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
             firstDayOfWeek = (int)firstDayOfMonth.DayOfWeek;
 
-            for (int i = 0; i < firstDayOfWeek; i++)
+            DateTime nameOfDay = new DateTime(year, month, day + 1);
+            int dayNameInNum = (int)nameOfDay.DayOfWeek;
+            int temp = day - dayNameInNum + 1;
+
+            for (int i = 0; i < dayNameInNum; i++)
             {
+                blank = false;
                 UCWeekDays weekday = new UCWeekDays();
-                weekday.DayName(day,i, blank);
+                weekday.DayName(temp,i, blank);
                 flowLayoutPanelWeeks.Controls.Add(weekday);
+                temp++;
             }
 
-            for (int i = firstDayOfWeek; i < 7; i++)
+            for (int i = dayNameInNum; i < 6; i++)
             {
                 blank = false;
                 day++;
                 UCWeekDays weekday = new UCWeekDays();
                 weekday.DayName(day, i, blank);
+
                 flowLayoutPanelWeeks.Controls.Add(weekday);
                 
             }
@@ -70,7 +78,7 @@ namespace FINAL_PROJECT
 
         private void NextWeekCalendar_Click(object sender, EventArgs e)
         {
-            /*int i = 8 - firstDayOfWeek + nextWeek*/
+            PrevWeekCalendar.Visible = true;
             flowLayoutPanelWeeks.Controls.Clear();
             string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             txtboxMonthNow.Text = monthName + " " + year;
@@ -165,7 +173,7 @@ namespace FINAL_PROJECT
             }
             
 
-            if (day <= 1&& day >= -5)
+            if (day < 1&& day >= -6)
             {
                 DateTime firstDayOfMonth = new DateTime(year, month, 1);
                 firstDayOfWeek = (int)firstDayOfMonth.DayOfWeek;
@@ -188,16 +196,24 @@ namespace FINAL_PROJECT
                     
                 }
             }
-            else if (day <= -6)
+            else if (day < -6)
             {
                 month--;
                 string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
                 txtboxMonthNow.Text = monthName + " " + year;
                 
                 MonthTotaldays = DateTime.DaysInMonth(year, month );
-                day = MonthTotaldays - firstDayOfWeek;
+                DateTime now = DateTime.Now;
+                if (month == now.Month && year == now.Year)
+                {
+                    day = now.Day - 2;
+                    PrevWeekCalendar.Visible = false;
+                }
+                else 
+                {
+                    day = MonthTotaldays - firstDayOfWeek;
+                }
                 
-
                 for (int i = 0; i < 7; i++)
                 {
                     blank = false;

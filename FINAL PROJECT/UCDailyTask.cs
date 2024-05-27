@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FINAL_PROJECT
 {
-    public partial class UCWeekBlank : UserControl
+    public partial class UCDailyTask : UserControl
     {
-        public UCWeekBlank()
+        public UCDailyTask()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace FINAL_PROJECT
 {
-    partial class UCWeekBlank
+    partial class UCDailyTask
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // UCWeekBlank
+            // UCDailyTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Margin = new System.Windows.Forms.Padding(0);
-            this.Name = "UCWeekBlank";
-            this.Size = new System.Drawing.Size(122, 21);
+            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Name = "UCDailyTask";
+            this.Size = new System.Drawing.Size(125, 143);
             this.ResumeLayout(false);
 
         }
