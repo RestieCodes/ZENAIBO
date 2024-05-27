@@ -503,6 +503,26 @@ namespace FINAL_PROJECT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EnlargedNewTimeLine_Wolf {
+            get {
+                object obj = ResourceManager.GetObject("EnlargedNewTimeLine-Wolf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EnlargedNewTimeLineForWolf {
+            get {
+                object obj = ResourceManager.GetObject("EnlargedNewTimeLineForWolf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fpBlank {
             get {
                 object obj = ResourceManager.GetObject("fpBlank", resourceCulture);

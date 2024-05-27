@@ -227,7 +227,25 @@
     <Compile Include="TaskBar.Designer.cs">
       <DependentUpon>TaskBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaskDaily.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskDaily.Designer.cs">
+      <DependentUpon>TaskDaily.cs</DependentUpon>
+    </Compile>
     <Compile Include="TempStorage.cs" />
+    <Compile Include="UCDailyTask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDailyTask.Designer.cs">
+      <DependentUpon>UCDailyTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCWeekDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCWeekDays.Designer.cs">
+      <DependentUpon>UCWeekDays.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -301,6 +319,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TaskBar.resx">
       <DependentUpon>TaskBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskDaily.resx">
+      <DependentUpon>TaskDaily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDailyTask.resx">
+      <DependentUpon>UCDailyTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCWeekDays.resx">
+      <DependentUpon>UCWeekDays.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
@@ -588,6 +615,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Dashboard_CALENDARMay29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnlargedNewTimeLineForWolf.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
