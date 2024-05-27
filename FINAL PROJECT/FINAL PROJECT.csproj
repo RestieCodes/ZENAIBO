@@ -619,5 +619,29 @@
   <ItemGroup>
     <None Include="Resources\EnlargedNewTimeLineForWolf.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskAcadsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskHomeResIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskETNIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskAPNIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskCareerIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskGymIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskSmallAPNIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskOthersIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

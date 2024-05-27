@@ -161,6 +161,7 @@
             this.txtboxMonthNow.Location = new System.Drawing.Point(323, 0);
             this.txtboxMonthNow.Multiline = true;
             this.txtboxMonthNow.Name = "txtboxMonthNow";
+            this.txtboxMonthNow.ReadOnly = true;
             this.txtboxMonthNow.Size = new System.Drawing.Size(316, 35);
             this.txtboxMonthNow.TabIndex = 1;
             this.txtboxMonthNow.Text = "Month 0000";

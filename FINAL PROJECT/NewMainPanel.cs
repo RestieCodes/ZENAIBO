@@ -28,7 +28,7 @@ namespace FINAL_PROJECT
         private aboutUs aboutUsForm;
         private Form previousClickedForm = new Dashboard();
 
-        public event EventHandler SwitchToDashboardRequested;
+
 
         private List<KryptonButton> buttons;
         public NewMainPanel()

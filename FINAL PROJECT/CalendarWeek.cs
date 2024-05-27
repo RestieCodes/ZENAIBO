@@ -69,7 +69,7 @@ namespace FINAL_PROJECT
                 day++;
                 UCWeekDays weekday = new UCWeekDays();
                 weekday.DayName(day, i, blank);
-
+                weekday.DisplayTask(txtboxMonthNow.Text, day);
                 flowLayoutPanelWeeks.Controls.Add(weekday);
                 
             }
@@ -105,6 +105,7 @@ namespace FINAL_PROJECT
                     day++;
                     UCWeekDays weekday = new UCWeekDays();
                     weekday.DayName(day, i, blank);
+                    weekday.DisplayTask(txtboxMonthNow.Text, day);
                     flowLayoutPanelWeeks.Controls.Add(weekday);
                    
                 }
@@ -133,6 +134,7 @@ namespace FINAL_PROJECT
                     day++;
                     UCWeekDays weekday = new UCWeekDays();
                     weekday.DayName(day, i, blank);
+                    weekday.DisplayTask(txtboxMonthNow.Text, day);
                     flowLayoutPanelWeeks.Controls.Add(weekday);
                 }
             }
@@ -153,6 +155,7 @@ namespace FINAL_PROJECT
                         day++;
                         UCWeekDays weekday = new UCWeekDays();
                         weekday.DayName(day, i, blank);
+                        weekday.DisplayTask(txtboxMonthNow.Text, day);
                         flowLayoutPanelWeeks.Controls.Add(weekday);
                     }
                     
@@ -192,6 +195,7 @@ namespace FINAL_PROJECT
                     day++;
                     UCWeekDays weekday = new UCWeekDays();
                     weekday.DayName(day, i, blank);
+                    weekday.DisplayTask(txtboxMonthNow.Text, day);
                     flowLayoutPanelWeeks.Controls.Add(weekday);
                     
                 }
@@ -220,6 +224,7 @@ namespace FINAL_PROJECT
                     day++;
                     UCWeekDays weekday = new UCWeekDays();
                     weekday.DayName(day, i, blank);
+                    weekday.DisplayTask(txtboxMonthNow.Text, day);
                     flowLayoutPanelWeeks.Controls.Add(weekday);
                     if (day == MonthTotaldays)
                     {
@@ -243,6 +248,7 @@ namespace FINAL_PROJECT
                     day++;
                     UCWeekDays weekday = new UCWeekDays();
                     weekday.DayName(day, i, blank);
+                    weekday.DisplayTask(txtboxMonthNow.Text, day);
                     flowLayoutPanelWeeks.Controls.Add(weekday);
                     
                 }
@@ -256,6 +262,7 @@ namespace FINAL_PROJECT
                     day++;
                     UCWeekDays weekday = new UCWeekDays();
                     weekday.DayName(day, i, blank);
+                    weekday.DisplayTask(txtboxMonthNow.Text, day);
                     flowLayoutPanelWeeks.Controls.Add(weekday);
                     
                 }
