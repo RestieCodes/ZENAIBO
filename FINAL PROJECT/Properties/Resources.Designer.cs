@@ -453,6 +453,86 @@ namespace FINAL_PROJECT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DailyTaskAcadsIcon {
+            get {
+                object obj = ResourceManager.GetObject("DailyTaskAcadsIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DailyTaskAPNIcon {
+            get {
+                object obj = ResourceManager.GetObject("DailyTaskAPNIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DailyTaskCareerIcon {
+            get {
+                object obj = ResourceManager.GetObject("DailyTaskCareerIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DailyTaskETNIcon {
+            get {
+                object obj = ResourceManager.GetObject("DailyTaskETNIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DailyTaskGymIcon {
+            get {
+                object obj = ResourceManager.GetObject("DailyTaskGymIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DailyTaskHomeResIcon {
+            get {
+                object obj = ResourceManager.GetObject("DailyTaskHomeResIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DailyTaskOthersIcon {
+            get {
+                object obj = ResourceManager.GetObject("DailyTaskOthersIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DailyTaskSmallAPNIcon {
+            get {
+                object obj = ResourceManager.GetObject("DailyTaskSmallAPNIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Dashboard_CALENDARMay29 {
             get {
                 object obj = ResourceManager.GetObject("Dashboard_CALENDARMay29", resourceCulture);

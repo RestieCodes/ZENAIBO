@@ -112,5 +112,16 @@ namespace FINAL_PROJECT
                 TaskDaily.Add(new Tuple<string, string, int, int, int, string>(title,descipt,taskType,timeStart,timeEnd, date));
             }
         }
+
+        public static List<Tuple<string, string, int, int, int, string>> SortDailyTask() 
+        {
+            var sortedDailyTask = TaskDaily.OrderBy(p => p.Item4).ToList();
+
+            for (int i = 0; i < sortedDailyTask.Count; i++)
+            {
+                sortedDailyTask[i] = new Tuple<string, string, int, int, int, string>(sortedDailyTask[i].Item1, sortedDailyTask[i].Item2, sortedDailyTask[i].Item3, sortedDailyTask[i].Item4, sortedDailyTask[i].Item5 , sortedDailyTask[i].Item6);
+            }
+            return sortedDailyTask;
+        }
     }
 }

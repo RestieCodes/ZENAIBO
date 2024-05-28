@@ -46,7 +46,7 @@ namespace FINAL_PROJECT
 
         private void deletePicture_Click(object sender, EventArgs e)
         {
-            pctProfile.Image = FINAL_PROJECT.Properties.Resources.fpBlank;
+            pctProfile.Image = Properties.Resources.fpBlank;
         }
 
         private void User_Load(object sender, EventArgs e)
@@ -62,16 +62,9 @@ namespace FINAL_PROJECT
 
         private void label10_Click(object sender, EventArgs e)
         {
-            NewMainPanel newMainPanel = new NewMainPanel();
-            newMainPanel.Close();
-
             this.Dispose();
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-            GC.Collect();
-
-            Login login = new Login();
-            login.Show();
+            NewMainPanel._newMainPanelInstance.Dispose();
+            Login._login.Show();
 
             
         }

@@ -12,20 +12,31 @@ namespace FINAL_PROJECT
 {
     public partial class Login : KryptonForm
     {
+        public static Login _login;
         public Login()
         {
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-            GC.Collect();
             InitializeComponent();
         }
 
         // Go to Signup
         private void label4_Click(object sender, EventArgs e)
         {
-            SignUp signUpForm = new SignUp();
-            signUpForm.Show();
-            this.Hide();
+            if (SignUp._signUp == null)
+            {
+                SignUp signUpForm = new SignUp();
+                SignUp._signUp = signUpForm;
+                signUpForm.Show();
+                this.Hide();
+            }
+            else 
+            {
+                SignUp._signUp.Show();
+                this.Hide();
+            }
+            
+            
+            
+            
         }
 
         //Minimize
@@ -66,7 +77,13 @@ namespace FINAL_PROJECT
             //code for data base
 
             NewMainPanel mainPanel = new NewMainPanel();
+            NewMainPanel._newMainPanelInstance = mainPanel;
             mainPanel.Show();
+            if (SignUp._signUp != null)
+            {
+                SignUp._signUp.Dispose();
+            }
+            
             this.Hide();
       
         }

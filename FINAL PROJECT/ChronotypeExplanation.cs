@@ -24,9 +24,7 @@ namespace FINAL_PROJECT
 
         private void btnSaveChanges_Click(object sender, EventArgs e)
         {
-            SignUp signUpForm = new SignUp();
-            signUpForm.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

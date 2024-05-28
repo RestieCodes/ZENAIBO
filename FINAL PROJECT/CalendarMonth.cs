@@ -14,7 +14,7 @@ namespace FINAL_PROJECT
     public partial class CalendarMonth : Form
     {
         public static int month, year;
-        int[] task = {3,6,21};
+
         public CalendarMonth()
         {
             InitializeComponent(); 
@@ -52,8 +52,7 @@ namespace FINAL_PROJECT
             for (int i = 1; i <= days; i++)
             {
                 UserControlDays ucDays = new UserControlDays();
-                ucDays.Days(i);
-                DisplayIcon(ucDays, "May", 2024, task);
+                ucDays.DisplayGoal(txtboxMonthNow.Text, i);
                 emptyPanel.Controls.Add(ucDays);
             }
 
@@ -91,8 +90,7 @@ namespace FINAL_PROJECT
             for (int i = 1; i <= days; i++)
             {
                 UserControlDays ucDays = new UserControlDays();
-                ucDays.Days(i);
-                DisplayIcon(ucDays, "May", 2024, task);
+                ucDays.DisplayGoal(txtboxMonthNow.Text, i);
                 emptyPanel.Controls.Add(ucDays);
             }
         }
@@ -129,20 +127,9 @@ namespace FINAL_PROJECT
             for (int i = 1; i <= days; i++)
             {
                 UserControlDays ucDays = new UserControlDays();
-                ucDays.Days(i);
-                DisplayIcon(ucDays, "May", 2024, task);
+                ucDays.DisplayGoal(txtboxMonthNow.Text, i);
                 emptyPanel.Controls.Add(ucDays);
             }
         }
-
-        private void DisplayIcon(UserControlDays uc, string month, int year, int[] arr )
-        {
-            string date = month + " " + year;
-            if (txtboxMonthNow.Text.ToLower() == date.ToLower())
-            {
-                uc.IconTrigger(arr);
-            }
-        }
-
     }
 }

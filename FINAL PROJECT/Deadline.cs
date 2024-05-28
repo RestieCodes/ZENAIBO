@@ -401,7 +401,17 @@ namespace FINAL_PROJECT
             btnAddTask.Visible = true;
             ResetTextCtn();
 
+            checkBoxAcads.Checked = false;
+            checkBoxCareer.Checked = false;
+            checkBoxGym.Checked = false;
+            checkBoxEntertainment.Checked = false;
+            checkBoxHomeRes.Checked = false;
+            checkBoxAppointment.Checked = false;
+            checkBoxSmallTask.Checked = false;
+            checkBoxOther.Checked = false;
+
             taskbarCtn.Controls.Clear();
+
             garbageCollect();
             for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
             {

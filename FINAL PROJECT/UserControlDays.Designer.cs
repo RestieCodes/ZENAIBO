@@ -6,7 +6,6 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
         /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
@@ -29,8 +28,7 @@
         private void InitializeComponent()
         {
             this.lbDays = new System.Windows.Forms.Label();
-            this.picBoxEmpty = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxEmpty)).BeginInit();
+            this.flowLayoutPanelCTN = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // lbDays
@@ -43,29 +41,25 @@
             this.lbDays.TabIndex = 0;
             this.lbDays.Text = "00";
             // 
-            // picBoxEmpty
+            // flowLayoutPanelCTN
             // 
-            this.picBoxEmpty.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBoxEmpty.Location = new System.Drawing.Point(86, 33);
-            this.picBoxEmpty.Name = "picBoxEmpty";
-            this.picBoxEmpty.Size = new System.Drawing.Size(33, 32);
-            this.picBoxEmpty.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxEmpty.TabIndex = 1;
-            this.picBoxEmpty.TabStop = false;
-            this.picBoxEmpty.Click += new System.EventHandler(this.picBoxEmpty_Click);
+            this.flowLayoutPanelCTN.AutoScroll = true;
+            this.flowLayoutPanelCTN.Location = new System.Drawing.Point(42, 0);
+            this.flowLayoutPanelCTN.Name = "flowLayoutPanelCTN";
+            this.flowLayoutPanelCTN.Size = new System.Drawing.Size(87, 71);
+            this.flowLayoutPanelCTN.TabIndex = 1;
             // 
             // UserControlDays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Controls.Add(this.picBoxEmpty);
+            this.Controls.Add(this.flowLayoutPanelCTN);
             this.Controls.Add(this.lbDays);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "UserControlDays";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Size = new System.Drawing.Size(129, 71);
-            this.Load += new System.EventHandler(this.UserControlDays_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxEmpty)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -74,6 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Label lbDays;
-        private System.Windows.Forms.PictureBox picBoxEmpty;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelCTN;
     }
 }

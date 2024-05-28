@@ -32,6 +32,8 @@ namespace FINAL_PROJECT
 
             lblDay.Text = dayName + " | " + DateTimeFormatInfo.CurrentInfo.GetMonthName(month) + " " + day + ", " + year;
 
+            PrevDayCalendar.Visible = false;
+
             for (int i = 0; i < TempStorage.TaskDaily.Count; i++)
             {
                 if (lblDay.Text == TempStorage.TaskDaily[i].Item6)
@@ -170,6 +172,7 @@ namespace FINAL_PROJECT
         private void NextDayCalendar_Click(object sender, EventArgs e)
         {
             panelTaskContainer.Controls.Clear();
+            PrevDayCalendar.Visible = true;
             if (day == monthTotalDays)
             {
                 month++;
@@ -201,6 +204,7 @@ namespace FINAL_PROJECT
         private void PrevDayCalendar_Click(object sender, EventArgs e)
         {
             panelTaskContainer.Controls.Clear();
+            DateTime now = DateTime.Now;
             if (day == 1)
             {
                 month--;
@@ -213,8 +217,18 @@ namespace FINAL_PROJECT
             }
 
             DateTime nameOfDay = new DateTime(year, month, day);
+            DateTime today = new DateTime(now.Year,now.Month,now.Day);
+
             string dayName = nameOfDay.DayOfWeek.ToString("F");
+            string dayNameToday = nameOfDay.DayOfWeek.ToString("F");
+
+            string dayNameTodayText = dayNameToday + " | " + DateTimeFormatInfo.CurrentInfo.GetMonthName(now.Month) + " " + now.Day + ", " + now.Year;
             lblDay.Text = dayName + " | " + DateTimeFormatInfo.CurrentInfo.GetMonthName(month) + " " + day + ", " + year;
+
+            if (lblDay.Text == dayNameTodayText) 
+            {
+                PrevDayCalendar.Visible = false;
+            }
 
             for (int i = 0; i < TempStorage.TaskDaily.Count; i++)
             {

@@ -13,7 +13,7 @@ namespace FINAL_PROJECT
 {
     public partial class NewMainPanel : KryptonForm
     {
-
+        public static NewMainPanel _newMainPanelInstance;
         private Timer expandCollapseTimer;
         private bool isExpanded = false;
         private const int expandedWidth = 220;
@@ -28,11 +28,15 @@ namespace FINAL_PROJECT
         private aboutUs aboutUsForm;
         private Form previousClickedForm = new Dashboard();
 
-        public event EventHandler SwitchToDashboardRequested;
+
 
         private List<KryptonButton> buttons;
         public NewMainPanel()
         {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+            GC.Collect();
+
             InitializeComponent();
             InitializeForms();
             InitializeExpandCollapseTimer();
