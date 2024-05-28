@@ -619,5 +619,17 @@
   <ItemGroup>
     <None Include="Resources\EnlargedNewTimeLineForWolf.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Motivation2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Motivation5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Motivation4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Motivation3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -12,13 +12,22 @@ namespace FINAL_PROJECT
 {
     public partial class Dashboard : Form
     {
+        //Motivational messages
+        private int currentImageIndex = 4;
+        private readonly string[] imageNames = {
+            "Dashboard_Motivation1",
+            "Dashboard_Motivation2",
+            "Dashboard_Motivation3",
+            "Dashboard_Motivation4",
+            "Dashboard_Motivation5"
+        };
+
         public Dashboard()
         {
             InitializeComponent();
 
-           
 
-
+            //display the goal list in the flowpanel
             for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
             {
                 GoalPanelDashboardDisplay goalPanelDashboardDisplay = new GoalPanelDashboardDisplay();
@@ -27,7 +36,25 @@ namespace FINAL_PROJECT
                 goalsContainer.Controls.Add(goalPanelDashboardDisplay);
 
             }
+            InitializeMotivationImageChanger();
         }
+        private void InitializeMotivationImageChanger()
+        {
+            // Set the initial image
+            ChangeImage();
+
+            // Configure the timer
+            Timer timer = new Timer();
+            timer.Interval = 60000; // 1 minute
+            timer.Tick += (sender, e) => ChangeImage();
+            timer.Start();
+        }
+        private void ChangeImage()
+        {
+            currentImageIndex = (currentImageIndex + 1) % imageNames.Length;
+            pictureMotivations.Image = (Image)Properties.Resources.ResourceManager.GetObject(imageNames[currentImageIndex]);
+        }
+
         private void ShowTaskTomorrow_Click(object sender, EventArgs e)
         {
             if (ShowTaskTomorrow.Text == "TASK TOMORROW")
