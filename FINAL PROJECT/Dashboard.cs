@@ -45,7 +45,7 @@ namespace FINAL_PROJECT
 
             // Configure the timer
             Timer timer = new Timer();
-            timer.Interval = 60000; // 1 minute
+            timer.Interval = 5000; // 1 minute
             timer.Tick += (sender, e) => ChangeImage();
             timer.Start();
         }
