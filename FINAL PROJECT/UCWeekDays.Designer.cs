@@ -28,27 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblDay = new System.Windows.Forms.Label();
             this.lblDayName = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.flowLayoutPanelTaskCtn = new System.Windows.Forms.FlowLayoutPanel();
+            this.textBoxDay = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblDay
-            // 
-            this.lblDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDay.AutoSize = true;
-            this.lblDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
-            this.lblDay.Location = new System.Drawing.Point(55, 2);
-            this.lblDay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDay.Name = "lblDay";
-            this.lblDay.Size = new System.Drawing.Size(26, 17);
-            this.lblDay.TabIndex = 87;
-            this.lblDay.Text = "00";
             // 
             // lblDayName
             // 
@@ -83,13 +68,28 @@
             this.flowLayoutPanelTaskCtn.Size = new System.Drawing.Size(128, 405);
             this.flowLayoutPanelTaskCtn.TabIndex = 89;
             // 
+            // textBoxDay
+            // 
+            this.textBoxDay.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxDay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.textBoxDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
+            this.textBoxDay.Location = new System.Drawing.Point(-5, 3);
+            this.textBoxDay.Margin = new System.Windows.Forms.Padding(1);
+            this.textBoxDay.Name = "textBoxDay";
+            this.textBoxDay.ReadOnly = true;
+            this.textBoxDay.Size = new System.Drawing.Size(134, 16);
+            this.textBoxDay.TabIndex = 90;
+            this.textBoxDay.Text = "00";
+            this.textBoxDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // UCWeekDays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBoxDay);
             this.Controls.Add(this.flowLayoutPanelTaskCtn);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.lblDay);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "UCWeekDays";
             this.Size = new System.Drawing.Size(134, 456);
@@ -101,10 +101,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblDay;
         private System.Windows.Forms.Label lblDayName;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelTaskCtn;
+        private System.Windows.Forms.TextBox textBoxDay;
     }
 }

@@ -40,6 +40,7 @@
             this.textBoxTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTitle.Location = new System.Drawing.Point(0, 74);
             this.textBoxTitle.Name = "textBoxTitle";
+            this.textBoxTitle.ReadOnly = true;
             this.textBoxTitle.Size = new System.Drawing.Size(109, 13);
             this.textBoxTitle.TabIndex = 2;
             this.textBoxTitle.Text = "Laundry";
@@ -51,6 +52,7 @@
             this.textBoxTimeSpan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTimeSpan.Location = new System.Drawing.Point(0, 107);
             this.textBoxTimeSpan.Name = "textBoxTimeSpan";
+            this.textBoxTimeSpan.ReadOnly = true;
             this.textBoxTimeSpan.Size = new System.Drawing.Size(109, 13);
             this.textBoxTimeSpan.TabIndex = 3;
             this.textBoxTimeSpan.Text = "8 am - 9 pm";

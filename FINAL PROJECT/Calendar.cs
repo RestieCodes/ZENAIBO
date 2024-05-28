@@ -72,7 +72,9 @@ namespace FINAL_PROJECT
         {
 
             ShowForm(GetCalendarMonthForm());
-            btnMonth.Focus();
+            btnMonth.StateCommon.Back.Color1 = Color.FromArgb(108, 23, 180);
+            btnMonth.StateCommon.Back.Color2 = Color.FromArgb(108, 23, 180);
+            btnMonth.StateCommon.Content.ShortText.Color1 = Color.White;
 
         }
 

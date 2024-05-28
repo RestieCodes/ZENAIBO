@@ -22,12 +22,12 @@ namespace FINAL_PROJECT
         {
             if (blank)
             {
-                lblDay.Visible = false;               
+                textBoxDay.Visible = false;               
             }
             else
             {
-                lblDay.Visible = true;
-                lblDay.Text = day.ToString();
+                textBoxDay.Visible = true;
+                textBoxDay.Text = day.ToString();
             }
 
             switch (num)

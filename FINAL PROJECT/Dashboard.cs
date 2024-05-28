@@ -51,8 +51,7 @@ namespace FINAL_PROJECT
 
         private void EditButton_Click(object sender, EventArgs e)
         {
-            NewMainPanel MainPanleAccess = new NewMainPanel();  
-            User user = new User();
+            NewMainPanel._newMainPanelInstance.btn_Profile.PerformClick();
 
         }
 
