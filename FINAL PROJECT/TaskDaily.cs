@@ -25,7 +25,8 @@ namespace FINAL_PROJECT
         { 
             lblTitle.Text = data.Item1;
             lblDescript.Text = data.Item2;
-
+            lblTaskType.Text = data.Item3 + "";
+            lblDate.Text = data.Item6;
             switch (data.Item3)
             {
 
@@ -61,7 +62,8 @@ namespace FINAL_PROJECT
                     pictureBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023639_486;
                     break;
             }
-
+            lblTimeStart.Text = data.Item4.ToString();
+            lblTimeEnd.Text = data.Item5.ToString();
             PanelSize(data.Item5 - data.Item4);
             PanelPos(data.Item4);
         }
@@ -83,6 +85,71 @@ namespace FINAL_PROJECT
            int baseLoc = 3;
 
             this.Location = new System.Drawing.Point(3, baseLoc + 51 * (start - 8) - 1);
+
+        }
+
+        private void TaskDaily_DoubleClick(object sender, EventArgs e)
+        {
+            CalendarDay._calendarDay.btnSave.Visible = false;
+            CalendarDay._calendarDay.btnSaveEdit.Visible = true;
+
+            CalendarDay._calendarDay.txtBoxTitle1.Text = lblTitle.Text;
+            CalendarDay._calendarDay.txtBoxDescription1.Text = lblDescript.Text;
+            CalendarDay._calendarDay.txtBoxTimeStart.Text = lblTimeStart.Text;
+            CalendarDay._calendarDay.txtBoxTimeEnd.Text = lblTimeEnd.Text;
+
+            CalendarDay._calendarDay.lblKey1.Text = lblTitle.Text;
+            CalendarDay._calendarDay.lblKey2.Text = lblDescript.Text;
+
+            CalendarDay._calendarDay.lblHeader.Text = "EDIT TASK";
+
+            if (lblTaskType.Text == "0")
+            {
+                CalendarDay._calendarDay.listBoxTaskType.SelectedIndex = 0;
+            }
+            else if (lblTaskType.Text == "1")
+            {
+                CalendarDay._calendarDay.listBoxTaskType.SelectedIndex = 1;
+            }
+            else if (lblTaskType.Text == "2")
+            {
+                CalendarDay._calendarDay.listBoxTaskType.SelectedIndex = 2;
+            }
+            else if (lblTaskType.Text == "3")
+            {
+                CalendarDay._calendarDay.listBoxTaskType.SelectedIndex = 3;
+            }
+            else if (lblTaskType.Text == "4")
+            {
+                CalendarDay._calendarDay.listBoxTaskType.SelectedIndex = 4;
+            }
+            else if (lblTaskType.Text == "5")
+            {
+                CalendarDay._calendarDay.listBoxTaskType.SelectedIndex = 5;
+            }
+            else if (lblTaskType.Text == "6")
+            {
+                CalendarDay._calendarDay.listBoxTaskType.SelectedIndex = 6;
+            }
+            else if (lblTaskType.Text == "7")
+            {
+                CalendarDay._calendarDay.listBoxTaskType.SelectedIndex = 7;
+            }
+        }
+
+        private void deleteDailyTask_Click(object sender, EventArgs e)
+        {
+            TempStorage.RemoveDailyTask(lblTitle.Text,lblDescript.Text,Convert.ToInt32(lblTaskType.Text),lblDate.Text);
+            CalendarDay._calendarDay.panelTaskContainer.Controls.Clear();
+            for (int i = 0; i < TempStorage.TaskDaily.Count; i++)
+            {
+                if (CalendarDay._calendarDay.lblDay.Text == TempStorage.TaskDaily[i].Item6)
+                {
+                    TaskDaily taskDaily = new TaskDaily();
+                    taskDaily.DisplayTask(TempStorage.TaskDaily[i]);
+                    CalendarDay._calendarDay.panelTaskContainer.Controls.Add(taskDaily);
+                }
+            }
 
         }
     }

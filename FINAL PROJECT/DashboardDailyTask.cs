@@ -10,50 +10,52 @@ using System.Windows.Forms;
 
 namespace FINAL_PROJECT
 {
-    public partial class UCDailyTask : UserControl
+    public partial class DashboardDailyTask : UserControl
     {
-        public UCDailyTask()
+        public DashboardDailyTask()
         {
             InitializeComponent();
         }
 
         public void DisplayContent(Tuple<string, string, int, int, int, string> data) 
         {
-            textBoxTitle.Text = data.Item1;
+            lblTitle.Text = data.Item1;
+            lblDescript.Text = data.Item2;
+
             string timeStart;
             string timeEnd;
-            switch (data.Item3) 
+            switch (data.Item3)
             {
                 case 0:
-                    pictureBoxIcon.Image = Properties.Resources.DailyTaskAcadsIcon;
+                    pictureBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023405_591;
                     break;
 
                 case 1:
-                    pictureBoxIcon.Image = Properties.Resources.DailyTaskCareerIcon;
+                    pictureBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T022644_520;
                     break;
 
                 case 2:
-                    pictureBoxIcon.Image = Properties.Resources.DailyTaskGymIcon;
+                    pictureBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023254_961;
                     break;
 
                 case 3:
-                    pictureBoxIcon.Image = Properties.Resources.DailyTaskETNIcon;
+                    pictureBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T021726_290;
                     break;
 
                 case 4:
-                    pictureBoxIcon.Image = Properties.Resources.DailyTaskHomeResIcon;
+                    pictureBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T022707_602;
                     break;
 
                 case 5:
-                    pictureBoxIcon.Image = Properties.Resources.DailyTaskAPNIcon;
+                    pictureBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T022658_810;
                     break;
 
                 case 6:
-                    pictureBoxIcon.Image = Properties.Resources.DailyTaskSmallAPNIcon;
+                    pictureBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023527_334;
                     break;
 
                 case 7:
-                    pictureBoxIcon.Image = Properties.Resources.DailyTaskOthersIcon;
+                    pictureBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023639_486;
                     break;
 
             }
@@ -71,12 +73,11 @@ namespace FINAL_PROJECT
                 timeStart = (data.Item4 - 12) + " PM";
             }
 
-
             if (data.Item5 > 12)
             {
                 timeEnd = (data.Item5 - 12) + " PM";
             }
-            else if (data.Item5 == 12) 
+            else if (data.Item5 == 12)
             {
                 timeEnd = data.Item5 + " PM";
             }
@@ -85,7 +86,7 @@ namespace FINAL_PROJECT
                 timeEnd = data.Item5 + " AM";
             }
 
-            textBoxTimeSpan.Text = timeStart + " - " + timeEnd;
+            lblTime.Text = timeStart + " - " + timeEnd;
         }
     }
 }

@@ -49,22 +49,10 @@ namespace FINAL_PROJECT
                     break;
 
                 case 3:
-                    picBoxTaskTypeIcon.Image = Properties.Resources.Untitled_design___2024_04_29T021726_290;
-                    break;
-
-                case 4:
-                    picBoxTaskTypeIcon.Image = Properties.Resources.Untitled_design___2024_04_29T022707_602;
-                    break;
-
-                case 5:
                     picBoxTaskTypeIcon.Image = Properties.Resources.Untitled_design___2024_04_29T022658_810;
                     break;
 
-                case 6:
-                    picBoxTaskTypeIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023527_334;
-                    break;
-
-                case 7:
+                case 4:
                     picBoxTaskTypeIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023639_486;
                     break;
             }   
@@ -286,10 +274,7 @@ namespace FINAL_PROJECT
             checkBoxAcads.Checked = false;
             checkBoxCareer.Checked = false;
             checkBoxGym.Checked = false;
-
-
             checkBoxAppointment.Checked = false;
-
             checkBoxOther.Checked = false;
 
             taskbarCtn.Controls.Clear();

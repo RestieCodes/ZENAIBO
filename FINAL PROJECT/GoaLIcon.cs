@@ -37,26 +37,11 @@ namespace FINAL_PROJECT
                     break;
 
                 case 3:
-                    this.BackgroundImage = Properties.Resources.Untitled_design___2024_04_29T021726_290;
-                    this.BackgroundImageLayout = ImageLayout.Zoom;
-                    break;
-
-                case 4:
-                    this.BackgroundImage = Properties.Resources.Untitled_design___2024_04_29T022707_602;
-                    this.BackgroundImageLayout = ImageLayout.Zoom;
-                    break;
-
-                case 5:
                     this.BackgroundImage = Properties.Resources.Untitled_design___2024_04_29T022658_810;
                     this.BackgroundImageLayout = ImageLayout.Zoom;
                     break;
 
-                case 6:
-                    this.BackgroundImage = Properties.Resources.Untitled_design___2024_04_29T023527_334;
-                    this.BackgroundImageLayout = ImageLayout.Zoom;
-                    break;
-
-                case 7:
+                case 4:
                     this.BackgroundImage = Properties.Resources.Untitled_design___2024_04_29T023639_486;
                     this.BackgroundImageLayout = ImageLayout.Zoom;
                     break;

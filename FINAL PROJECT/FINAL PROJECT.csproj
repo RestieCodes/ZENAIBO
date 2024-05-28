@@ -166,6 +166,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DashboardDailyTask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardDailyTask.Designer.cs">
+      <DependentUpon>DashboardDailyTask.cs</DependentUpon>
+    </Compile>
     <Compile Include="Deadline.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +293,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardDailyTask.resx">
+      <DependentUpon>DashboardDailyTask.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Deadline.resx">
       <DependentUpon>Deadline.cs</DependentUpon>

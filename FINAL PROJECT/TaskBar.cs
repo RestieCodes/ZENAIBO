@@ -66,21 +66,10 @@ namespace FINAL_PROJECT
                     picBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023254_961;
                     break;
 
-                case "ENTERTAINMENT":
-                    picBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T021726_290;
-                    break;
-
-                case "HOME RESPONSIBILITY":
-                    picBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T022707_602;
-                    break;
-
                 case "APPOINTMENT":
                     picBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T022658_810;
                     break;
 
-                case "SMALL TASK":
-                    picBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023527_334;
-                    break;
 
                 case "OTHERS":
                     picBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023639_486;

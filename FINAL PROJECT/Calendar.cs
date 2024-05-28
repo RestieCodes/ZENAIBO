@@ -63,7 +63,8 @@ namespace FINAL_PROJECT
             {
 
                 calendarDayForm = new CalendarDay();
-            }
+                CalendarDay._calendarDay = calendarDayForm;
+            }   
 
             return calendarDayForm;
         }

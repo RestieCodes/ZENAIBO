@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,17 +26,6 @@ namespace FINAL_PROJECT
         public Dashboard()
         {
             InitializeComponent();
-
-
-            //display the goal list in the flowpanel
-            for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
-            {
-                GoalPanelDashboardDisplay goalPanelDashboardDisplay = new GoalPanelDashboardDisplay();
-                goalPanelDashboardDisplay.BorderStyle = BorderStyle.None;
-                goalPanelDashboardDisplay.DisplayContent(TempStorage.TaskStorage[i]);
-                goalsContainer.Controls.Add(goalPanelDashboardDisplay);
-
-            }
             InitializeMotivationImageChanger();
         }
         private void InitializeMotivationImageChanger()
@@ -61,19 +51,62 @@ namespace FINAL_PROJECT
             {
                 ShowTaskTomorrow.Text = "TASK TODAY";
                 ShowTaskTomorrow.StateCommon.Content.ShortText.Color1 = Color.BlueViolet;
+                flowLayoutPanelCTN.Controls.Clear();
+                ShowTaskTommorow();
+                
+
                 //change task display 
             }
             else
             {
                 ShowTaskTomorrow.Text = "TASK TOMORROW";
                 ShowTaskTomorrow.StateCommon.Content.ShortText.Color1 = Color.WhiteSmoke;
+
+                flowLayoutPanelCTN.Controls.Clear();
+                ShowTaskToday();
                 //change task display 
             }
         }
 
-        private void kryptonButton1_Click(object sender, EventArgs e)
+        private void ShowTaskTommorow() 
         {
+            DateTime now = DateTime.Now;
+            DateTime nameOfDay = new DateTime(now.Year, now.Month, now.Day + 1);
+            string dayName = nameOfDay.DayOfWeek.ToString("G");
+            string fullDayName = dayName + " | " + DateTimeFormatInfo.CurrentInfo.GetMonthName(now.Month) + " " + (now.Day + 1) + ", " + now.Year;
 
+            TempStorage.TaskDaily = TempStorage.SortDailyTask();
+
+            for (int i = 0; i < TempStorage.TaskDaily.Count; i++)
+            {
+                if (fullDayName == TempStorage.TaskDaily[i].Item6)
+                {
+                    DashboardDailyTask dashboardDailyTask  =  new DashboardDailyTask();
+                    dashboardDailyTask.DisplayContent(TempStorage.TaskDaily[i]);
+                    flowLayoutPanelCTN.Controls.Add(dashboardDailyTask);
+                }
+            }
+        }
+
+        private void ShowTaskToday()
+        {
+            DateTime now = DateTime.Now;
+           
+            DateTime nameOfDay = new DateTime(now.Year, now.Month, now.Day);
+            string dayName = nameOfDay.DayOfWeek.ToString("G");
+            string fullDayName = dayName + " | " + DateTimeFormatInfo.CurrentInfo.GetMonthName(now.Month) + " " + now.Day + ", " + now.Year;
+
+            /*TempStorage.TaskDaily = TempStorage.SortDailyTask();*/
+
+            for (int i = 0; i < TempStorage.TaskDaily.Count; i++)
+            {
+                if (fullDayName == TempStorage.TaskDaily[i].Item6)
+                {
+                    DashboardDailyTask dashboardDailyTask = new DashboardDailyTask();
+                    dashboardDailyTask.DisplayContent(TempStorage.TaskDaily[i]);
+                    flowLayoutPanelCTN.Controls.Add(dashboardDailyTask);
+                }
+            }
         }
 
         private void EditButton_Click(object sender, EventArgs e)
@@ -82,14 +115,21 @@ namespace FINAL_PROJECT
 
         }
 
-        private void goalsContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            //display the goal list in the flowpanel
+            TempStorage.TaskStorage = TempStorage.SortTaskStorage();    
+            for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
+            {
+                GoalPanelDashboardDisplay goalPanelDashboardDisplay = new GoalPanelDashboardDisplay();
+                goalPanelDashboardDisplay.BorderStyle = BorderStyle.None;
+                goalPanelDashboardDisplay.DisplayContent(TempStorage.TaskStorage[i]);
+                goalsContainer.Controls.Add(goalPanelDashboardDisplay);
 
+            }
+
+            ShowTaskToday();
         }
     }
 }

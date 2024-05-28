@@ -14,6 +14,7 @@ namespace FINAL_PROJECT
 {
     public partial class CalendarDay : Form
     {
+        public static CalendarDay _calendarDay;
         int day, month, year, monthTotalDays;
         public CalendarDay()
         {
@@ -29,7 +30,7 @@ namespace FINAL_PROJECT
             DateTime nameOfDay = new DateTime(year, month, day);
             string dayName = nameOfDay.DayOfWeek.ToString("G");
             monthTotalDays = DateTime.DaysInMonth(year, month);
-
+            btnSaveEdit.Visible = false;
             lblDay.Text = dayName + " | " + DateTimeFormatInfo.CurrentInfo.GetMonthName(month) + " " + day + ", " + year;
 
             PrevDayCalendar.Visible = false;
@@ -129,6 +130,62 @@ namespace FINAL_PROJECT
             listBoxTaskType.SelectedIndex = -1;
             txtBoxTimeStart.Text = string.Empty;
             txtBoxTimeEnd.Text = string.Empty;
+            picBoxTaskTypeIcon.Image = null;
+        }
+
+        private void btnSaveEdit_Click(object sender, EventArgs e)
+        {
+            btnSave.Visible = true;
+            btnSaveEdit.Visible = false;
+            lblHeader.Text = "ADD TASK";
+            if (txtBoxTitle1.Text == string.Empty || txtBoxDescription1.Text == string.Empty || listBoxTaskType.SelectedIndex == -1 || txtBoxTimeStart.Text == string.Empty || txtBoxTimeEnd.Text == string.Empty)
+            {
+                MessageBox.Show("Please Fill Up All the Information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                int timeStart = Convert.ToInt32(txtBoxTimeStart.Text);
+                int timeEnd = Convert.ToInt32(txtBoxTimeEnd.Text);
+
+                bool validStage1 = SleepSchedNotif(timeStart, timeEnd);
+                bool validStage2 = TimeSpanArrangement(timeStart, timeEnd);
+                if (!validStage1)
+                {
+                    MessageBox.Show("Can't Set Task in Your Sleeping Sched", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (!validStage2)
+                {
+                    MessageBox.Show("Invalid Time Span", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    panelTaskContainer.Controls.Clear();
+                    TempStorage.SaveChangesTaskDaily(txtBoxTitle1.Text, txtBoxDescription1.Text, listBoxTaskType.SelectedIndex, timeStart, timeEnd, lblDay.Text, lblKey1.Text, lblKey2.Text); ;
+
+                    for (int i = 0; i < TempStorage.TaskDaily.Count; i++)
+                    {
+                        if (lblDay.Text == TempStorage.TaskDaily[i].Item6)
+                        {
+                            TaskDaily taskDaily = new TaskDaily();
+                            taskDaily.DisplayTask(TempStorage.TaskDaily[i]);
+                            panelTaskContainer.Controls.Add(taskDaily);
+                        }
+                    }
+                }
+            }
+
+
+
+            txtBoxTitle1.Text = string.Empty;
+            txtBoxDescription1.Text = string.Empty;
+            listBoxTaskType.SelectedIndex = -1;
+            txtBoxTimeStart.Text = string.Empty;
+            txtBoxTimeEnd.Text = string.Empty;
+            picBoxTaskTypeIcon.Image = null;
+
+
+
+
         }
 
         private void listBoxTaskType_SelectedIndexChanged(object sender, EventArgs e)

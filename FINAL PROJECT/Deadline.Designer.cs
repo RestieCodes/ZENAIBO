@@ -30,6 +30,7 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblHeader = new System.Windows.Forms.Label();
+            this.listBoxTaskType = new FINAL_PROJECT.CustomListBox();
             this.txtBoxTitle1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtBoxDescription1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.deleteIcon = new System.Windows.Forms.PictureBox();
@@ -43,6 +44,11 @@
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.dtpSetDate = new System.Windows.Forms.DateTimePicker();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.checkBoxOther = new System.Windows.Forms.CheckBox();
             this.checkBoxAppointment = new System.Windows.Forms.CheckBox();
             this.checkBoxGym = new System.Windows.Forms.CheckBox();
@@ -59,12 +65,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.listBoxTaskType = new FINAL_PROJECT.CustomListBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.deleteIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTaskTypeIcon)).BeginInit();
@@ -97,10 +97,10 @@
             this.panel2.Controls.Add(this.kryptonLabel1);
             this.panel2.Controls.Add(this.kryptonLabel2);
             this.panel2.Controls.Add(this.dtpSetDate);
-            this.panel2.Location = new System.Drawing.Point(898, 110);
+            this.panel2.Location = new System.Drawing.Point(718, 88);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(389, 617);
+            this.panel2.Size = new System.Drawing.Size(311, 494);
             this.panel2.TabIndex = 9;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -110,18 +110,42 @@
             this.lblHeader.BackColor = System.Drawing.Color.Transparent;
             this.lblHeader.Font = new System.Drawing.Font("Squada One", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblHeader.Location = new System.Drawing.Point(106, 15);
+            this.lblHeader.Location = new System.Drawing.Point(85, 12);
             this.lblHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(161, 44);
+            this.lblHeader.Size = new System.Drawing.Size(129, 36);
             this.lblHeader.TabIndex = 42;
             this.lblHeader.Text = "ADD GOAL";
             // 
+            // listBoxTaskType
+            // 
+            this.listBoxTaskType.BackColor = System.Drawing.Color.White;
+            this.listBoxTaskType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBoxTaskType.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listBoxTaskType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.listBoxTaskType.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxTaskType.ForeColor = System.Drawing.Color.Indigo;
+            this.listBoxTaskType.FormattingEnabled = true;
+            this.listBoxTaskType.ItemHeight = 40;
+            this.listBoxTaskType.Items.AddRange(new object[] {
+            "ACADS",
+            "CAREER",
+            "WORKOUT",
+            "APPOINTMENT",
+            "OTHERS"});
+            this.listBoxTaskType.LineHeight = 40;
+            this.listBoxTaskType.Location = new System.Drawing.Point(102, 208);
+            this.listBoxTaskType.Name = "listBoxTaskType";
+            this.listBoxTaskType.Size = new System.Drawing.Size(192, 154);
+            this.listBoxTaskType.TabIndex = 0;
+            this.listBoxTaskType.SelectedIndexChanged += new System.EventHandler(this.listBoxTaskType_SelectedIndexChanged_1);
+            // 
             // txtBoxTitle1
             // 
-            this.txtBoxTitle1.Location = new System.Drawing.Point(129, 78);
+            this.txtBoxTitle1.Location = new System.Drawing.Point(103, 62);
+            this.txtBoxTitle1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBoxTitle1.Name = "txtBoxTitle1";
-            this.txtBoxTitle1.Size = new System.Drawing.Size(239, 33);
+            this.txtBoxTitle1.Size = new System.Drawing.Size(191, 29);
             this.txtBoxTitle1.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -133,10 +157,11 @@
             // 
             // txtBoxDescription1
             // 
-            this.txtBoxDescription1.Location = new System.Drawing.Point(129, 125);
+            this.txtBoxDescription1.Location = new System.Drawing.Point(103, 100);
+            this.txtBoxDescription1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBoxDescription1.Multiline = true;
             this.txtBoxDescription1.Name = "txtBoxDescription1";
-            this.txtBoxDescription1.Size = new System.Drawing.Size(239, 120);
+            this.txtBoxDescription1.Size = new System.Drawing.Size(191, 82);
             this.txtBoxDescription1.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -150,10 +175,9 @@
             // 
             this.deleteIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteIcon.Image = global::FINAL_PROJECT.Properties.Resources.deleteIcon;
-            this.deleteIcon.Location = new System.Drawing.Point(290, 550);
-            this.deleteIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.deleteIcon.Location = new System.Drawing.Point(232, 440);
             this.deleteIcon.Name = "deleteIcon";
-            this.deleteIcon.Size = new System.Drawing.Size(74, 62);
+            this.deleteIcon.Size = new System.Drawing.Size(59, 50);
             this.deleteIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.deleteIcon.TabIndex = 18;
             this.deleteIcon.TabStop = false;
@@ -164,10 +188,9 @@
             // 
             this.lblUserSearch.AutoSize = true;
             this.lblUserSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
-            this.lblUserSearch.Location = new System.Drawing.Point(202, 162);
-            this.lblUserSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUserSearch.Location = new System.Drawing.Point(162, 130);
             this.lblUserSearch.Name = "lblUserSearch";
-            this.lblUserSearch.Size = new System.Drawing.Size(44, 16);
+            this.lblUserSearch.Size = new System.Drawing.Size(35, 13);
             this.lblUserSearch.TabIndex = 17;
             this.lblUserSearch.Text = "label2";
             this.lblUserSearch.Visible = false;
@@ -175,7 +198,7 @@
             // btnSaveChanges
             // 
             this.btnSaveChanges.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSaveChanges.Location = new System.Drawing.Point(109, 550);
+            this.btnSaveChanges.Location = new System.Drawing.Point(87, 440);
             this.btnSaveChanges.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveChanges.Name = "btnSaveChanges";
             this.btnSaveChanges.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
@@ -185,7 +208,7 @@
             this.btnSaveChanges.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSaveChanges.Size = new System.Drawing.Size(166, 56);
+            this.btnSaveChanges.Size = new System.Drawing.Size(133, 45);
             this.btnSaveChanges.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
             this.btnSaveChanges.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
             this.btnSaveChanges.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
@@ -211,10 +234,10 @@
             // 
             // picBoxTaskTypeIcon
             // 
-            this.picBoxTaskTypeIcon.Location = new System.Drawing.Point(21, 271);
+            this.picBoxTaskTypeIcon.Location = new System.Drawing.Point(17, 243);
             this.picBoxTaskTypeIcon.Margin = new System.Windows.Forms.Padding(2);
             this.picBoxTaskTypeIcon.Name = "picBoxTaskTypeIcon";
-            this.picBoxTaskTypeIcon.Size = new System.Drawing.Size(84, 76);
+            this.picBoxTaskTypeIcon.Size = new System.Drawing.Size(67, 61);
             this.picBoxTaskTypeIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxTaskTypeIcon.TabIndex = 15;
             this.picBoxTaskTypeIcon.TabStop = false;
@@ -222,7 +245,7 @@
             // btnAddTask
             // 
             this.btnAddTask.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddTask.Location = new System.Drawing.Point(116, 550);
+            this.btnAddTask.Location = new System.Drawing.Point(93, 440);
             this.btnAddTask.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddTask.Name = "btnAddTask";
             this.btnAddTask.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
@@ -232,7 +255,7 @@
             this.btnAddTask.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAddTask.Size = new System.Drawing.Size(159, 56);
+            this.btnAddTask.Size = new System.Drawing.Size(127, 45);
             this.btnAddTask.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
             this.btnAddTask.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
             this.btnAddTask.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
@@ -262,10 +285,10 @@
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(22, 489);
+            this.kryptonLabel5.Location = new System.Drawing.Point(18, 391);
             this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(91, 25);
+            this.kryptonLabel5.Size = new System.Drawing.Size(74, 21);
             this.kryptonLabel5.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel5.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel5.TabIndex = 13;
@@ -273,10 +296,10 @@
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(18, 233);
+            this.kryptonLabel3.Location = new System.Drawing.Point(14, 212);
             this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(94, 25);
+            this.kryptonLabel3.Size = new System.Drawing.Size(77, 21);
             this.kryptonLabel3.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel3.TabIndex = 12;
@@ -284,10 +307,10 @@
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(6, 125);
+            this.kryptonLabel1.Location = new System.Drawing.Point(5, 100);
             this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(119, 25);
+            this.kryptonLabel1.Size = new System.Drawing.Size(96, 20);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 11;
@@ -295,10 +318,10 @@
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(38, 83);
+            this.kryptonLabel2.Location = new System.Drawing.Point(30, 66);
             this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(51, 27);
+            this.kryptonLabel2.Size = new System.Drawing.Size(42, 22);
             this.kryptonLabel2.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel2.TabIndex = 10;
@@ -311,11 +334,11 @@
             this.dtpSetDate.CalendarTitleForeColor = System.Drawing.Color.Red;
             this.dtpSetDate.CustomFormat = "";
             this.dtpSetDate.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpSetDate.Location = new System.Drawing.Point(129, 489);
+            this.dtpSetDate.Location = new System.Drawing.Point(103, 391);
             this.dtpSetDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpSetDate.MinDate = new System.DateTime(2024, 5, 21, 0, 0, 0, 0);
             this.dtpSetDate.Name = "dtpSetDate";
-            this.dtpSetDate.Size = new System.Drawing.Size(242, 23);
+            this.dtpSetDate.Size = new System.Drawing.Size(194, 20);
             this.dtpSetDate.TabIndex = 8;
             this.dtpSetDate.Value = new System.DateTime(2024, 5, 21, 0, 0, 0, 0);
             // 
@@ -340,22 +363,82 @@
             this.panel3.Controls.Add(this.pictureBox14);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.kryptonLabel4);
-            this.panel3.Location = new System.Drawing.Point(813, 110);
+            this.panel3.Location = new System.Drawing.Point(650, 88);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(79, 617);
+            this.panel3.Size = new System.Drawing.Size(63, 494);
             this.panel3.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(8, 446);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 13);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "OTHERS";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Crimson;
+            this.label5.Location = new System.Drawing.Point(0, 360);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 9);
+            this.label5.TabIndex = 43;
+            this.label5.Text = "APPOINTMENT";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.label4.Location = new System.Drawing.Point(2, 271);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "WORKOUT";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label3.Location = new System.Drawing.Point(5, 186);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "CAREER";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkViolet;
+            this.label2.Location = new System.Drawing.Point(10, 98);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "ACADS";
             // 
             // checkBoxOther
             // 
             this.checkBoxOther.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxOther.AutoSize = true;
             this.checkBoxOther.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxOther.Location = new System.Drawing.Point(32, 576);
+            this.checkBoxOther.Location = new System.Drawing.Point(26, 461);
             this.checkBoxOther.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxOther.Name = "checkBoxOther";
             this.checkBoxOther.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxOther.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxOther.Size = new System.Drawing.Size(15, 14);
             this.checkBoxOther.TabIndex = 15;
             this.checkBoxOther.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBoxOther.UseVisualStyleBackColor = true;
@@ -366,11 +449,11 @@
             this.checkBoxAppointment.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxAppointment.AutoSize = true;
             this.checkBoxAppointment.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxAppointment.Location = new System.Drawing.Point(32, 470);
+            this.checkBoxAppointment.Location = new System.Drawing.Point(26, 376);
             this.checkBoxAppointment.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxAppointment.Name = "checkBoxAppointment";
             this.checkBoxAppointment.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxAppointment.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxAppointment.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAppointment.TabIndex = 16;
             this.checkBoxAppointment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBoxAppointment.UseVisualStyleBackColor = true;
@@ -381,11 +464,11 @@
             this.checkBoxGym.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxGym.AutoSize = true;
             this.checkBoxGym.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxGym.Location = new System.Drawing.Point(32, 359);
+            this.checkBoxGym.Location = new System.Drawing.Point(26, 287);
             this.checkBoxGym.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxGym.Name = "checkBoxGym";
             this.checkBoxGym.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxGym.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxGym.Size = new System.Drawing.Size(15, 14);
             this.checkBoxGym.TabIndex = 13;
             this.checkBoxGym.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBoxGym.UseVisualStyleBackColor = true;
@@ -396,11 +479,11 @@
             this.checkBoxCareer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxCareer.AutoSize = true;
             this.checkBoxCareer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxCareer.Location = new System.Drawing.Point(32, 250);
+            this.checkBoxCareer.Location = new System.Drawing.Point(26, 200);
             this.checkBoxCareer.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxCareer.Name = "checkBoxCareer";
             this.checkBoxCareer.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxCareer.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxCareer.Size = new System.Drawing.Size(15, 14);
             this.checkBoxCareer.TabIndex = 12;
             this.checkBoxCareer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBoxCareer.UseVisualStyleBackColor = true;
@@ -411,11 +494,11 @@
             this.checkBoxAcads.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxAcads.AutoSize = true;
             this.checkBoxAcads.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxAcads.Location = new System.Drawing.Point(32, 141);
+            this.checkBoxAcads.Location = new System.Drawing.Point(26, 113);
             this.checkBoxAcads.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxAcads.Name = "checkBoxAcads";
             this.checkBoxAcads.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxAcads.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxAcads.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAcads.TabIndex = 11;
             this.checkBoxAcads.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBoxAcads.UseVisualStyleBackColor = true;
@@ -425,10 +508,10 @@
             // 
             this.pictureBox19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox19.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023639_486;
-            this.pictureBox19.Location = new System.Drawing.Point(1, 501);
+            this.pictureBox19.Location = new System.Drawing.Point(1, 401);
             this.pictureBox19.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(79, 61);
+            this.pictureBox19.Size = new System.Drawing.Size(63, 49);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox19.TabIndex = 39;
             this.pictureBox19.TabStop = false;
@@ -437,10 +520,10 @@
             // 
             this.pictureBox17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox17.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T022644_520;
-            this.pictureBox17.Location = new System.Drawing.Point(2, 169);
+            this.pictureBox17.Location = new System.Drawing.Point(2, 135);
             this.pictureBox17.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(77, 75);
+            this.pictureBox17.Size = new System.Drawing.Size(62, 60);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox17.TabIndex = 37;
             this.pictureBox17.TabStop = false;
@@ -449,10 +532,10 @@
             // 
             this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox16.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023405_591;
-            this.pictureBox16.Location = new System.Drawing.Point(0, 62);
+            this.pictureBox16.Location = new System.Drawing.Point(0, 50);
             this.pictureBox16.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(81, 65);
+            this.pictureBox16.Size = new System.Drawing.Size(65, 52);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 37;
             this.pictureBox16.TabStop = false;
@@ -462,10 +545,10 @@
             // 
             this.pictureBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox14.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T022658_810;
-            this.pictureBox14.Location = new System.Drawing.Point(-2, 389);
+            this.pictureBox14.Location = new System.Drawing.Point(-2, 311);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(83, 64);
+            this.pictureBox14.Size = new System.Drawing.Size(66, 51);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 35;
             this.pictureBox14.TabStop = false;
@@ -474,20 +557,20 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023254_961;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 274);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 219);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(79, 81);
+            this.pictureBox3.Size = new System.Drawing.Size(63, 65);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 33;
             this.pictureBox3.TabStop = false;
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(10, 23);
+            this.kryptonLabel4.Location = new System.Drawing.Point(8, 18);
             this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(67, 27);
+            this.kryptonLabel4.Size = new System.Drawing.Size(55, 22);
             this.kryptonLabel4.StateCommon.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel4.TabIndex = 16;
@@ -499,10 +582,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Squada One", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
-            this.label1.Location = new System.Drawing.Point(21, 23);
+            this.label1.Location = new System.Drawing.Point(17, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 53);
+            this.label1.Size = new System.Drawing.Size(106, 42);
             this.label1.TabIndex = 40;
             this.label1.Text = "GOALS";
             // 
@@ -510,10 +593,9 @@
             // 
             this.taskbarCtn.AutoScroll = true;
             this.taskbarCtn.BackColor = System.Drawing.Color.Transparent;
-            this.taskbarCtn.Location = new System.Drawing.Point(11, 10);
-            this.taskbarCtn.Margin = new System.Windows.Forms.Padding(4);
+            this.taskbarCtn.Location = new System.Drawing.Point(9, 8);
             this.taskbarCtn.Name = "taskbarCtn";
-            this.taskbarCtn.Size = new System.Drawing.Size(809, 593);
+            this.taskbarCtn.Size = new System.Drawing.Size(647, 474);
             this.taskbarCtn.TabIndex = 41;
             this.taskbarCtn.Paint += new System.Windows.Forms.PaintEventHandler(this.taskbarCtn_Paint);
             // 
@@ -525,26 +607,29 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.taskbarCtn);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Location = new System.Drawing.Point(19, 110);
+            this.panel1.Location = new System.Drawing.Point(15, 88);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(787, 612);
+            this.panel1.Size = new System.Drawing.Size(630, 490);
             this.panel1.TabIndex = 42;
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(11, 10);
+            this.panel4.Location = new System.Drawing.Point(9, 8);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(780, 579);
+            this.panel4.Size = new System.Drawing.Size(624, 463);
             this.panel4.TabIndex = 76;
             // 
             // kryptonButton1
             // 
             this.kryptonButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonButton1.Location = new System.Drawing.Point(31, 89);
+            this.kryptonButton1.Location = new System.Drawing.Point(25, 71);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
-            this.kryptonButton1.Size = new System.Drawing.Size(1256, 5);
+            this.kryptonButton1.Size = new System.Drawing.Size(1005, 4);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
@@ -563,95 +648,13 @@
             this.kryptonButton1.TabIndex = 75;
             this.kryptonButton1.Values.Text = "kryptonButton1";
             // 
-            // listBoxTaskType
-            // 
-            this.listBoxTaskType.BackColor = System.Drawing.Color.White;
-            this.listBoxTaskType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBoxTaskType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.listBoxTaskType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.listBoxTaskType.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxTaskType.ForeColor = System.Drawing.Color.Indigo;
-            this.listBoxTaskType.FormattingEnabled = true;
-            this.listBoxTaskType.ItemHeight = 40;
-            this.listBoxTaskType.Items.AddRange(new object[] {
-            "ACADS",
-            "CAREER",
-            "WORKOUT",
-            "ENTERTAINMENT",
-            "HOME RESPONSIBILITY",
-            "APPOINTMENT",
-            "SMALL TASK",
-            "OTHERS"});
-            this.listBoxTaskType.LineHeight = 40;
-            this.listBoxTaskType.Location = new System.Drawing.Point(129, 230);
-            this.listBoxTaskType.Margin = new System.Windows.Forms.Padding(4);
-            this.listBoxTaskType.Name = "listBoxTaskType";
-            this.listBoxTaskType.Size = new System.Drawing.Size(239, 242);
-            this.listBoxTaskType.TabIndex = 0;
-            this.listBoxTaskType.SelectedIndexChanged += new System.EventHandler(this.listBoxTaskType_SelectedIndexChanged_1);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label2.Location = new System.Drawing.Point(12, 122);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 16);
-            this.label2.TabIndex = 40;
-            this.label2.Text = "ACADS";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.label3.Location = new System.Drawing.Point(6, 232);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 16);
-            this.label3.TabIndex = 41;
-            this.label3.Text = "CAREER";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.label4.Location = new System.Drawing.Point(3, 339);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 16);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "WORKOUT";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Sans", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Crimson;
-            this.label5.Location = new System.Drawing.Point(0, 450);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 13);
-            this.label5.TabIndex = 43;
-            this.label5.Text = "APPOINTMENT";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(10, 557);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 16);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "OTHERS";
-            // 
             // Deadline
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.BG_Dashboard;
-            this.ClientSize = new System.Drawing.Size(1318, 750);
+            this.ClientSize = new System.Drawing.Size(1054, 600);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);

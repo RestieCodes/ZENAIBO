@@ -123,5 +123,85 @@ namespace FINAL_PROJECT
             }
             return sortedDailyTask;
         }
+
+        public static List<Tuple<string, string, string, string, string, string, int>> SortTaskStorage()
+        {
+            var sortedTaskStorage = TaskStorage.OrderBy(p => p.Item4)
+                                               .ThenBy(p => p.Item5)
+                                               .ToList();
+
+            for (int i = 0; i < sortedTaskStorage.Count; i++)
+            {
+                sortedTaskStorage[i] = new Tuple<string, string, string, string, string, string, int>(sortedTaskStorage[i].Item1, sortedTaskStorage[i].Item2, sortedTaskStorage[i].Item3, sortedTaskStorage[i].Item4, sortedTaskStorage[i].Item5, sortedTaskStorage[i].Item6, sortedTaskStorage[i].Item7);
+            }
+            return sortedTaskStorage;
+        }
+
+        public static void SaveChangesTaskDaily(string title, string descript, int taskType, int timeStart, int timeEnd, string date, string key1, string key2)
+        {
+
+            var userIndex = TaskDaily.FindIndex(p => p.Item1.Equals(key1) && p.Item2.Equals(key2));
+
+            bool valid = true;
+            bool exist = false;
+
+            for (int i = 0; i < TaskDaily.Count; i++)
+            {
+                if (TaskDaily[i] == TaskDaily[userIndex])
+                {
+                    continue;
+                }
+                else
+                {
+                    if (TaskDaily[i].Item6 == date)
+                    {
+                        for (int j = TaskDaily[i].Item4; j < TaskDaily[i].Item5; j++)
+                        {
+                            for (int k = timeStart; k < timeEnd; k++)
+                            {
+                                if (j == k)
+                                {
+                                    valid = false;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            for (int i = 0; i < TaskDaily.Count; i++)
+            {
+                if (TaskDaily[i] == TaskDaily[userIndex])
+                {
+                    continue;
+                }
+                else
+                {
+                    if ((TaskDaily[i].Item1 == title && TaskDaily[i].Item2 == descript) && (TaskDaily[i].Item3 == taskType && TaskDaily[i].Item6 == date))
+                    {
+                        exist = true;
+                    }
+                }
+            }
+
+
+            if (valid && !exist)
+            {
+                TaskDaily[userIndex] = new Tuple<string, string, int, int, int, string>(title, descript, taskType, timeStart, timeEnd, date);
+            }
+            else if (exist)
+            {
+                MessageBox.Show("Task Already Exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (!valid)
+            {
+                MessageBox.Show("Overlapping Schedule", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }  
+        }
+        public static void RemoveDailyTask(string title, string descript, int taskType, string date)
+        {
+            var userIndex = TaskDaily.FindIndex(p => p.Item1.Equals(title) && p.Item2.Equals(descript) && p.Item3.Equals(taskType) && p.Item6.Equals(date));
+            TaskDaily.Remove(TaskDaily[userIndex]);
+        }
     }
 }
