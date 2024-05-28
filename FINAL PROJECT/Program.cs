@@ -14,9 +14,14 @@ namespace FINAL_PROJECT
         [STAThread]
         static void Main()
         {
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Login login = new Login();
+            Login._login = login;
+            Application.Run(login);
+            
+            
         }
     }
 }

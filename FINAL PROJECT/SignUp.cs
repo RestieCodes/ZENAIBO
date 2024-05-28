@@ -11,8 +11,10 @@ using System.Windows.Forms;
 
 namespace FINAL_PROJECT
 {
+    
     public partial class SignUp : Form
     {
+        public static SignUp _signUp;
         public SignUp()
         {
             InitializeComponent(); 
@@ -20,14 +22,10 @@ namespace FINAL_PROJECT
 
         //Go to login
         public void label4_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-            GC.Collect();
-            Login login = new Login();
-            login.Show();
-            
+        {         
+            Login._login.Show();
+            this.Hide();
+
         }
 
         // X button
@@ -377,9 +375,9 @@ namespace FINAL_PROJECT
         // Sign up button
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            NewMainPanel NewmainPanel = new NewMainPanel();
-            NewmainPanel.Show();
+            Login._login.Show();
             this.Hide();
+            
 
             checkGlow();
             //If all circles are glowing, the account will be registered
@@ -393,7 +391,7 @@ namespace FINAL_PROJECT
         {
             ChronotypeExplanation NewChronotypeExplanation = new ChronotypeExplanation();
             NewChronotypeExplanation.Show();
-            this.Hide();
+            
            
         }
     }

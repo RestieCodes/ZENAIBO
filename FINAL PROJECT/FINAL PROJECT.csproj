@@ -178,6 +178,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GoaLIcon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GoaLIcon.Designer.cs">
+      <DependentUpon>GoaLIcon.cs</DependentUpon>
+    </Compile>
     <Compile Include="GoalPanelDashboardDisplay.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -195,12 +201,6 @@
     </Compile>
     <Compile Include="NewMainPanel.Designer.cs">
       <DependentUpon>NewMainPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PopUpCalendar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PopUpCalendar.Designer.cs">
-      <DependentUpon>PopUpCalendar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -294,6 +294,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GoaLIcon.resx">
+      <DependentUpon>GoaLIcon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GoalPanelDashboardDisplay.resx">
       <DependentUpon>GoalPanelDashboardDisplay.cs</DependentUpon>
     </EmbeddedResource>
@@ -302,9 +305,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewMainPanel.resx">
       <DependentUpon>NewMainPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PopUpCalendar.resx">
-      <DependentUpon>PopUpCalendar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -618,6 +618,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\EnlargedNewTimeLineForWolf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskAcadsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskHomeResIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskETNIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskAPNIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskCareerIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskGymIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskSmallAPNIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskOthersIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Dashboard_Motivation2.png" />

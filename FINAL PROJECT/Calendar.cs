@@ -18,12 +18,13 @@ namespace FINAL_PROJECT
         private CalendarMonth calendarMonthForm;
         private CalendarDay calendarDayForm;
         private CalendarWeek calendarWeekForm;
-
+        private Form previousClickedForm = new CalendarMonth();
         public int Month;
         public Calendar()
         {
             InitializeComponent();
-            InitializeForms();  
+            InitializeForms();
+            this.Load += new EventHandler(Calendar_Load);
         }
 
         private void InitializeForms()
@@ -32,11 +33,11 @@ namespace FINAL_PROJECT
             calendarDayForm = null;
             calendarWeekForm = null;
         }
-      
+
 
         public CalendarMonth GetCalendarMonthForm()
         {
-            if (calendarMonthForm == null)
+            if (calendarMonthForm == null || calendarMonthForm.IsDisposed)
             {
 
                 calendarMonthForm = new CalendarMonth();
@@ -47,7 +48,7 @@ namespace FINAL_PROJECT
 
         public CalendarWeek GetCalendarWeekForm()
         {
-            if (calendarWeekForm == null)
+            if (calendarWeekForm == null || calendarWeekForm.IsDisposed)
             {
 
                 calendarWeekForm = new CalendarWeek();
@@ -58,7 +59,7 @@ namespace FINAL_PROJECT
 
         public CalendarDay GetCalendarDayForm()
         {
-            if (calendarDayForm == null)
+            if (calendarDayForm == null || calendarDayForm.IsDisposed)
             {
 
                 calendarDayForm = new CalendarDay();
@@ -71,31 +72,33 @@ namespace FINAL_PROJECT
         {
 
             ShowForm(GetCalendarMonthForm());
+            btnMonth.StateCommon.Back.Color1 = Color.FromArgb(108, 23, 180);
+            btnMonth.StateCommon.Back.Color2 = Color.FromArgb(108, 23, 180);
+            btnMonth.StateCommon.Content.ShortText.Color1 = Color.White;
 
         }
 
-        private void ShowForm(Form form) 
+        private void ShowForm(Form form)
         {
             panelContainer.Controls.Clear();
             form.TopLevel = false;
             form.FormBorderStyle = FormBorderStyle.None;
             form.Dock = DockStyle.Fill;
             panelContainer.Controls.Add(form);
-            
-            
 
-            try
+            // Show the form
+            form.Show();
+
+            if (previousClickedForm != form)
             {
-                form.Show();
-                
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred while showing the form: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                previousClickedForm.Dispose();
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+                GC.Collect();
+                previousClickedForm = form;
             }
         }
 
-        
 
 
 
@@ -103,16 +106,49 @@ namespace FINAL_PROJECT
         private void btnMonth_Click(object sender, EventArgs e)
         {
             ShowForm(GetCalendarMonthForm());
+            btnWeek.StateCommon.Back.Color1 = Color.White;
+            btnWeek.StateCommon.Back.Color2 = Color.White;
+            btnWeek.StateCommon.Content.ShortText.Color1 = Color.FromArgb(108, 23, 180);
+
+            btnDay.StateCommon.Back.Color1 = Color.White;
+            btnDay.StateCommon.Back.Color2 = Color.White;
+            btnDay.StateCommon.Content.ShortText.Color1 = Color.FromArgb(108, 23, 180);
+
+            btnMonth.StateCommon.Back.Color1 = Color.FromArgb(108, 23, 180);
+            btnMonth.StateCommon.Back.Color2 = Color.FromArgb(108, 23, 180);
+            btnMonth.StateCommon.Content.ShortText.Color1 = Color.White;
         }
 
         private void btnDay_Click(object sender, EventArgs e)
         {
             ShowForm(GetCalendarDayForm());
+            btnWeek.StateCommon.Back.Color1 = Color.White;
+            btnWeek.StateCommon.Back.Color2 = Color.White;
+            btnWeek.StateCommon.Content.ShortText.Color1 = Color.FromArgb(108, 23, 180);
+
+            btnDay.StateCommon.Back.Color1 = Color.FromArgb(108, 23, 180);
+            btnDay.StateCommon.Back.Color2 = Color.FromArgb(108, 23, 180);
+            btnDay.StateCommon.Content.ShortText.Color1 = Color.White;
+
+            btnMonth.StateCommon.Back.Color1 = Color.White;
+            btnMonth.StateCommon.Back.Color2 = Color.White;
+            btnMonth.StateCommon.Content.ShortText.Color1 = Color.FromArgb(108, 23, 180);
         }
 
         private void btnWeek_Click_1(object sender, EventArgs e)
         {
             ShowForm(GetCalendarWeekForm());
+            btnWeek.StateCommon.Back.Color1 = Color.FromArgb(108, 23, 180);
+            btnWeek.StateCommon.Back.Color2 = Color.FromArgb(108, 23, 180);
+            btnWeek.StateCommon.Content.ShortText.Color1 = Color.White;
+
+            btnDay.StateCommon.Back.Color1 = Color.White;
+            btnDay.StateCommon.Back.Color2 = Color.White;
+            btnDay.StateCommon.Content.ShortText.Color1 = Color.FromArgb(108, 23, 180);
+
+            btnMonth.StateCommon.Back.Color1 = Color.White;
+            btnMonth.StateCommon.Back.Color2 = Color.White;
+            btnMonth.StateCommon.Content.ShortText.Color1 = Color.FromArgb(108, 23, 180);
         }
     }
 }
