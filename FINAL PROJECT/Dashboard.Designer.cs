@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,7 +50,7 @@
             this.goalsContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.ShowTaskTomorrow = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureMotivations = new System.Windows.Forms.PictureBox();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4.SuspendLayout();
@@ -65,7 +64,7 @@
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureMotivations)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -357,20 +356,20 @@
             this.ShowTaskTomorrow.Values.Text = "TASK TOMORROW";
             this.ShowTaskTomorrow.Click += new System.EventHandler(this.ShowTaskTomorrow_Click);
             // 
-            // pictureBox5
+            // pictureMotivations
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pictureMotivations.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(980, 529);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(309, 193);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 55;
-            this.pictureBox5.TabStop = false;
+            this.pictureMotivations.BackColor = System.Drawing.Color.Transparent;
+            this.pictureMotivations.Image = global::FINAL_PROJECT.Properties.Resources.Dashboard_Motivation3;
+            this.pictureMotivations.Location = new System.Drawing.Point(980, 529);
+            this.pictureMotivations.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureMotivations.Name = "pictureMotivations";
+            this.pictureMotivations.Size = new System.Drawing.Size(309, 193);
+            this.pictureMotivations.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureMotivations.TabIndex = 55;
+            this.pictureMotivations.TabStop = false;
             // 
             // kryptonButton1
             // 
@@ -401,6 +400,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Silver;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(33, 110);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(671, 606);
@@ -415,7 +415,7 @@
             this.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.BG_Dashboard;
             this.ClientSize = new System.Drawing.Size(1318, 750);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureMotivations);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.ShowTaskTomorrow);
             this.Controls.Add(this.label8);
@@ -444,7 +444,7 @@
             this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureMotivations)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -471,7 +471,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private ComponentFactory.Krypton.Toolkit.KryptonButton ShowTaskTomorrow;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureMotivations;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.FlowLayoutPanel goalsContainer;
         private System.Windows.Forms.Panel panel3;
