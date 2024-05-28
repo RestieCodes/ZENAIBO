@@ -44,28 +44,27 @@
             this.dtpSetDate = new System.Windows.Forms.DateTimePicker();
             this.panel3 = new System.Windows.Forms.Panel();
             this.checkBoxOther = new System.Windows.Forms.CheckBox();
-            this.checkBoxSmallTask = new System.Windows.Forms.CheckBox();
             this.checkBoxAppointment = new System.Windows.Forms.CheckBox();
-            this.checkBoxHomeRes = new System.Windows.Forms.CheckBox();
-            this.checkBoxEntertainment = new System.Windows.Forms.CheckBox();
             this.checkBoxGym = new System.Windows.Forms.CheckBox();
             this.checkBoxCareer = new System.Windows.Forms.CheckBox();
             this.checkBoxAcads = new System.Windows.Forms.CheckBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.taskbarCtn = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.listBoxTaskType = new FINAL_PROJECT.CustomListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.deleteIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTaskTypeIcon)).BeginInit();
@@ -73,11 +72,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -328,22 +324,21 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.checkBoxOther);
-            this.panel3.Controls.Add(this.checkBoxSmallTask);
             this.panel3.Controls.Add(this.checkBoxAppointment);
-            this.panel3.Controls.Add(this.checkBoxHomeRes);
-            this.panel3.Controls.Add(this.checkBoxEntertainment);
             this.panel3.Controls.Add(this.checkBoxGym);
             this.panel3.Controls.Add(this.checkBoxCareer);
             this.panel3.Controls.Add(this.checkBoxAcads);
             this.panel3.Controls.Add(this.pictureBox19);
             this.panel3.Controls.Add(this.pictureBox17);
             this.panel3.Controls.Add(this.pictureBox16);
-            this.panel3.Controls.Add(this.pictureBox15);
             this.panel3.Controls.Add(this.pictureBox14);
-            this.panel3.Controls.Add(this.pictureBox13);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.kryptonLabel4);
             this.panel3.Location = new System.Drawing.Point(813, 110);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
@@ -356,7 +351,7 @@
             this.checkBoxOther.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxOther.AutoSize = true;
             this.checkBoxOther.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxOther.Location = new System.Drawing.Point(8, 572);
+            this.checkBoxOther.Location = new System.Drawing.Point(32, 576);
             this.checkBoxOther.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxOther.Name = "checkBoxOther";
             this.checkBoxOther.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -366,27 +361,12 @@
             this.checkBoxOther.UseVisualStyleBackColor = true;
             this.checkBoxOther.CheckedChanged += new System.EventHandler(this.checkBoxOther_CheckedChanged);
             // 
-            // checkBoxSmallTask
-            // 
-            this.checkBoxSmallTask.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBoxSmallTask.AutoSize = true;
-            this.checkBoxSmallTask.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxSmallTask.Location = new System.Drawing.Point(8, 503);
-            this.checkBoxSmallTask.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxSmallTask.Name = "checkBoxSmallTask";
-            this.checkBoxSmallTask.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxSmallTask.Size = new System.Drawing.Size(18, 17);
-            this.checkBoxSmallTask.TabIndex = 14;
-            this.checkBoxSmallTask.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxSmallTask.UseVisualStyleBackColor = true;
-            this.checkBoxSmallTask.CheckedChanged += new System.EventHandler(this.checkBoxSmallTask_CheckedChanged);
-            // 
             // checkBoxAppointment
             // 
             this.checkBoxAppointment.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxAppointment.AutoSize = true;
             this.checkBoxAppointment.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxAppointment.Location = new System.Drawing.Point(8, 435);
+            this.checkBoxAppointment.Location = new System.Drawing.Point(32, 470);
             this.checkBoxAppointment.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxAppointment.Name = "checkBoxAppointment";
             this.checkBoxAppointment.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -396,42 +376,12 @@
             this.checkBoxAppointment.UseVisualStyleBackColor = true;
             this.checkBoxAppointment.CheckedChanged += new System.EventHandler(this.checkBoxAppointment_CheckedChanged);
             // 
-            // checkBoxHomeRes
-            // 
-            this.checkBoxHomeRes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBoxHomeRes.AutoSize = true;
-            this.checkBoxHomeRes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxHomeRes.Location = new System.Drawing.Point(8, 366);
-            this.checkBoxHomeRes.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxHomeRes.Name = "checkBoxHomeRes";
-            this.checkBoxHomeRes.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxHomeRes.Size = new System.Drawing.Size(18, 17);
-            this.checkBoxHomeRes.TabIndex = 15;
-            this.checkBoxHomeRes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxHomeRes.UseVisualStyleBackColor = true;
-            this.checkBoxHomeRes.CheckedChanged += new System.EventHandler(this.checkBoxHomeRes_CheckedChanged);
-            // 
-            // checkBoxEntertainment
-            // 
-            this.checkBoxEntertainment.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBoxEntertainment.AutoSize = true;
-            this.checkBoxEntertainment.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxEntertainment.Location = new System.Drawing.Point(8, 288);
-            this.checkBoxEntertainment.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBoxEntertainment.Name = "checkBoxEntertainment";
-            this.checkBoxEntertainment.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBoxEntertainment.Size = new System.Drawing.Size(18, 17);
-            this.checkBoxEntertainment.TabIndex = 14;
-            this.checkBoxEntertainment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBoxEntertainment.UseVisualStyleBackColor = true;
-            this.checkBoxEntertainment.CheckedChanged += new System.EventHandler(this.checkBoxEntertainment_CheckedChanged);
-            // 
             // checkBoxGym
             // 
             this.checkBoxGym.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxGym.AutoSize = true;
             this.checkBoxGym.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxGym.Location = new System.Drawing.Point(8, 219);
+            this.checkBoxGym.Location = new System.Drawing.Point(32, 359);
             this.checkBoxGym.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxGym.Name = "checkBoxGym";
             this.checkBoxGym.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -446,7 +396,7 @@
             this.checkBoxCareer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxCareer.AutoSize = true;
             this.checkBoxCareer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxCareer.Location = new System.Drawing.Point(8, 154);
+            this.checkBoxCareer.Location = new System.Drawing.Point(32, 250);
             this.checkBoxCareer.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxCareer.Name = "checkBoxCareer";
             this.checkBoxCareer.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -461,7 +411,7 @@
             this.checkBoxAcads.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxAcads.AutoSize = true;
             this.checkBoxAcads.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxAcads.Location = new System.Drawing.Point(8, 87);
+            this.checkBoxAcads.Location = new System.Drawing.Point(32, 141);
             this.checkBoxAcads.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxAcads.Name = "checkBoxAcads";
             this.checkBoxAcads.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -475,10 +425,10 @@
             // 
             this.pictureBox19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox19.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023639_486;
-            this.pictureBox19.Location = new System.Drawing.Point(21, 555);
+            this.pictureBox19.Location = new System.Drawing.Point(1, 501);
             this.pictureBox19.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox19.Size = new System.Drawing.Size(79, 61);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox19.TabIndex = 39;
             this.pictureBox19.TabStop = false;
@@ -487,10 +437,10 @@
             // 
             this.pictureBox17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox17.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T022644_520;
-            this.pictureBox17.Location = new System.Drawing.Point(21, 137);
+            this.pictureBox17.Location = new System.Drawing.Point(2, 169);
             this.pictureBox17.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox17.Size = new System.Drawing.Size(77, 75);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox17.TabIndex = 37;
             this.pictureBox17.TabStop = false;
@@ -499,77 +449,42 @@
             // 
             this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox16.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023405_591;
-            this.pictureBox16.Location = new System.Drawing.Point(21, 68);
+            this.pictureBox16.Location = new System.Drawing.Point(0, 62);
             this.pictureBox16.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox16.Size = new System.Drawing.Size(81, 65);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 37;
             this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox15.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023527_334;
-            this.pictureBox15.Location = new System.Drawing.Point(21, 490);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(60, 50);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 36;
-            this.pictureBox15.TabStop = false;
+            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
             // pictureBox14
             // 
             this.pictureBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox14.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T022658_810;
-            this.pictureBox14.Location = new System.Drawing.Point(21, 420);
+            this.pictureBox14.Location = new System.Drawing.Point(-2, 389);
             this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox14.Size = new System.Drawing.Size(83, 64);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 35;
             this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox13.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T022707_602;
-            this.pictureBox13.Location = new System.Drawing.Point(22, 349);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(60, 50);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 34;
-            this.pictureBox13.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T023254_961;
-            this.pictureBox3.Location = new System.Drawing.Point(21, 206);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 274);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(79, 81);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 33;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Image = global::FINAL_PROJECT.Properties.Resources.Untitled_design___2024_04_29T021726_290;
-            this.pictureBox2.Location = new System.Drawing.Point(22, 275);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
-            // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(10, 25);
+            this.kryptonLabel4.Location = new System.Drawing.Point(10, 23);
             this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(67, 27);
@@ -615,6 +530,13 @@
             this.panel1.Size = new System.Drawing.Size(787, 612);
             this.panel1.TabIndex = 42;
             // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(11, 10);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(780, 579);
+            this.panel4.TabIndex = 76;
+            // 
             // kryptonButton1
             // 
             this.kryptonButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -640,13 +562,6 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonButton1.TabIndex = 75;
             this.kryptonButton1.Values.Text = "kryptonButton1";
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(11, 10);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(780, 579);
-            this.panel4.TabIndex = 76;
             // 
             // listBoxTaskType
             // 
@@ -675,6 +590,61 @@
             this.listBoxTaskType.TabIndex = 0;
             this.listBoxTaskType.SelectedIndexChanged += new System.EventHandler(this.listBoxTaskType_SelectedIndexChanged_1);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkViolet;
+            this.label2.Location = new System.Drawing.Point(12, 122);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 16);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "ACADS";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label3.Location = new System.Drawing.Point(6, 232);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 16);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "CAREER";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.label4.Location = new System.Drawing.Point(3, 339);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 16);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "WORKOUT";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Sans", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Crimson;
+            this.label5.Location = new System.Drawing.Point(0, 450);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 13);
+            this.label5.TabIndex = 43;
+            this.label5.Text = "APPOINTMENT";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(10, 557);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 16);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "OTHERS";
+            // 
             // Deadline
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -702,11 +672,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -717,10 +684,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.CheckBox checkBoxAppointment;
-        private System.Windows.Forms.CheckBox checkBoxHomeRes;
-        private System.Windows.Forms.CheckBox checkBoxEntertainment;
         private System.Windows.Forms.CheckBox checkBoxOther;
-        private System.Windows.Forms.CheckBox checkBoxSmallTask;
         private System.Windows.Forms.CheckBox checkBoxGym;
         private System.Windows.Forms.CheckBox checkBoxCareer;
         private System.Windows.Forms.CheckBox checkBoxAcads;
@@ -729,10 +693,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox17;
@@ -752,5 +713,10 @@
         private System.Windows.Forms.Panel panel1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
