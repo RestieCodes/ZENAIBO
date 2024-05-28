@@ -433,6 +433,16 @@ namespace FINAL_PROJECT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ChronotypeExplanationFInalLast {
+            get {
+                object obj = ResourceManager.GetObject("ChronotypeExplanationFInalLast", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ChronotypeExplanationFInalNa {
             get {
                 object obj = ResourceManager.GetObject("ChronotypeExplanationFInalNa", resourceCulture);
@@ -546,6 +556,16 @@ namespace FINAL_PROJECT.Properties {
         internal static System.Drawing.Bitmap Dashboard_Motivation1 {
             get {
                 object obj = ResourceManager.GetObject("Dashboard_Motivation1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dashboard_Motivation2 {
+            get {
+                object obj = ResourceManager.GetObject("Dashboard_Motivation2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -763,6 +783,16 @@ namespace FINAL_PROJECT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LoginForgotPass {
+            get {
+                object obj = ResourceManager.GetObject("LoginForgotPass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo_w_Name {
             get {
                 object obj = ResourceManager.GetObject("Logo w Name", resourceCulture);
@@ -956,6 +986,36 @@ namespace FINAL_PROJECT.Properties {
         internal static System.Drawing.Bitmap Signup_Display {
             get {
                 object obj = ResourceManager.GetObject("Signup Display", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SignUpComplete {
+            get {
+                object obj = ResourceManager.GetObject("SignUpComplete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UCDailyTask {
+            get {
+                object obj = ResourceManager.GetObject("UCDailyTask", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UCDailyTask2 {
+            get {
+                object obj = ResourceManager.GetObject("UCDailyTask2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

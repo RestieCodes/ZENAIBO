@@ -11,6 +11,15 @@ namespace FINAL_PROJECT
 {
     internal class TempStorage
     {
+        //For Accounts
+        public static List<string> EmailList = new List<string>();
+        public static List<string> ChronoTypeList = new List<string>();
+        public static List<string> UsernameList = new List<string>();
+        public static List<string> PasswordList = new List<string>();
+
+
+
+
         public static List<Tuple<string, string, string, string, string, string, int>> TaskStorage = new List<Tuple<string, string, string, string, string, string, int>>();
         public static List<Tuple<string, string, string, string, string, string>> TaskDoneHistory = new List<Tuple<string, string, string, string, string, string>>();
         public static List<Tuple<string, string, int, int, int,string>> TaskDaily = new List<Tuple<string, string, int, int, int, string>>();
@@ -123,5 +132,7 @@ namespace FINAL_PROJECT
             }
             return sortedDailyTask;
         }
+
+     
     }
 }

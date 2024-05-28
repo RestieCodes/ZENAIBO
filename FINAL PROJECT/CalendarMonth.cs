@@ -95,6 +95,11 @@ namespace FINAL_PROJECT
             }
         }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void NextMonthCalendar_Click(object sender, EventArgs e)
         {
             emptyPanel.Controls.Clear();

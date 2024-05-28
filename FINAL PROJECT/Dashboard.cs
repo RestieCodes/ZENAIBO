@@ -13,13 +13,13 @@ namespace FINAL_PROJECT
     public partial class Dashboard : Form
     {
         //Motivational messages
-        private int currentImageIndex = 4;
+        private int currentImageIndex = 0;
         private readonly string[] imageNames = {
-            "Dashboard_Motivation1",
-            "Dashboard_Motivation2",
-            "Dashboard_Motivation3",
-            "Dashboard_Motivation4",
-            "Dashboard_Motivation5"
+            "Dashboard_Motivation1", //4
+            "Dashboard_Motivation2", //0
+            "Dashboard_Motivation3", //1
+            "Dashboard_Motivation4", //2
+            "Dashboard_Motivation5"  //3
         };
 
         public Dashboard()
@@ -88,6 +88,11 @@ namespace FINAL_PROJECT
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

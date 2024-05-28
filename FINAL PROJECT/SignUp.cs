@@ -47,9 +47,9 @@ namespace FINAL_PROJECT
             //check if the Fullname textbox met the condition (No skipping)
             if (glowFullname.Visible == false)
             {
-                textBoxFullname.Focus();
+                textBoxEmail.Focus();
                 label5.Visible = false;
-                labelRegistration.Text = "             Full Name : Enter 9 to 30 characters";
+                labelRegistration.Text = "                                        Enter Email";
                 labelRegistration.ForeColor = Color.Crimson;
             }
             //check if you choose chronotype (No skipping)
@@ -89,11 +89,11 @@ namespace FINAL_PROJECT
         public void label5_Click(object sender, EventArgs e)
         {
             //change the label to show the condition
-            labelRegistration.Text = "             Full Name : Enter 9 to 30 characters";
+            labelRegistration.Text = "                                        Enter Email";
             labelRegistration.ForeColor = Color.MediumPurple;
 
             label5.Visible = false;
-            textBoxFullname.Focus();
+            textBoxEmail.Focus();
 
         }
             //Text Box
@@ -101,13 +101,13 @@ namespace FINAL_PROJECT
         {
             label5.Visible = false;
             chronotypeBox.Text = "        Chronotype";
-            //change the label to show the condition
-            labelRegistration.Text = "             Full Name : Enter 9 to 30 characters";
+            //change the label to show the condition 
+            labelRegistration.Text = "                                        Enter Email";
             labelRegistration.ForeColor = Color.MediumPurple;
 
 
             //Count the number of characters
-            int numberOfCharacters = textBoxFullname.Text.Length;
+            int numberOfCharacters = textBoxEmail.Text.Length;
 
             //Real-time checker
             if (numberOfCharacters >= 10 && numberOfCharacters <= 30)
@@ -123,9 +123,9 @@ namespace FINAL_PROJECT
             if (e.KeyCode == Keys.Enter)
             {
                 //No input
-                if (string.IsNullOrEmpty(textBoxFullname.Text) || textBoxFullname.Text == "Full Name")
+                if (string.IsNullOrEmpty(textBoxEmail.Text) || textBoxEmail.Text == "Email")
                 {
-                    textBoxFullname.Text = string.Empty;
+                    textBoxEmail.Text = string.Empty;
                 }
 
                 //Error input
@@ -143,7 +143,7 @@ namespace FINAL_PROJECT
         }
 
         // Chronotype
-        public void kryptonComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void chronotypeBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             checkGlow();
 
@@ -161,8 +161,8 @@ namespace FINAL_PROJECT
                 glowChronotype.Visible = true;
                 label2.Visible = false;
                 //Choose from combo box then display
-                string selectedItem = chronotypeBox.SelectedItem.ToString();
-                switch (selectedItem)
+                string chrono = chronotypeBox.SelectedItem.ToString();
+                switch (chrono)
                 {
                     case "     LION":
                         pictureBoxChronotype.Image = Properties.Resources.ICON_Lion;
@@ -225,7 +225,7 @@ namespace FINAL_PROJECT
             if (e.KeyCode == Keys.Enter)
             {
                 //No input
-                if (string.IsNullOrEmpty(textBoxUsername.Text) || textBoxUsername.Text == "Full Name")
+                if (string.IsNullOrEmpty(textBoxUsername.Text) || textBoxUsername.Text == "Email")
                 {
                     textBoxUsername.Text = string.Empty;
                 }
@@ -375,16 +375,35 @@ namespace FINAL_PROJECT
         // Sign up button
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            Login._login.Show();
-            this.Hide();
-            
-
             checkGlow();
             //If all circles are glowing, the account will be registered
             if (glowCPassword.Visible == true)
             {
-                //Account registration
+                string email = textBoxEmail.Text;
+                string chronoType = chronotypeBox.SelectedItem.ToString();
+                string username = textBoxUsername.Text;
+                string password = textBoxPassword.Text;
+
+                TempStorage.EmailList.Add(email);
+                TempStorage.ChronoTypeList.Add(chronoType);
+                TempStorage.UsernameList.Add(username);
+                TempStorage.PasswordList.Add(password);
+
+                // Optionally, clear the input fields after storing data
+                ClearInputFields();
+
+                this.Hide();
+                SignUpComplete signUpComplete = new SignUpComplete(); 
+                signUpComplete.Show();
             }
+        }
+
+        private void ClearInputFields()
+        {
+            textBoxEmail.Text = "";
+            textBoxUsername.Text = "";
+            textBoxPassword.Text = "";
+            chronotypeBox.SelectedIndex = -1; // Clear the selection
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
@@ -394,5 +413,6 @@ namespace FINAL_PROJECT
             
            
         }
+
     }
 }

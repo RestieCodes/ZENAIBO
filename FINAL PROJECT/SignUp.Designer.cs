@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxFullname = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
@@ -62,7 +62,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.txtEmail = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.chronotypeBox)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChronotype)).BeginInit();
@@ -83,7 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -99,19 +99,19 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Let\'s Get Started!";
             // 
-            // textBoxFullname
+            // textBoxEmail
             // 
-            this.textBoxFullname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(114)))));
-            this.textBoxFullname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxFullname.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFullname.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBoxFullname.Location = new System.Drawing.Point(605, 142);
-            this.textBoxFullname.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxFullname.Name = "textBoxFullname";
-            this.textBoxFullname.Size = new System.Drawing.Size(295, 21);
-            this.textBoxFullname.TabIndex = 12;
-            this.textBoxFullname.Text = "Full Name";
-            this.textBoxFullname.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxFullname_KeyDown);
+            this.textBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(114)))));
+            this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxEmail.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEmail.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxEmail.Location = new System.Drawing.Point(605, 142);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(295, 21);
+            this.textBoxEmail.TabIndex = 12;
+            this.textBoxEmail.Text = "Email";
+            this.textBoxEmail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxFullname_KeyDown);
             // 
             // label3
             // 
@@ -208,7 +208,7 @@
             this.chronotypeBox.StateTracking.Item.Content.ShortText.Color2 = System.Drawing.Color.Black;
             this.chronotypeBox.TabIndex = 34;
             this.chronotypeBox.Text = "      Chronotype";
-            this.chronotypeBox.SelectedIndexChanged += new System.EventHandler(this.kryptonComboBox2_SelectedIndexChanged);
+            this.chronotypeBox.SelectedIndexChanged += new System.EventHandler(this.chronotypeBox_SelectedIndexChanged);
             // 
             // textBoxCPassword
             // 
@@ -245,9 +245,9 @@
             this.label5.Location = new System.Drawing.Point(598, 142);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(250, 21);
+            this.label5.Size = new System.Drawing.Size(207, 21);
             this.label5.TabIndex = 62;
-            this.label5.Text = "Full Name                                ";
+            this.label5.Text = "Email                               ";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
@@ -572,16 +572,16 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // pictureBox3
+            // txtEmail
             // 
-            this.pictureBox3.Image = global::FINAL_PROJECT.Properties.Resources.Signup__Text_Container_;
-            this.pictureBox3.Location = new System.Drawing.Point(558, 126);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(365, 52);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 24;
-            this.pictureBox3.TabStop = false;
+            this.txtEmail.Image = global::FINAL_PROJECT.Properties.Resources.Signup__Text_Container_;
+            this.txtEmail.Location = new System.Drawing.Point(558, 126);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(365, 52);
+            this.txtEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.txtEmail.TabIndex = 24;
+            this.txtEmail.TabStop = false;
             // 
             // SignUp
             // 
@@ -618,8 +618,8 @@
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBoxFullname);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -647,7 +647,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -655,10 +655,10 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxFullname;
+        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox txtEmail;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox textBoxUsername;

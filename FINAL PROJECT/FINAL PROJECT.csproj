@@ -172,6 +172,12 @@
     <Compile Include="Deadline.Designer.cs">
       <DependentUpon>Deadline.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +220,12 @@
     </Compile>
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpComplete.Designer.cs">
+      <DependentUpon>SignUpComplete.cs</DependentUpon>
     </Compile>
     <Compile Include="TaskAccomplishments.cs">
       <SubType>UserControl</SubType>
@@ -291,6 +303,9 @@
     <EmbeddedResource Include="Deadline.resx">
       <DependentUpon>Deadline.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpComplete.resx">
+      <DependentUpon>SignUpComplete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TaskAccomplishments.resx">
       <DependentUpon>TaskAccomplishments.cs</DependentUpon>
@@ -654,6 +672,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Dashboard_Motivation3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Motivation21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChronotypeExplanationFInalLast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignUpComplete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginForgotPass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UCDailyTask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UCDailyTask2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

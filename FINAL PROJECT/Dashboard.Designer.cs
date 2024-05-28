@@ -362,7 +362,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureMotivations.BackColor = System.Drawing.Color.Transparent;
-            this.pictureMotivations.Image = global::FINAL_PROJECT.Properties.Resources.Dashboard_Motivation3;
+            this.pictureMotivations.Image = global::FINAL_PROJECT.Properties.Resources.Dashboard_Motivation2;
             this.pictureMotivations.Location = new System.Drawing.Point(980, 529);
             this.pictureMotivations.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureMotivations.Name = "pictureMotivations";
@@ -405,6 +405,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(671, 606);
             this.flowLayoutPanel1.TabIndex = 75;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // Dashboard
             // 
