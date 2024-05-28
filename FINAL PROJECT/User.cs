@@ -51,6 +51,7 @@ namespace FINAL_PROJECT
 
         private void User_Load(object sender, EventArgs e)
         {
+            PrevAccomplishments.Visible = false;
             for (int i = TempStorage.TaskDoneHistory.Count - 1; i >= 0; i--)
             {
                 TaskAccomplishments taskFinished = new TaskAccomplishments();
@@ -67,6 +68,36 @@ namespace FINAL_PROJECT
             Login._login.Show();
 
             
+        }
+
+        private void NextAccomplishments_Click(object sender, EventArgs e)
+        {
+            NextAccomplishments.Visible=false;
+            PrevAccomplishments.Visible = true;
+
+            taskDoneCTN.Controls.Clear();
+            for (int i = TempStorage.TaskDailyHistory.Count - 1; i >= 0; i--)
+            {
+                TaskDailiesAccomplishments tda = new TaskDailiesAccomplishments();
+                tda.DisplayHistory(TempStorage.TaskDailyHistory[i]);
+                User.user_intance.taskDoneCTN.Controls.Add(tda);
+
+            }
+        }
+
+        private void PrevAccomplishments_Click(object sender, EventArgs e)
+        {
+            NextAccomplishments.Visible = true;
+            PrevAccomplishments.Visible = false;
+
+            taskDoneCTN.Controls.Clear();
+            for (int i = TempStorage.TaskDoneHistory.Count - 1; i >= 0; i--)
+            {
+                TaskAccomplishments taskFinished = new TaskAccomplishments();
+                taskFinished.DisplayHistory(TempStorage.TaskDoneHistory[i]);
+                taskDoneCTN.Controls.Add(taskFinished);
+
+            }
         }
     }
 }

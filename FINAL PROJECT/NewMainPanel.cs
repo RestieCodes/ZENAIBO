@@ -60,6 +60,7 @@ namespace FINAL_PROJECT
             if (dashboardForm == null || dashboardForm.IsDisposed)
             {
                 dashboardForm = new Dashboard();
+                Dashboard._dashboard = dashboardForm;
             }
             return dashboardForm;
 

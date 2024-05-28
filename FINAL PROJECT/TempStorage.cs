@@ -14,9 +14,10 @@ namespace FINAL_PROJECT
         public static List<Tuple<string, string, string, string, string, string, int>> TaskStorage = new List<Tuple<string, string, string, string, string, string, int>>();
         public static List<Tuple<string, string, string, string, string, string>> TaskDoneHistory = new List<Tuple<string, string, string, string, string, string>>();
         public static List<Tuple<string, string, int, int, int,string>> TaskDaily = new List<Tuple<string, string, int, int, int, string>>();
-       
-        
-        
+        public static List<Tuple<string, string, int, string>> TaskDailyHistory = new List<Tuple<string, string, int, string>>();
+        public static List<Tuple<string, string, int, string>> Accounts = new List<Tuple<string, string, int, string>>();
+
+
         public static void AddTask(string title, string description, string taskType, string month, string day, string year, int index) 
         {
             bool exist = TaskStorage.Any(t =>
@@ -203,5 +204,19 @@ namespace FINAL_PROJECT
             var userIndex = TaskDaily.FindIndex(p => p.Item1.Equals(title) && p.Item2.Equals(descript) && p.Item3.Equals(taskType) && p.Item6.Equals(date));
             TaskDaily.Remove(TaskDaily[userIndex]);
         }
+
+        public static void TaskDailyDone(string title, string descript, int taskType, string date) 
+        {
+            var userIndex = TaskDaily.FindIndex(p => p.Item1.Equals(title) && p.Item2.Equals(descript) && p.Item3.Equals(taskType) && p.Item6.Equals(date));
+            TaskDailyHistory.Add(new Tuple<string, string, int,string>(title,descript,taskType,date));
+            TaskDaily.Remove(TaskDaily[userIndex]);
+        }
+
+        public static void TaskDailyRemoveHistory(string title, string description, int tasktype, string date)
+        {
+            var userIndex = TaskDailyHistory.FindIndex(p => p.Item1.Equals(title) && p.Item2.Equals(description) && p.Item3.Equals(tasktype) && p.Item4.Equals(date));
+            TaskDailyHistory.Remove(TaskDailyHistory[userIndex]);
+        }
+
     }
 }

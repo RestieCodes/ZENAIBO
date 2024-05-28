@@ -53,6 +53,8 @@
             this.pictureMotivations = new System.Windows.Forms.PictureBox();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.flowLayoutPanelCTN = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panelTask = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -65,6 +67,8 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMotivations)).BeginInit();
+            this.flowLayoutPanelCTN.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -414,12 +418,31 @@
             // flowLayoutPanelCTN
             // 
             this.flowLayoutPanelCTN.AutoScroll = true;
-            this.flowLayoutPanelCTN.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanelCTN.Location = new System.Drawing.Point(26, 88);
+            this.flowLayoutPanelCTN.BackColor = System.Drawing.Color.Silver;
+            this.flowLayoutPanelCTN.Controls.Add(this.panel6);
+            this.flowLayoutPanelCTN.Location = new System.Drawing.Point(25, 88);
             this.flowLayoutPanelCTN.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanelCTN.Name = "flowLayoutPanelCTN";
-            this.flowLayoutPanelCTN.Size = new System.Drawing.Size(537, 485);
+            this.flowLayoutPanelCTN.Size = new System.Drawing.Size(536, 485);
             this.flowLayoutPanelCTN.TabIndex = 75;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.EnlargedNewTimeLineForWolf;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.Controls.Add(this.panelTask);
+            this.panel6.Location = new System.Drawing.Point(3, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(512, 1249);
+            this.panel6.TabIndex = 0;
+            // 
+            // panelTask
+            // 
+            this.panelTask.BackColor = System.Drawing.Color.Transparent;
+            this.panelTask.Location = new System.Drawing.Point(121, 87);
+            this.panelTask.Name = "panelTask";
+            this.panelTask.Size = new System.Drawing.Size(371, 811);
+            this.panelTask.TabIndex = 0;
             // 
             // Dashboard
             // 
@@ -460,6 +483,8 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMotivations)).EndInit();
+            this.flowLayoutPanelCTN.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -485,11 +510,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton ShowTaskTomorrow;
         private System.Windows.Forms.PictureBox pictureMotivations;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.FlowLayoutPanel goalsContainer;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelCTN;
+        private System.Windows.Forms.Panel panel6;
+        public System.Windows.Forms.Panel panelTask;
+        public ComponentFactory.Krypton.Toolkit.KryptonButton ShowTaskTomorrow;
     }
 }

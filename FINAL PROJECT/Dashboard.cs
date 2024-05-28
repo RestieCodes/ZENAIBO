@@ -13,6 +13,7 @@ namespace FINAL_PROJECT
 {
     public partial class Dashboard : Form
     {
+        public static Dashboard _dashboard;
         //Motivational messages
         private int currentImageIndex = 4;
         private readonly string[] imageNames = {
@@ -33,11 +34,11 @@ namespace FINAL_PROJECT
             // Set the initial image
             ChangeImage();
 
-            // Configure the timer
+/*            // Configure the timer
             Timer timer = new Timer();
             timer.Interval = 5000; // 1 minute
             timer.Tick += (sender, e) => ChangeImage();
-            timer.Start();
+            timer.Start();*/
         }
         private void ChangeImage()
         {
@@ -51,7 +52,7 @@ namespace FINAL_PROJECT
             {
                 ShowTaskTomorrow.Text = "TASK TODAY";
                 ShowTaskTomorrow.StateCommon.Content.ShortText.Color1 = Color.BlueViolet;
-                flowLayoutPanelCTN.Controls.Clear();
+                
                 ShowTaskTommorow();
                 
 
@@ -62,49 +63,46 @@ namespace FINAL_PROJECT
                 ShowTaskTomorrow.Text = "TASK TOMORROW";
                 ShowTaskTomorrow.StateCommon.Content.ShortText.Color1 = Color.WhiteSmoke;
 
-                flowLayoutPanelCTN.Controls.Clear();
+                
                 ShowTaskToday();
                 //change task display 
             }
         }
 
-        private void ShowTaskTommorow() 
+        public void ShowTaskTommorow() 
         {
+            panelTask.Controls.Clear();
             DateTime now = DateTime.Now;
             DateTime nameOfDay = new DateTime(now.Year, now.Month, now.Day + 1);
             string dayName = nameOfDay.DayOfWeek.ToString("G");
             string fullDayName = dayName + " | " + DateTimeFormatInfo.CurrentInfo.GetMonthName(now.Month) + " " + (now.Day + 1) + ", " + now.Year;
 
-            TempStorage.TaskDaily = TempStorage.SortDailyTask();
-
             for (int i = 0; i < TempStorage.TaskDaily.Count; i++)
             {
                 if (fullDayName == TempStorage.TaskDaily[i].Item6)
                 {
-                    DashboardDailyTask dashboardDailyTask  =  new DashboardDailyTask();
-                    dashboardDailyTask.DisplayContent(TempStorage.TaskDaily[i]);
-                    flowLayoutPanelCTN.Controls.Add(dashboardDailyTask);
+                    TaskDailyInDashboard td = new TaskDailyInDashboard();
+                    td.DisplayTask(TempStorage.TaskDaily[i]);
+                    panelTask.Controls.Add(td);
                 }
             }
         }
 
-        private void ShowTaskToday()
+        public void ShowTaskToday()
         {
-            DateTime now = DateTime.Now;
-           
+            panelTask.Controls.Clear();
+            DateTime now = DateTime.Now;        
             DateTime nameOfDay = new DateTime(now.Year, now.Month, now.Day);
             string dayName = nameOfDay.DayOfWeek.ToString("G");
             string fullDayName = dayName + " | " + DateTimeFormatInfo.CurrentInfo.GetMonthName(now.Month) + " " + now.Day + ", " + now.Year;
-
-            /*TempStorage.TaskDaily = TempStorage.SortDailyTask();*/
 
             for (int i = 0; i < TempStorage.TaskDaily.Count; i++)
             {
                 if (fullDayName == TempStorage.TaskDaily[i].Item6)
                 {
-                    DashboardDailyTask dashboardDailyTask = new DashboardDailyTask();
-                    dashboardDailyTask.DisplayContent(TempStorage.TaskDaily[i]);
-                    flowLayoutPanelCTN.Controls.Add(dashboardDailyTask);
+                    TaskDailyInDashboard td = new TaskDailyInDashboard();
+                    td.DisplayTask(TempStorage.TaskDaily[i]);
+                    panelTask.Controls.Add(td);
                 }
             }
         }
@@ -131,5 +129,6 @@ namespace FINAL_PROJECT
 
             ShowTaskToday();
         }
+
     }
 }

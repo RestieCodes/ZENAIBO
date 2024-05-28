@@ -48,6 +48,8 @@
             this.deletePicture = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.NextAccomplishments = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.PrevAccomplishments = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxChronoIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uploadPicture)).BeginInit();
@@ -124,7 +126,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Squada One", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label2.Location = new System.Drawing.Point(143, 14);
+            this.label2.Location = new System.Drawing.Point(126, 15);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(370, 32);
@@ -245,9 +247,9 @@
             this.taskDoneCTN.BackColor = System.Drawing.Color.Transparent;
             this.taskDoneCTN.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.BG_Profile_accomplishementList2;
             this.taskDoneCTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.taskDoneCTN.Location = new System.Drawing.Point(403, 136);
+            this.taskDoneCTN.Location = new System.Drawing.Point(423, 177);
             this.taskDoneCTN.Name = "taskDoneCTN";
-            this.taskDoneCTN.Size = new System.Drawing.Size(618, 438);
+            this.taskDoneCTN.Size = new System.Drawing.Size(586, 397);
             this.taskDoneCTN.TabIndex = 70;
             // 
             // panel1
@@ -309,17 +311,17 @@
             this.panel2.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.BG_Profile_Accomplishement;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(387, 88);
+            this.panel2.Location = new System.Drawing.Point(406, 88);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(649, 503);
+            this.panel2.Size = new System.Drawing.Size(617, 503);
             this.panel2.TabIndex = 72;
             // 
             // kryptonButton1
             // 
             this.kryptonButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonButton1.Location = new System.Drawing.Point(25, 71);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
@@ -342,6 +344,79 @@
             this.kryptonButton1.TabIndex = 76;
             this.kryptonButton1.Values.Text = "kryptonButton1";
             // 
+            // NextAccomplishments
+            // 
+            this.NextAccomplishments.Location = new System.Drawing.Point(1026, 313);
+            this.NextAccomplishments.Margin = new System.Windows.Forms.Padding(2);
+            this.NextAccomplishments.Name = "NextAccomplishments";
+            this.NextAccomplishments.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.NextAccomplishments.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.NextAccomplishments.OverrideDefault.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.NextAccomplishments.OverrideDefault.Border.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.NextAccomplishments.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.NextAccomplishments.Size = new System.Drawing.Size(22, 78);
+            this.NextAccomplishments.StateCommon.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.NextAccomplishments.StateCommon.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.NextAccomplishments.StateCommon.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.NextAccomplishments.StateCommon.Border.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.NextAccomplishments.StateCommon.Border.ColorAngle = 50F;
+            this.NextAccomplishments.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.NextAccomplishments.StateCommon.Border.Rounding = 10;
+            this.NextAccomplishments.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.NextAccomplishments.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.NextAccomplishments.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextAccomplishments.StateTracking.Back.Color1 = System.Drawing.Color.SlateBlue;
+            this.NextAccomplishments.StateTracking.Back.Color2 = System.Drawing.Color.SlateBlue;
+            this.NextAccomplishments.StateTracking.Border.Color1 = System.Drawing.Color.White;
+            this.NextAccomplishments.StateTracking.Border.Color2 = System.Drawing.Color.White;
+            this.NextAccomplishments.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.NextAccomplishments.TabIndex = 75;
+            this.NextAccomplishments.Values.Text = ">";
+            this.NextAccomplishments.Click += new System.EventHandler(this.NextAccomplishments_Click);
+            // 
+            // PrevAccomplishments
+            // 
+            this.PrevAccomplishments.Location = new System.Drawing.Point(380, 308);
+            this.PrevAccomplishments.Margin = new System.Windows.Forms.Padding(2);
+            this.PrevAccomplishments.Name = "PrevAccomplishments";
+            this.PrevAccomplishments.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevAccomplishments.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevAccomplishments.OverrideDefault.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevAccomplishments.OverrideDefault.Border.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevAccomplishments.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.PrevAccomplishments.Size = new System.Drawing.Size(22, 78);
+            this.PrevAccomplishments.StateCommon.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevAccomplishments.StateCommon.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevAccomplishments.StateCommon.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevAccomplishments.StateCommon.Border.Color2 = System.Drawing.Color.DarkSlateBlue;
+            this.PrevAccomplishments.StateCommon.Border.ColorAngle = 50F;
+            this.PrevAccomplishments.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.PrevAccomplishments.StateCommon.Border.Rounding = 10;
+            this.PrevAccomplishments.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-2, -1, -1, -1);
+            this.PrevAccomplishments.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.PrevAccomplishments.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.PrevAccomplishments.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrevAccomplishments.StateTracking.Back.Color1 = System.Drawing.Color.SlateBlue;
+            this.PrevAccomplishments.StateTracking.Back.Color2 = System.Drawing.Color.SlateBlue;
+            this.PrevAccomplishments.StateTracking.Border.Color1 = System.Drawing.Color.White;
+            this.PrevAccomplishments.StateTracking.Border.Color2 = System.Drawing.Color.White;
+            this.PrevAccomplishments.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.PrevAccomplishments.TabIndex = 77;
+            this.PrevAccomplishments.Values.Text = "<";
+            this.PrevAccomplishments.Click += new System.EventHandler(this.PrevAccomplishments_Click);
+            // 
             // User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -349,6 +424,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.BG_Dashboard;
             this.ClientSize = new System.Drawing.Size(1054, 600);
+            this.Controls.Add(this.PrevAccomplishments);
+            this.Controls.Add(this.NextAccomplishments);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.taskDoneCTN);
@@ -395,5 +472,7 @@
         public System.Windows.Forms.FlowLayoutPanel taskDoneCTN;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.Label label10;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton NextAccomplishments;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton PrevAccomplishments;
     }
 }

@@ -133,12 +133,6 @@
     <Compile Include="CalendarDay.Designer.cs">
       <DependentUpon>CalendarDay.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalendarDayTaskBar.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CalendarDayTaskBar.Designer.cs">
-      <DependentUpon>CalendarDayTaskBar.cs</DependentUpon>
-    </Compile>
     <Compile Include="CalendarMonth.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,12 +160,6 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="DashboardDailyTask.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DashboardDailyTask.Designer.cs">
-      <DependentUpon>DashboardDailyTask.cs</DependentUpon>
-    </Compile>
     <Compile Include="Deadline.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,12 +183,6 @@
     </Compile>
     <Compile Include="GoalPanelDashboardDisplay.Designer.cs">
       <DependentUpon>GoalPanelDashboardDisplay.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainPanel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainPanel.Designer.cs">
-      <DependentUpon>MainPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="NewMainPanel.cs">
       <SubType>Form</SubType>
@@ -233,11 +215,23 @@
     <Compile Include="TaskBar.Designer.cs">
       <DependentUpon>TaskBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaskDailiesAccomplishments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskDailiesAccomplishments.Designer.cs">
+      <DependentUpon>TaskDailiesAccomplishments.cs</DependentUpon>
+    </Compile>
     <Compile Include="TaskDaily.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="TaskDaily.Designer.cs">
       <DependentUpon>TaskDaily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskDailyInDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskDailyInDashboard.Designer.cs">
+      <DependentUpon>TaskDailyInDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="TempStorage.cs" />
     <Compile Include="UCDailyTask.cs">
@@ -279,9 +273,6 @@
     <EmbeddedResource Include="CalendarDay.resx">
       <DependentUpon>CalendarDay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CalendarDayTaskBar.resx">
-      <DependentUpon>CalendarDayTaskBar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CalendarMonth.resx">
       <DependentUpon>CalendarMonth.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,9 +285,6 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DashboardDailyTask.resx">
-      <DependentUpon>DashboardDailyTask.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Deadline.resx">
       <DependentUpon>Deadline.cs</DependentUpon>
     </EmbeddedResource>
@@ -308,9 +296,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GoalPanelDashboardDisplay.resx">
       <DependentUpon>GoalPanelDashboardDisplay.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainPanel.resx">
-      <DependentUpon>MainPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewMainPanel.resx">
       <DependentUpon>NewMainPanel.cs</DependentUpon>
@@ -329,8 +314,14 @@
     <EmbeddedResource Include="TaskBar.resx">
       <DependentUpon>TaskBar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TaskDailiesAccomplishments.resx">
+      <DependentUpon>TaskDailiesAccomplishments.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaskDaily.resx">
       <DependentUpon>TaskDaily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskDailyInDashboard.resx">
+      <DependentUpon>TaskDailyInDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCDailyTask.resx">
       <DependentUpon>UCDailyTask.cs</DependentUpon>

@@ -94,8 +94,10 @@ namespace FINAL_PROJECT
 
             label5.Visible = false;
             textBoxFullname.Focus();
+            textBoxFullname.Text = string.Empty;
 
         }
+
             //Text Box
         public void textBoxFullname_KeyDown(object sender, KeyEventArgs e)
         {
@@ -105,12 +107,11 @@ namespace FINAL_PROJECT
             labelRegistration.Text = "             Full Name : Enter 9 to 30 characters";
             labelRegistration.ForeColor = Color.MediumPurple;
 
-
             //Count the number of characters
             int numberOfCharacters = textBoxFullname.Text.Length;
 
             //Real-time checker
-            if (numberOfCharacters >= 10 && numberOfCharacters <= 30)
+            if (numberOfCharacters >= 8 && numberOfCharacters <= 30)
             {
                 glowFullname.Visible = true;
             }
@@ -153,6 +154,7 @@ namespace FINAL_PROJECT
                 // goto Username txtbox
                 label6.Visible = false;
                 textBoxUsername.Focus();
+
                 //change the label to show the condition
                 labelRegistration.Text = "        Username : Enter 8 - 15 characters";
                 labelRegistration.ForeColor = Color.MediumPurple;
@@ -197,6 +199,7 @@ namespace FINAL_PROJECT
 
                 label6.Visible = false;
                 textBoxUsername.Focus();
+                
 
             }
               
@@ -212,7 +215,7 @@ namespace FINAL_PROJECT
             int numberOfCharacters = textBoxUsername.Text.Length;
 
             // Condition with Real-time checker
-            if (numberOfCharacters >= 8 && numberOfCharacters < 15)
+            if (numberOfCharacters >= 7 && numberOfCharacters < 15)
             {
                 glowUsername.Visible = true;
             }
@@ -272,7 +275,7 @@ namespace FINAL_PROJECT
             int numberOfCharacters = textBoxPassword.Text.Length;
 
             // Condition with Real-time checker
-            if (numberOfCharacters >= 8 && numberOfCharacters < 15)
+            if (numberOfCharacters >= 7 && numberOfCharacters < 15)
             {
                 foreach (char c in textBoxPassword.Text)
                 {

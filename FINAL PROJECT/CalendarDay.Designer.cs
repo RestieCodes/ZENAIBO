@@ -31,11 +31,15 @@
             this.panelTotalTask = new System.Windows.Forms.Panel();
             this.lblDay = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblKey2 = new System.Windows.Forms.Label();
+            this.lblKey1 = new System.Windows.Forms.Label();
+            this.btnSaveEdit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.txtBoxTimeEnd = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtBoxTimeStart = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lblClear = new System.Windows.Forms.Label();
             this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.lblHeader = new System.Windows.Forms.Label();
+            this.listBoxTaskType = new FINAL_PROJECT.CustomListBox();
             this.txtBoxTitle1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtBoxDescription1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lblUserSearch = new System.Windows.Forms.Label();
@@ -50,10 +54,6 @@
             this.emptyPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelTaskContainer = new System.Windows.Forms.Panel();
-            this.btnSaveEdit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.lblKey1 = new System.Windows.Forms.Label();
-            this.lblKey2 = new System.Windows.Forms.Label();
-            this.listBoxTaskType = new FINAL_PROJECT.CustomListBox();
             this.panelTotalTask.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTaskTypeIcon)).BeginInit();
@@ -116,6 +116,64 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(373, 514);
             this.panel2.TabIndex = 52;
+            // 
+            // lblKey2
+            // 
+            this.lblKey2.AutoSize = true;
+            this.lblKey2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
+            this.lblKey2.Location = new System.Drawing.Point(38, 478);
+            this.lblKey2.Name = "lblKey2";
+            this.lblKey2.Size = new System.Drawing.Size(35, 13);
+            this.lblKey2.TabIndex = 58;
+            this.lblKey2.Text = "label1";
+            this.lblKey2.Visible = false;
+            // 
+            // lblKey1
+            // 
+            this.lblKey1.AutoSize = true;
+            this.lblKey1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
+            this.lblKey1.Location = new System.Drawing.Point(38, 461);
+            this.lblKey1.Name = "lblKey1";
+            this.lblKey1.Size = new System.Drawing.Size(35, 13);
+            this.lblKey1.TabIndex = 57;
+            this.lblKey1.Text = "lblKey";
+            this.lblKey1.Visible = false;
+            // 
+            // btnSaveEdit
+            // 
+            this.btnSaveEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveEdit.Location = new System.Drawing.Point(163, 449);
+            this.btnSaveEdit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSaveEdit.Name = "btnSaveEdit";
+            this.btnSaveEdit.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
+            this.btnSaveEdit.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
+            this.btnSaveEdit.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
+            this.btnSaveEdit.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
+            this.btnSaveEdit.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSaveEdit.Size = new System.Drawing.Size(110, 37);
+            this.btnSaveEdit.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
+            this.btnSaveEdit.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
+            this.btnSaveEdit.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
+            this.btnSaveEdit.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
+            this.btnSaveEdit.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSaveEdit.StateCommon.Border.Rounding = 20;
+            this.btnSaveEdit.StateCommon.Border.Width = 3;
+            this.btnSaveEdit.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-20);
+            this.btnSaveEdit.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
+            this.btnSaveEdit.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveEdit.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
+            this.btnSaveEdit.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
+            this.btnSaveEdit.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnSaveEdit.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnSaveEdit.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
+            this.btnSaveEdit.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
+            this.btnSaveEdit.TabIndex = 56;
+            this.btnSaveEdit.Values.Text = "SAVE";
+            this.btnSaveEdit.Click += new System.EventHandler(this.btnSaveEdit_Click);
             // 
             // txtBoxTimeEnd
             // 
@@ -191,6 +249,32 @@
             this.lblHeader.Size = new System.Drawing.Size(131, 36);
             this.lblHeader.TabIndex = 42;
             this.lblHeader.Text = "ADD TASK";
+            // 
+            // listBoxTaskType
+            // 
+            this.listBoxTaskType.BackColor = System.Drawing.Color.White;
+            this.listBoxTaskType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBoxTaskType.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listBoxTaskType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.listBoxTaskType.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxTaskType.ForeColor = System.Drawing.Color.Indigo;
+            this.listBoxTaskType.FormattingEnabled = true;
+            this.listBoxTaskType.ItemHeight = 40;
+            this.listBoxTaskType.Items.AddRange(new object[] {
+            "ACADS",
+            "CAREER",
+            "WORKOUT",
+            "ENTERTAINMENT",
+            "HOME RESPONSIBILITY",
+            "APPOINTMENT",
+            "SMALL TASK",
+            "OTHERS"});
+            this.listBoxTaskType.LineHeight = 40;
+            this.listBoxTaskType.Location = new System.Drawing.Point(106, 187);
+            this.listBoxTaskType.Name = "listBoxTaskType";
+            this.listBoxTaskType.Size = new System.Drawing.Size(243, 197);
+            this.listBoxTaskType.TabIndex = 0;
+            this.listBoxTaskType.SelectedIndexChanged += new System.EventHandler(this.listBoxTaskType_SelectedIndexChanged);
             // 
             // txtBoxTitle1
             // 
@@ -424,90 +508,6 @@
             this.panelTaskContainer.Name = "panelTaskContainer";
             this.panelTaskContainer.Size = new System.Drawing.Size(412, 811);
             this.panelTaskContainer.TabIndex = 0;
-            // 
-            // btnSaveEdit
-            // 
-            this.btnSaveEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSaveEdit.Location = new System.Drawing.Point(163, 449);
-            this.btnSaveEdit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSaveEdit.Name = "btnSaveEdit";
-            this.btnSaveEdit.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
-            this.btnSaveEdit.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
-            this.btnSaveEdit.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
-            this.btnSaveEdit.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
-            this.btnSaveEdit.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSaveEdit.Size = new System.Drawing.Size(110, 37);
-            this.btnSaveEdit.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
-            this.btnSaveEdit.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
-            this.btnSaveEdit.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
-            this.btnSaveEdit.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
-            this.btnSaveEdit.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnSaveEdit.StateCommon.Border.Rounding = 20;
-            this.btnSaveEdit.StateCommon.Border.Width = 3;
-            this.btnSaveEdit.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-20);
-            this.btnSaveEdit.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
-            this.btnSaveEdit.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveEdit.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
-            this.btnSaveEdit.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
-            this.btnSaveEdit.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnSaveEdit.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnSaveEdit.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(38)))), ((int)(((byte)(39)))));
-            this.btnSaveEdit.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(23)))), ((int)(((byte)(180)))));
-            this.btnSaveEdit.TabIndex = 56;
-            this.btnSaveEdit.Values.Text = "SAVE";
-            this.btnSaveEdit.Click += new System.EventHandler(this.btnSaveEdit_Click);
-            // 
-            // lblKey1
-            // 
-            this.lblKey1.AutoSize = true;
-            this.lblKey1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.lblKey1.Location = new System.Drawing.Point(38, 461);
-            this.lblKey1.Name = "lblKey1";
-            this.lblKey1.Size = new System.Drawing.Size(35, 13);
-            this.lblKey1.TabIndex = 57;
-            this.lblKey1.Text = "lblKey";
-            this.lblKey1.Visible = false;
-            // 
-            // lblKey2
-            // 
-            this.lblKey2.AutoSize = true;
-            this.lblKey2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(43)))));
-            this.lblKey2.Location = new System.Drawing.Point(38, 478);
-            this.lblKey2.Name = "lblKey2";
-            this.lblKey2.Size = new System.Drawing.Size(35, 13);
-            this.lblKey2.TabIndex = 58;
-            this.lblKey2.Text = "label1";
-            this.lblKey2.Visible = false;
-            // 
-            // listBoxTaskType
-            // 
-            this.listBoxTaskType.BackColor = System.Drawing.Color.White;
-            this.listBoxTaskType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBoxTaskType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.listBoxTaskType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.listBoxTaskType.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxTaskType.ForeColor = System.Drawing.Color.Indigo;
-            this.listBoxTaskType.FormattingEnabled = true;
-            this.listBoxTaskType.ItemHeight = 40;
-            this.listBoxTaskType.Items.AddRange(new object[] {
-            "ACADS",
-            "CAREER",
-            "WORKOUT",
-            "ENTERTAINMENT",
-            "HOME RESPONSIBILITY",
-            "APPOINTMENT",
-            "SMALL TASK",
-            "OTHERS"});
-            this.listBoxTaskType.LineHeight = 40;
-            this.listBoxTaskType.Location = new System.Drawing.Point(106, 187);
-            this.listBoxTaskType.Name = "listBoxTaskType";
-            this.listBoxTaskType.Size = new System.Drawing.Size(243, 197);
-            this.listBoxTaskType.TabIndex = 0;
-            this.listBoxTaskType.SelectedIndexChanged += new System.EventHandler(this.listBoxTaskType_SelectedIndexChanged);
             // 
             // CalendarDay
             // 
