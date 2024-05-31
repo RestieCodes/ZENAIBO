@@ -55,7 +55,7 @@ namespace FINAL_PROJECT
                 
 
                 ShowTaskTommorow();
-                Calendar.Image = Properties.Resources.Dashboard_CALENDARMay30;
+                Calendar.Image = Properties.Resources.Dashboard_CALENDARJun2;
 
                 //change task display 
             }
@@ -63,7 +63,7 @@ namespace FINAL_PROJECT
             {
                 ShowTaskTomorrow.Text = "CHECK TASK TOMORROW";
                 ShowTaskTomorrow.StateCommon.Content.ShortText.Color1 = Color.WhiteSmoke;
-                Calendar.Image = Properties.Resources.Dashboard_CALENDARMay29;
+                Calendar.Image = Properties.Resources.Dashboard_CALENDARJun1;
 
                 ShowTaskToday();
                 //change task display 

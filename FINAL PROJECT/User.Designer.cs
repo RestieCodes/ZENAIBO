@@ -47,21 +47,23 @@
             this.label10 = new System.Windows.Forms.Label();
             this.deletePicture = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.TextBox();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.NextAccomplishments = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.PrevAccomplishments = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.lblTitle = new System.Windows.Forms.TextBox();
+            this.editChronotype = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxChronoIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uploadPicture)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.deletePicture)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.editChronotype)).BeginInit();
             this.SuspendLayout();
             // 
             // lblChronoName
             // 
-            this.lblChronoName.Location = new System.Drawing.Point(256, 439);
+            this.lblChronoName.Location = new System.Drawing.Point(221, 439);
             this.lblChronoName.Margin = new System.Windows.Forms.Padding(2);
             this.lblChronoName.Name = "lblChronoName";
             this.lblChronoName.Size = new System.Drawing.Size(89, 39);
@@ -249,7 +251,7 @@
             this.taskDoneCTN.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.BG_Profile_accomplishementList2;
             this.taskDoneCTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.taskDoneCTN.Location = new System.Drawing.Point(529, 221);
-            this.taskDoneCTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.taskDoneCTN.Margin = new System.Windows.Forms.Padding(4);
             this.taskDoneCTN.Name = "taskDoneCTN";
             this.taskDoneCTN.Size = new System.Drawing.Size(732, 496);
             this.taskDoneCTN.TabIndex = 70;
@@ -258,6 +260,7 @@
             // 
             this.panel1.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.Profile_Container;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.editChronotype);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.deletePicture);
             this.panel1.Controls.Add(this.uploadPicture);
@@ -285,7 +288,7 @@
             this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label10.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(160, 583);
+            this.label10.Location = new System.Drawing.Point(168, 583);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(98, 24);
@@ -319,6 +322,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(771, 629);
             this.panel2.TabIndex = 72;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.lblTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lblTitle.Font = new System.Drawing.Font("ROG Fonts", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.MediumPurple;
+            this.lblTitle.Location = new System.Drawing.Point(21, 41);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.ReadOnly = true;
+            this.lblTitle.Size = new System.Drawing.Size(732, 72);
+            this.lblTitle.TabIndex = 68;
+            this.lblTitle.Text = "GOALS";
+            this.lblTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lblTitle.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // kryptonButton1
             // 
@@ -420,20 +438,19 @@
             this.PrevAccomplishments.Values.Text = "<";
             this.PrevAccomplishments.Click += new System.EventHandler(this.PrevAccomplishments_Click);
             // 
-            // lblTitle
+            // editChronotype
             // 
-            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.lblTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lblTitle.Font = new System.Drawing.Font("ROG Fonts", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.MediumPurple;
-            this.lblTitle.Location = new System.Drawing.Point(21, 41);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.ReadOnly = true;
-            this.lblTitle.Size = new System.Drawing.Size(732, 72);
-            this.lblTitle.TabIndex = 68;
-            this.lblTitle.Text = "GOALS";
-            this.lblTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.lblTitle.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.editChronotype.BackColor = System.Drawing.Color.Transparent;
+            this.editChronotype.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.ICON_edit__1_;
+            this.editChronotype.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.editChronotype.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.editChronotype.Location = new System.Drawing.Point(384, 439);
+            this.editChronotype.Margin = new System.Windows.Forms.Padding(2);
+            this.editChronotype.Name = "editChronotype";
+            this.editChronotype.Size = new System.Drawing.Size(32, 30);
+            this.editChronotype.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.editChronotype.TabIndex = 77;
+            this.editChronotype.TabStop = false;
             // 
             // User
             // 
@@ -464,6 +481,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.deletePicture)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.editChronotype)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -493,5 +511,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton NextAccomplishments;
         private ComponentFactory.Krypton.Toolkit.KryptonButton PrevAccomplishments;
         private System.Windows.Forms.TextBox lblTitle;
+        private System.Windows.Forms.PictureBox editChronotype;
     }
 }

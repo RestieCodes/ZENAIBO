@@ -191,7 +191,7 @@
             this.TypeOfPerson.AutoSize = true;
             this.TypeOfPerson.Font = new System.Drawing.Font("Squada One", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TypeOfPerson.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.TypeOfPerson.Location = new System.Drawing.Point(24, 279);
+            this.TypeOfPerson.Location = new System.Drawing.Point(15, 279);
             this.TypeOfPerson.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TypeOfPerson.Name = "TypeOfPerson";
             this.TypeOfPerson.Size = new System.Drawing.Size(110, 23);
@@ -204,7 +204,7 @@
             this.totalGOals.AutoSize = true;
             this.totalGOals.Font = new System.Drawing.Font("Squada One", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalGOals.ForeColor = System.Drawing.Color.BlueViolet;
-            this.totalGOals.Location = new System.Drawing.Point(45, 322);
+            this.totalGOals.Location = new System.Drawing.Point(36, 322);
             this.totalGOals.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.totalGOals.Name = "totalGOals";
             this.totalGOals.Size = new System.Drawing.Size(69, 53);
@@ -215,7 +215,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::FINAL_PROJECT.Properties.Resources.mpICON_Line;
-            this.pictureBox2.Location = new System.Drawing.Point(156, 137);
+            this.pictureBox2.Location = new System.Drawing.Point(147, 137);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(10, 412);
@@ -392,7 +392,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Squada One", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(179, 279);
+            this.label7.Location = new System.Drawing.Point(170, 279);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(122, 23);
@@ -405,7 +405,7 @@
             this.accomplishedGoals.AutoSize = true;
             this.accomplishedGoals.Font = new System.Drawing.Font("Squada One", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accomplishedGoals.ForeColor = System.Drawing.Color.BlueViolet;
-            this.accomplishedGoals.Location = new System.Drawing.Point(208, 322);
+            this.accomplishedGoals.Location = new System.Drawing.Point(199, 322);
             this.accomplishedGoals.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.accomplishedGoals.Name = "accomplishedGoals";
             this.accomplishedGoals.Size = new System.Drawing.Size(69, 53);
