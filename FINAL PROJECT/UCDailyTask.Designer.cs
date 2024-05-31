@@ -36,24 +36,28 @@
             // 
             // textBoxTitle
             // 
-            this.textBoxTitle.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.textBoxTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             this.textBoxTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTitle.Location = new System.Drawing.Point(0, 74);
+            this.textBoxTitle.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.textBoxTitle.Location = new System.Drawing.Point(0, 91);
+            this.textBoxTitle.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTitle.Name = "textBoxTitle";
             this.textBoxTitle.ReadOnly = true;
-            this.textBoxTitle.Size = new System.Drawing.Size(109, 13);
+            this.textBoxTitle.Size = new System.Drawing.Size(145, 15);
             this.textBoxTitle.TabIndex = 2;
             this.textBoxTitle.Text = "Laundry";
             this.textBoxTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxTimeSpan
             // 
-            this.textBoxTimeSpan.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.textBoxTimeSpan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(43)))), ((int)(((byte)(61)))));
             this.textBoxTimeSpan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTimeSpan.Location = new System.Drawing.Point(0, 107);
+            this.textBoxTimeSpan.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.textBoxTimeSpan.Location = new System.Drawing.Point(0, 132);
+            this.textBoxTimeSpan.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTimeSpan.Name = "textBoxTimeSpan";
             this.textBoxTimeSpan.ReadOnly = true;
-            this.textBoxTimeSpan.Size = new System.Drawing.Size(109, 13);
+            this.textBoxTimeSpan.Size = new System.Drawing.Size(145, 15);
             this.textBoxTimeSpan.TabIndex = 3;
             this.textBoxTimeSpan.Text = "8 am - 9 pm";
             this.textBoxTimeSpan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -62,24 +66,28 @@
             // 
             this.pictureBoxIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBoxIcon.Image = global::FINAL_PROJECT.Properties.Resources.DailyTaskOthersIcon;
-            this.pictureBoxIcon.Location = new System.Drawing.Point(1, 15);
+            this.pictureBoxIcon.Location = new System.Drawing.Point(1, 18);
+            this.pictureBoxIcon.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxIcon.Name = "pictureBoxIcon";
-            this.pictureBoxIcon.Size = new System.Drawing.Size(107, 44);
+            this.pictureBoxIcon.Size = new System.Drawing.Size(143, 54);
             this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxIcon.TabIndex = 0;
             this.pictureBoxIcon.TabStop = false;
             // 
             // UCDailyTask
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = global::FINAL_PROJECT.Properties.Resources.UCDailyTask2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.textBoxTimeSpan);
             this.Controls.Add(this.textBoxTitle);
             this.Controls.Add(this.pictureBoxIcon);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "UCDailyTask";
-            this.Size = new System.Drawing.Size(109, 131);
+            this.Size = new System.Drawing.Size(145, 161);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -43,29 +43,29 @@
             this.lblDayName.AutoSize = true;
             this.lblDayName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDayName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblDayName.Location = new System.Drawing.Point(24, 4);
-            this.lblDayName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDayName.Location = new System.Drawing.Point(32, 5);
             this.lblDayName.Name = "lblDayName";
-            this.lblDayName.Size = new System.Drawing.Size(86, 13);
+            this.lblDayName.Size = new System.Drawing.Size(104, 16);
             this.lblDayName.TabIndex = 0;
             this.lblDayName.Text = "WEDNESDAY";
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(4)))), ((int)(((byte)(41)))));
             this.panel4.Controls.Add(this.lblDayName);
-            this.panel4.Location = new System.Drawing.Point(0, 21);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Location = new System.Drawing.Point(0, 26);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(134, 22);
+            this.panel4.Size = new System.Drawing.Size(179, 27);
             this.panel4.TabIndex = 88;
             // 
             // flowLayoutPanelTaskCtn
             // 
             this.flowLayoutPanelTaskCtn.AutoScroll = true;
-            this.flowLayoutPanelTaskCtn.Location = new System.Drawing.Point(3, 48);
+            this.flowLayoutPanelTaskCtn.Location = new System.Drawing.Point(4, 59);
+            this.flowLayoutPanelTaskCtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanelTaskCtn.Name = "flowLayoutPanelTaskCtn";
-            this.flowLayoutPanelTaskCtn.Size = new System.Drawing.Size(128, 405);
+            this.flowLayoutPanelTaskCtn.Size = new System.Drawing.Size(171, 498);
             this.flowLayoutPanelTaskCtn.TabIndex = 89;
             // 
             // textBoxDay
@@ -74,25 +74,25 @@
             this.textBoxDay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.textBoxDay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
-            this.textBoxDay.Location = new System.Drawing.Point(-5, 3);
+            this.textBoxDay.Location = new System.Drawing.Point(-3, 4);
             this.textBoxDay.Margin = new System.Windows.Forms.Padding(1);
             this.textBoxDay.Name = "textBoxDay";
             this.textBoxDay.ReadOnly = true;
-            this.textBoxDay.Size = new System.Drawing.Size(134, 16);
+            this.textBoxDay.Size = new System.Drawing.Size(179, 20);
             this.textBoxDay.TabIndex = 90;
             this.textBoxDay.Text = "00";
             this.textBoxDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // UCWeekDays
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.textBoxDay);
             this.Controls.Add(this.flowLayoutPanelTaskCtn);
             this.Controls.Add(this.panel4);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "UCWeekDays";
-            this.Size = new System.Drawing.Size(134, 456);
+            this.Size = new System.Drawing.Size(179, 561);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);

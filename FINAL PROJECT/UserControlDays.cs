@@ -37,7 +37,7 @@ namespace FINAL_PROJECT
 
             if (Date == monthNow)
             {
-                this.BackColor = Color.SteelBlue;
+                this.BackColor = Color.BlueViolet;
                 lbDays.ForeColor = Color.White;
             }
 

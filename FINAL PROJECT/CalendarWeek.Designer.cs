@@ -50,7 +50,8 @@
             this.textBox7.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.ForeColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(816, 50);
+            this.textBox7.Location = new System.Drawing.Point(1088, 62);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(0, 0);
@@ -66,7 +67,8 @@
             this.textBox6.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.ForeColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(695, 50);
+            this.textBox6.Location = new System.Drawing.Point(927, 62);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(0, 0);
@@ -82,7 +84,8 @@
             this.textBox5.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(574, 50);
+            this.textBox5.Location = new System.Drawing.Point(765, 62);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(0, 0);
@@ -98,7 +101,8 @@
             this.textBox4.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(452, 50);
+            this.textBox4.Location = new System.Drawing.Point(603, 62);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(0, 0);
@@ -114,7 +118,8 @@
             this.textBox3.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(330, 50);
+            this.textBox3.Location = new System.Drawing.Point(440, 62);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(0, 0);
@@ -130,7 +135,8 @@
             this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(209, 50);
+            this.textBox2.Location = new System.Drawing.Point(279, 62);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(0, 0);
@@ -140,37 +146,39 @@
             // 
             // panelTotalTask
             // 
-            this.panelTotalTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
+            this.panelTotalTask.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(4)))), ((int)(((byte)(41)))));
             this.panelTotalTask.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelTotalTask.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelTotalTask.Controls.Add(this.txtboxMonthNow);
             this.panelTotalTask.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
-            this.panelTotalTask.Location = new System.Drawing.Point(56, 12);
+            this.panelTotalTask.Location = new System.Drawing.Point(75, 15);
+            this.panelTotalTask.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelTotalTask.Name = "panelTotalTask";
-            this.panelTotalTask.Size = new System.Drawing.Size(941, 36);
+            this.panelTotalTask.Size = new System.Drawing.Size(1254, 44);
             this.panelTotalTask.TabIndex = 65;
             // 
             // txtboxMonthNow
             // 
             this.txtboxMonthNow.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtboxMonthNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(52)))), ((int)(((byte)(118)))));
+            this.txtboxMonthNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(4)))), ((int)(((byte)(41)))));
             this.txtboxMonthNow.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtboxMonthNow.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtboxMonthNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxMonthNow.Font = new System.Drawing.Font("ROG Fonts", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxMonthNow.ForeColor = System.Drawing.Color.White;
-            this.txtboxMonthNow.Location = new System.Drawing.Point(323, 0);
+            this.txtboxMonthNow.Location = new System.Drawing.Point(431, 0);
+            this.txtboxMonthNow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtboxMonthNow.Multiline = true;
             this.txtboxMonthNow.Name = "txtboxMonthNow";
             this.txtboxMonthNow.ReadOnly = true;
-            this.txtboxMonthNow.Size = new System.Drawing.Size(316, 35);
+            this.txtboxMonthNow.Size = new System.Drawing.Size(421, 43);
             this.txtboxMonthNow.TabIndex = 1;
             this.txtboxMonthNow.Text = "Month 0000";
             this.txtboxMonthNow.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // NextWeekCalendar
             // 
-            this.NextWeekCalendar.Location = new System.Drawing.Point(1002, 228);
-            this.NextWeekCalendar.Margin = new System.Windows.Forms.Padding(2);
+            this.NextWeekCalendar.Location = new System.Drawing.Point(1336, 281);
+            this.NextWeekCalendar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NextWeekCalendar.Name = "NextWeekCalendar";
             this.NextWeekCalendar.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
             this.NextWeekCalendar.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
@@ -179,7 +187,7 @@
             this.NextWeekCalendar.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.NextWeekCalendar.Size = new System.Drawing.Size(22, 78);
+            this.NextWeekCalendar.Size = new System.Drawing.Size(29, 96);
             this.NextWeekCalendar.StateCommon.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
             this.NextWeekCalendar.StateCommon.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
             this.NextWeekCalendar.StateCommon.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
@@ -205,8 +213,8 @@
             // 
             // PrevWeekCalendar
             // 
-            this.PrevWeekCalendar.Location = new System.Drawing.Point(22, 228);
-            this.PrevWeekCalendar.Margin = new System.Windows.Forms.Padding(2);
+            this.PrevWeekCalendar.Location = new System.Drawing.Point(29, 281);
+            this.PrevWeekCalendar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PrevWeekCalendar.Name = "PrevWeekCalendar";
             this.PrevWeekCalendar.OverrideDefault.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
             this.PrevWeekCalendar.OverrideDefault.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
@@ -215,7 +223,7 @@
             this.PrevWeekCalendar.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.PrevWeekCalendar.Size = new System.Drawing.Size(22, 78);
+            this.PrevWeekCalendar.Size = new System.Drawing.Size(29, 96);
             this.PrevWeekCalendar.StateCommon.Back.Color1 = System.Drawing.Color.DarkSlateBlue;
             this.PrevWeekCalendar.StateCommon.Back.Color2 = System.Drawing.Color.DarkSlateBlue;
             this.PrevWeekCalendar.StateCommon.Border.Color1 = System.Drawing.Color.DarkSlateBlue;
@@ -242,17 +250,18 @@
             // 
             // flowLayoutPanelWeeks
             // 
-            this.flowLayoutPanelWeeks.Location = new System.Drawing.Point(56, 48);
+            this.flowLayoutPanelWeeks.Location = new System.Drawing.Point(75, 59);
+            this.flowLayoutPanelWeeks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanelWeeks.Name = "flowLayoutPanelWeeks";
-            this.flowLayoutPanelWeeks.Size = new System.Drawing.Size(941, 459);
+            this.flowLayoutPanelWeeks.Size = new System.Drawing.Size(1255, 565);
             this.flowLayoutPanelWeeks.TabIndex = 0;
             // 
             // CalendarWeek
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(1030, 527);
+            this.ClientSize = new System.Drawing.Size(1373, 649);
             this.Controls.Add(this.flowLayoutPanelWeeks);
             this.Controls.Add(this.NextWeekCalendar);
             this.Controls.Add(this.PrevWeekCalendar);
@@ -264,7 +273,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.panelTotalTask);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CalendarWeek";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CalendarWeek";

@@ -19,6 +19,7 @@ namespace FINAL_PROJECT
             InitializeComponent();
 
             uploadPicture.BackColor = Color.Transparent;
+         
 
         }
 
@@ -74,6 +75,7 @@ namespace FINAL_PROJECT
         {
             NextAccomplishments.Visible=false;
             PrevAccomplishments.Visible = true;
+            lblTitle.Text = "DAILY TASKS";
 
             taskDoneCTN.Controls.Clear();
             for (int i = TempStorage.TaskDailyHistory.Count - 1; i >= 0; i--)
@@ -89,7 +91,7 @@ namespace FINAL_PROJECT
         {
             NextAccomplishments.Visible = true;
             PrevAccomplishments.Visible = false;
-
+            lblTitle.Text = "GOALS";
             taskDoneCTN.Controls.Clear();
             for (int i = TempStorage.TaskDoneHistory.Count - 1; i >= 0; i--)
             {
@@ -98,6 +100,11 @@ namespace FINAL_PROJECT
                 taskDoneCTN.Controls.Add(taskFinished);
 
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -35,31 +35,33 @@
             // 
             this.lbDays.AutoSize = true;
             this.lbDays.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDays.Location = new System.Drawing.Point(9, 7);
+            this.lbDays.Location = new System.Drawing.Point(12, 9);
+            this.lbDays.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDays.Name = "lbDays";
-            this.lbDays.Size = new System.Drawing.Size(27, 20);
+            this.lbDays.Size = new System.Drawing.Size(34, 25);
             this.lbDays.TabIndex = 0;
             this.lbDays.Text = "00";
             // 
             // flowLayoutPanelCTN
             // 
             this.flowLayoutPanelCTN.AutoScroll = true;
-            this.flowLayoutPanelCTN.Location = new System.Drawing.Point(42, 0);
+            this.flowLayoutPanelCTN.Location = new System.Drawing.Point(56, 0);
+            this.flowLayoutPanelCTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanelCTN.Name = "flowLayoutPanelCTN";
-            this.flowLayoutPanelCTN.Size = new System.Drawing.Size(87, 71);
+            this.flowLayoutPanelCTN.Size = new System.Drawing.Size(116, 87);
             this.flowLayoutPanelCTN.TabIndex = 1;
             // 
             // UserControlDays
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(205)))), ((int)(((byte)(228)))));
             this.Controls.Add(this.flowLayoutPanelCTN);
             this.Controls.Add(this.lbDays);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "UserControlDays";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Size = new System.Drawing.Size(129, 71);
+            this.Size = new System.Drawing.Size(172, 87);
             this.ResumeLayout(false);
             this.PerformLayout();
 

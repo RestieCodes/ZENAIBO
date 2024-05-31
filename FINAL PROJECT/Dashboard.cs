@@ -34,11 +34,11 @@ namespace FINAL_PROJECT
             // Set the initial image
             ChangeImage();
 
-/*            // Configure the timer
+            // Configure the timer
             Timer timer = new Timer();
             timer.Interval = 5000; // 1 minute
             timer.Tick += (sender, e) => ChangeImage();
-            timer.Start();*/
+            timer.Start();
         }
         private void ChangeImage()
         {
@@ -48,22 +48,23 @@ namespace FINAL_PROJECT
 
         private void ShowTaskTomorrow_Click(object sender, EventArgs e)
         {
-            if (ShowTaskTomorrow.Text == "TASK TOMORROW")
+            if (ShowTaskTomorrow.Text == "CHECK TASK TOMORROW")
             {
-                ShowTaskTomorrow.Text = "TASK TODAY";
+                ShowTaskTomorrow.Text = "CHECK TASK TODAY";
                 ShowTaskTomorrow.StateCommon.Content.ShortText.Color1 = Color.BlueViolet;
                 
+
                 ShowTaskTommorow();
-                
+                Calendar.Image = Properties.Resources.Dashboard_CALENDARMay30;
 
                 //change task display 
             }
             else
             {
-                ShowTaskTomorrow.Text = "TASK TOMORROW";
+                ShowTaskTomorrow.Text = "CHECK TASK TOMORROW";
                 ShowTaskTomorrow.StateCommon.Content.ShortText.Color1 = Color.WhiteSmoke;
+                Calendar.Image = Properties.Resources.Dashboard_CALENDARMay29;
 
-                
                 ShowTaskToday();
                 //change task display 
             }

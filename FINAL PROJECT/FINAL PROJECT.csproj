@@ -655,5 +655,14 @@
   <ItemGroup>
     <None Include="Resources\Dashboard_Motivation3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Motivation21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_CALENDARMay30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UCDailyTask2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
