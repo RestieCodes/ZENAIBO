@@ -117,6 +117,7 @@ namespace FINAL_PROJECT
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+
             //display the goal list in the flowpanel
             TempStorage.TaskStorage = TempStorage.SortTaskStorage();    
             for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
@@ -127,8 +128,15 @@ namespace FINAL_PROJECT
                 goalsContainer.Controls.Add(goalPanelDashboardDisplay);
 
             }
+            LoadUCIntoPanel();
+            ShowTaskToday();          
+        }
 
-            ShowTaskToday();
+        public void LoadUCIntoPanel()
+        {
+            panelUserProgress.Controls.Clear();
+            UserProgress uc = new UserProgress();
+            panelUserProgress.Controls.Add(uc);
         }
 
     }

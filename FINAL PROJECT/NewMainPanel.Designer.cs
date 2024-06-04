@@ -64,7 +64,7 @@
             this.panel2.Controls.Add(this.btnMinimize);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1134, 26);
             this.panel2.TabIndex = 3;
@@ -73,7 +73,7 @@
             // 
             this.pictureBox1.Image = global::FINAL_PROJECT.Properties.Resources.Logo_w_Name;
             this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -86,7 +86,7 @@
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExit.Image = global::FINAL_PROJECT.Properties.Resources.x;
             this.btnExit.Location = new System.Drawing.Point(1106, 8);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(22, 16);
             this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -100,7 +100,7 @@
             this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimize.Image = global::FINAL_PROJECT.Properties.Resources._;
             this.btnMinimize.Location = new System.Drawing.Point(1076, 8);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(22, 16);
             this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -121,7 +121,7 @@
             this.panelbtnContainer.Controls.Add(this.btnDashboard);
             this.panelbtnContainer.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelbtnContainer.Location = new System.Drawing.Point(0, 26);
-            this.panelbtnContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelbtnContainer.Margin = new System.Windows.Forms.Padding(2);
             this.panelbtnContainer.Name = "panelbtnContainer";
             this.panelbtnContainer.Size = new System.Drawing.Size(210, 595);
             this.panelbtnContainer.TabIndex = 4;
@@ -130,7 +130,7 @@
             // 
             this.btn_aboutUs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_aboutUs.Location = new System.Drawing.Point(1, 307);
-            this.btn_aboutUs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_aboutUs.Margin = new System.Windows.Forms.Padding(2);
             this.btn_aboutUs.Name = "btn_aboutUs";
             this.btn_aboutUs.OverrideDefault.Back.Color1 = System.Drawing.Color.Indigo;
             this.btn_aboutUs.OverrideDefault.Back.Color2 = System.Drawing.Color.BlueViolet;
@@ -176,7 +176,7 @@
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 61);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(210, 28);
             this.panel5.TabIndex = 30;
@@ -186,7 +186,7 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Image = global::FINAL_PROJECT.Properties.Resources.mpICON_GrayLine;
             this.pictureBox2.Location = new System.Drawing.Point(8, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(194, 28);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -197,7 +197,7 @@
             // 
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(8, 28);
             this.panel8.TabIndex = 1;
@@ -206,7 +206,7 @@
             // 
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel7.Location = new System.Drawing.Point(202, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(8, 28);
             this.panel7.TabIndex = 0;
@@ -259,7 +259,7 @@
             this.btn_Deadline.AutoSize = true;
             this.btn_Deadline.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Deadline.Location = new System.Drawing.Point(1, 206);
-            this.btn_Deadline.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Deadline.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Deadline.Name = "btn_Deadline";
             this.btn_Deadline.OverrideDefault.Back.Color1 = System.Drawing.Color.Indigo;
             this.btn_Deadline.OverrideDefault.Back.Color2 = System.Drawing.Color.BlueViolet;
@@ -303,7 +303,7 @@
             this.panel4.Controls.Add(this.btnExpand);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 12);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(210, 49);
             this.panel4.TabIndex = 29;
@@ -312,7 +312,7 @@
             // 
             this.btnExpand.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnExpand.Location = new System.Drawing.Point(0, 0);
-            this.btnExpand.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExpand.Margin = new System.Windows.Forms.Padding(2);
             this.btnExpand.Name = "btnExpand";
             this.btnExpand.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.btnExpand.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
@@ -340,7 +340,7 @@
             // 
             this.btnCalendar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCalendar.Location = new System.Drawing.Point(1, 156);
-            this.btnCalendar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCalendar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCalendar.Name = "btnCalendar";
             this.btnCalendar.OverrideDefault.Back.Color1 = System.Drawing.Color.Indigo;
             this.btnCalendar.OverrideDefault.Back.Color2 = System.Drawing.Color.BlueViolet;
@@ -383,7 +383,7 @@
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(210, 12);
             this.panel3.TabIndex = 28;
@@ -392,7 +392,7 @@
             // 
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.Location = new System.Drawing.Point(1, 106);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.OverrideDefault.Back.Color1 = System.Drawing.Color.Indigo;
             this.btnDashboard.OverrideDefault.Back.Color2 = System.Drawing.Color.BlueViolet;
@@ -434,7 +434,7 @@
             // 
             this.panelContainer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelContainer.Location = new System.Drawing.Point(81, 26);
-            this.panelContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelContainer.Margin = new System.Windows.Forms.Padding(2);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(1054, 600);
             this.panelContainer.TabIndex = 5;
@@ -448,7 +448,7 @@
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NewMainPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "x";
@@ -472,7 +472,6 @@
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.Panel panelbtnContainer;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnExpand;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnDashboard;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel4;
@@ -485,5 +484,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnCalendar;
         private System.Windows.Forms.Panel panelContainer;
         public ComponentFactory.Krypton.Toolkit.KryptonButton btn_Profile;
+        public ComponentFactory.Krypton.Toolkit.KryptonButton btnDashboard;
     }
 }

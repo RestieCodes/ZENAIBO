@@ -264,6 +264,12 @@
     <Compile Include="UserControlDays.Designer.cs">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserProgress.Designer.cs">
+      <DependentUpon>UserProgress.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="aboutUs.resx">
       <DependentUpon>aboutUs.cs</DependentUpon>
     </EmbeddedResource>
@@ -337,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlDays.resx">
       <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProgress.resx">
+      <DependentUpon>UserProgress.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

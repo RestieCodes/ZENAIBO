@@ -84,7 +84,7 @@ namespace FINAL_PROJECT
                         }
                     }
                 }              
-            }                    
+            }
         }
 
         private bool SleepSchedNotif(int timeStart, int timeEnd)

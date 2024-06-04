@@ -122,6 +122,10 @@ namespace FINAL_PROJECT
                             Dashboard._dashboard.panelTask.Controls.Add(td);
                         }
                     }
+
+                    Dashboard._dashboard.panelUserProgress.Controls.Clear();
+                    UserProgress uc = new UserProgress();
+                    Dashboard._dashboard.panelUserProgress.Controls.Add(uc);
             }
         }
     }

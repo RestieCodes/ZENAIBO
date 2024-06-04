@@ -264,7 +264,7 @@ namespace FINAL_PROJECT
 
         private void btnSaveChanges_Click(object sender, EventArgs e)
         {
-            Deadline.Deadline_instance.lblHeader.Text = "ADD GOAL";
+            Deadline.Deadline_instance.lblHeader.Text = "EDIT GOAL";
             TempStorage.SaveChanges(txtBoxTitle1.Text, txtBoxDescription1.Text, listBoxTaskType.Text, dtpSetDate.Value.ToString("MM"), dtpSetDate.Value.ToString("dd"), dtpSetDate.Value.ToString("yyyy"), listBoxTaskType.SelectedIndex, lblUserSearch.Text);
             btnSaveChanges.Visible = false;
             deleteIcon.Visible = false;
