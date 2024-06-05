@@ -104,7 +104,6 @@ namespace FINAL_PROJECT
                 if (valid && !exist) 
                 {
                     TaskDaily.Add(new Tuple<string, string, int, int, int, string>(title, descipt, taskType, timeStart, timeEnd, date));
-                    AllTaskCount++;
                 }
                 else if(exist) 
                 {
@@ -118,7 +117,6 @@ namespace FINAL_PROJECT
             else
             {
                 TaskDaily.Add(new Tuple<string, string, int, int, int, string>(title,descipt,taskType,timeStart,timeEnd, date));
-                AllTaskCount++;
             }
         }
 
@@ -211,7 +209,6 @@ namespace FINAL_PROJECT
         {
             var userIndex = TaskDaily.FindIndex(p => p.Item1.Equals(title) && p.Item2.Equals(descript) && p.Item3.Equals(taskType) && p.Item6.Equals(date));
             TaskDaily.Remove(TaskDaily[userIndex]);
-            AllTaskCount--;
         }
 
         public static void TaskDailyDone(string title, string descript, int taskType, string date) 
@@ -219,15 +216,12 @@ namespace FINAL_PROJECT
             var userIndex = TaskDaily.FindIndex(p => p.Item1.Equals(title) && p.Item2.Equals(descript) && p.Item3.Equals(taskType) && p.Item6.Equals(date));
             TaskDailyHistory.Add(new Tuple<string, string, int,string>(title,descript,taskType,date));
             TaskDaily.Remove(TaskDaily[userIndex]);
-            AllTaskDoneCount++;
         }
 
         public static void TaskDailyRemoveHistory(string title, string description, int tasktype, string date)
         {
             var userIndex = TaskDailyHistory.FindIndex(p => p.Item1.Equals(title) && p.Item2.Equals(description) && p.Item3.Equals(tasktype) && p.Item4.Equals(date));
             TaskDailyHistory.Remove(TaskDailyHistory[userIndex]);
-            AllTaskDoneCount--;
-            AllTaskCount--;
         }
 
     }
