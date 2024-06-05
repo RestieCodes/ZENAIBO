@@ -20,22 +20,22 @@ namespace FINAL_PROJECT
 
         private void UserProgress_Load(object sender, EventArgs e)
         {
-            if (TempStorage.TaskStorage.Count + TempStorage.TaskDaily.Count < 10)
+            if (TempStorage.TaskStorage.Count < 10)
             {
-                totalGOals.Text = "0" + (TempStorage.TaskStorage.Count + TempStorage.TaskDaily.Count);
+                totalGOals.Text = "0" + (TempStorage.TaskStorage.Count);
             }
             else
             {
-                totalGOals.Text = "" + (TempStorage.TaskStorage.Count + TempStorage.TaskDaily.Count);
+                totalGOals.Text = "" + (TempStorage.TaskStorage.Count);
             }
 
-            if (TempStorage.TaskDoneHistory.Count + TempStorage.TaskDailyHistory.Count < 10)
+            if (TempStorage.TaskDoneHistory.Count < 10)
             {
-                accomplishedGoals.Text = "0" + (TempStorage.TaskDoneHistory.Count + TempStorage.TaskDailyHistory.Count);
+                accomplishedGoals.Text = "0" + (TempStorage.TaskDoneHistory.Count);
             }
             else
             {
-                accomplishedGoals.Text = "" + (TempStorage.TaskDoneHistory.Count + TempStorage.TaskDailyHistory.Count);
+                accomplishedGoals.Text = "" + (TempStorage.TaskDoneHistory.Count);
             }
 
             double progress;
