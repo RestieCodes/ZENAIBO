@@ -20,13 +20,13 @@ namespace FINAL_PROJECT
 
         private void UserProgress_Load(object sender, EventArgs e)
         {
-            if (TempStorage.TaskStorage.Count < 10)
+            if (TempStorage.AllTaskCount < 10)
             {
-                totalGOals.Text = "0" + (TempStorage.TaskStorage.Count);
+                totalGOals.Text = "0" + (TempStorage.AllTaskCount);
             }
             else
             {
-                totalGOals.Text = "" + (TempStorage.TaskStorage.Count);
+                totalGOals.Text = "" + (TempStorage.AllTaskCount);
             }
 
             if (TempStorage.TaskDoneHistory.Count < 10)
