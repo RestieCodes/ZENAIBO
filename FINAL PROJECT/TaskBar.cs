@@ -37,7 +37,7 @@ namespace FINAL_PROJECT
 
             if (indicator <= 2 && numMonth - now.Month == 0)
             {
-                lblDate.ForeColor = Color.Red;
+                lblDate.ForeColor = Color.Crimson;
                 lblDate.Text = dayName + ", " + DateTimeFormatInfo.CurrentInfo.GetMonthName(numMonth) + " " + data.Item5 + " " + data.Item6;
             }
             else if ((indicator >= 3 && indicator <= 6)&& numMonth - now.Month == 0)
@@ -66,21 +66,10 @@ namespace FINAL_PROJECT
                     picBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023254_961;
                     break;
 
-                case "ENTERTAINMENT":
-                    picBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T021726_290;
-                    break;
-
-                case "HOME RESPONSIBILITY":
-                    picBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T022707_602;
-                    break;
-
                 case "APPOINTMENT":
                     picBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T022658_810;
                     break;
 
-                case "SMALL TASK":
-                    picBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023527_334;
-                    break;
 
                 case "OTHERS":
                     picBoxIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023639_486;
@@ -156,16 +145,14 @@ namespace FINAL_PROJECT
 
         private void editIcon_Click_1(object sender, EventArgs e)
         {
-            this.BorderStyle = BorderStyle.Fixed3D;
+            Deadline.Deadline_instance.lblHeader.Text = "EDIT GOAL";
+           
 
             Deadline.Deadline_instance.btnSaveChanges.Visible = true;
             Deadline.Deadline_instance.btnAddTask.Visible = false;
 
-
-            Deadline.Deadline_instance.txtBoxTitle.Text = lblTitle.Text;
-            Deadline.Deadline_instance.txtBoxDescription.Text = lblDescript.Text;
-
-             
+            Deadline.Deadline_instance.txtBoxTitle1.Text = lblTitle.Text;
+            Deadline.Deadline_instance.txtBoxDescription1.Text = lblDescript.Text;
 
             if (lblIndex.Text == "0")
             {
@@ -247,6 +234,11 @@ namespace FINAL_PROJECT
             circleIcon.Visible = true;
             doneIcon.Visible = false;
             doneTask = false;
+
+        }
+
+        private void TaskBar_Load(object sender, EventArgs e)
+        {
 
         }
     }

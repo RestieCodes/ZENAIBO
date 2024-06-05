@@ -11,8 +11,10 @@ using System.Windows.Forms;
 
 namespace FINAL_PROJECT
 {
+    
     public partial class SignUp : Form
     {
+        public static SignUp _signUp;
         public SignUp()
         {
             InitializeComponent(); 
@@ -20,14 +22,10 @@ namespace FINAL_PROJECT
 
         //Go to login
         public void label4_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-            GC.Collect();
-            Login login = new Login();
-            login.Show();
-            
+        {         
+            Login._login.Show();
+            this.Hide();
+
         }
 
         // X button
@@ -96,8 +94,10 @@ namespace FINAL_PROJECT
 
             label5.Visible = false;
             textBoxFullname.Focus();
+            textBoxFullname.Text = string.Empty;
 
         }
+
             //Text Box
         public void textBoxFullname_KeyDown(object sender, KeyEventArgs e)
         {
@@ -107,12 +107,11 @@ namespace FINAL_PROJECT
             labelRegistration.Text = "             Full Name : Enter 9 to 30 characters";
             labelRegistration.ForeColor = Color.MediumPurple;
 
-
             //Count the number of characters
             int numberOfCharacters = textBoxFullname.Text.Length;
 
             //Real-time checker
-            if (numberOfCharacters >= 10 && numberOfCharacters <= 30)
+            if (numberOfCharacters >= 8 && numberOfCharacters <= 30)
             {
                 glowFullname.Visible = true;
             }
@@ -155,6 +154,7 @@ namespace FINAL_PROJECT
                 // goto Username txtbox
                 label6.Visible = false;
                 textBoxUsername.Focus();
+
                 //change the label to show the condition
                 labelRegistration.Text = "        Username : Enter 8 - 15 characters";
                 labelRegistration.ForeColor = Color.MediumPurple;
@@ -199,6 +199,7 @@ namespace FINAL_PROJECT
 
                 label6.Visible = false;
                 textBoxUsername.Focus();
+                
 
             }
               
@@ -214,7 +215,7 @@ namespace FINAL_PROJECT
             int numberOfCharacters = textBoxUsername.Text.Length;
 
             // Condition with Real-time checker
-            if (numberOfCharacters >= 8 && numberOfCharacters < 15)
+            if (numberOfCharacters >= 7 && numberOfCharacters < 15)
             {
                 glowUsername.Visible = true;
             }
@@ -274,7 +275,7 @@ namespace FINAL_PROJECT
             int numberOfCharacters = textBoxPassword.Text.Length;
 
             // Condition with Real-time checker
-            if (numberOfCharacters >= 8 && numberOfCharacters < 15)
+            if (numberOfCharacters >= 7 && numberOfCharacters < 15)
             {
                 foreach (char c in textBoxPassword.Text)
                 {
@@ -377,9 +378,9 @@ namespace FINAL_PROJECT
         // Sign up button
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            NewMainPanel NewmainPanel = new NewMainPanel();
-            NewmainPanel.Show();
+            Login._login.Show();
             this.Hide();
+            
 
             checkGlow();
             //If all circles are glowing, the account will be registered
@@ -389,6 +390,12 @@ namespace FINAL_PROJECT
             }
         }
 
-       
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            ChronotypeExplanation NewChronotypeExplanation = new ChronotypeExplanation();
+            NewChronotypeExplanation.Show();
+            
+           
+        }
     }
 }

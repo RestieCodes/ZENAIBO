@@ -13,7 +13,7 @@ namespace FINAL_PROJECT
 {
     public partial class NewMainPanel : KryptonForm
     {
-
+        public static NewMainPanel _newMainPanelInstance;
         private Timer expandCollapseTimer;
         private bool isExpanded = false;
         private const int expandedWidth = 220;
@@ -28,14 +28,22 @@ namespace FINAL_PROJECT
         private aboutUs aboutUsForm;
         private Form previousClickedForm = new Dashboard();
 
+
+
         private List<KryptonButton> buttons;
         public NewMainPanel()
         {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+            GC.Collect();
+
             InitializeComponent();
             InitializeForms();
             InitializeExpandCollapseTimer();
             panelbtnContainer.Size = new Size(collapsedWidth, panelHeight);
             LoadFormIntoPanel(new Dashboard());
+            SetButtonColors(btnDashboard, Color.Indigo, Color.BlueViolet);
+
         }
 
         private void InitializeForms()
@@ -52,6 +60,7 @@ namespace FINAL_PROJECT
             if (dashboardForm == null || dashboardForm.IsDisposed)
             {
                 dashboardForm = new Dashboard();
+                Dashboard._dashboard = dashboardForm;
             }
             return dashboardForm;
 
@@ -84,6 +93,7 @@ namespace FINAL_PROJECT
             {
 
                 userForm = new User();
+                User.user_intance = userForm;
             }
             return userForm;
         }
@@ -151,11 +161,18 @@ namespace FINAL_PROJECT
         {
             Application.Exit();
         }
-
-        // Assuming you have a Panel named panelContainer in your form
-        
-
-        // Method to load a form into the panelContainer
+        public void SwitchToDashboard()
+        {
+            ResetButtonColors();
+            LoadFormIntoPanel(GetDashboardForm());
+            SetButtonColors(btnDashboard, Color.Indigo, Color.BlueViolet);
+        }
+        public void SwitchToDashboardPanel()
+        {
+            ResetButtonColors();
+            LoadFormIntoPanel(GetDashboardForm());
+            SetButtonColors(btnDashboard, Color.Indigo, Color.BlueViolet);
+        }
         private void LoadFormIntoPanel(Form form)
         {
             // Clear previous controls
@@ -170,6 +187,7 @@ namespace FINAL_PROJECT
             panelContainer.Controls.Add(form);
             panelContainer.Tag = form;
 
+
             // Show the form
             form.Show();
 
@@ -181,17 +199,9 @@ namespace FINAL_PROJECT
                 GC.Collect();
                 previousClickedForm = form;
             }
-        } 
-
-        // Event handlers for the buttons
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            ResetButtonColors();
-            LoadFormIntoPanel(GetDashboardForm());
-            SetButtonColors(btnDashboard, Color.Indigo, Color.BlueViolet);
-
         }
 
+       
         private void btnCalendar_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
@@ -206,7 +216,7 @@ namespace FINAL_PROJECT
             SetButtonColors(btn_Deadline, Color.Indigo, Color.BlueViolet);
         }
 
-        private void btn_Profile_Click(object sender, EventArgs e)
+        public void btn_Profile_Click(object sender, EventArgs e)
         {
             ResetButtonColors();
             LoadFormIntoPanel(GetUserForm());
@@ -247,5 +257,12 @@ namespace FINAL_PROJECT
             }
         }
 
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+
+            ResetButtonColors();
+            LoadFormIntoPanel(GetDashboardForm());
+            SetButtonColors(btnDashboard, Color.Indigo, Color.BlueViolet); 
+        }
     }
 }

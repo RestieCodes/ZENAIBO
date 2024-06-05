@@ -127,11 +127,29 @@
     <Compile Include="Calendar.Designer.cs">
       <DependentUpon>Calendar.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalendarDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarDay.Designer.cs">
+      <DependentUpon>CalendarDay.cs</DependentUpon>
+    </Compile>
     <Compile Include="CalendarMonth.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CalendarMonth.Designer.cs">
       <DependentUpon>CalendarMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarWeek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarWeek.Designer.cs">
+      <DependentUpon>CalendarWeek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChronotypeExplanation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChronotypeExplanation.Designer.cs">
+      <DependentUpon>ChronotypeExplanation.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomListBox.cs">
       <SubType>Component</SubType>
@@ -154,23 +172,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainPanel.cs">
-      <SubType>Form</SubType>
+    <Compile Include="GoaLIcon.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MainPanel.Designer.cs">
-      <DependentUpon>MainPanel.cs</DependentUpon>
+    <Compile Include="GoaLIcon.Designer.cs">
+      <DependentUpon>GoaLIcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoalPanelDashboardDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GoalPanelDashboardDisplay.Designer.cs">
+      <DependentUpon>GoalPanelDashboardDisplay.cs</DependentUpon>
     </Compile>
     <Compile Include="NewMainPanel.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewMainPanel.Designer.cs">
       <DependentUpon>NewMainPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PopUpCalendar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PopUpCalendar.Designer.cs">
-      <DependentUpon>PopUpCalendar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -185,13 +203,49 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaskAccomplishments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskAccomplishments.Designer.cs">
+      <DependentUpon>TaskAccomplishments.cs</DependentUpon>
+    </Compile>
     <Compile Include="TaskBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="TaskBar.Designer.cs">
       <DependentUpon>TaskBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaskDailiesAccomplishments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskDailiesAccomplishments.Designer.cs">
+      <DependentUpon>TaskDailiesAccomplishments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskDaily.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskDaily.Designer.cs">
+      <DependentUpon>TaskDaily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskDailyInDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskDailyInDashboard.Designer.cs">
+      <DependentUpon>TaskDailyInDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="TempStorage.cs" />
+    <Compile Include="UCDailyTask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDailyTask.Designer.cs">
+      <DependentUpon>UCDailyTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCWeekDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCWeekDays.Designer.cs">
+      <DependentUpon>UCWeekDays.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,14 +264,29 @@
     <Compile Include="UserControlDays.Designer.cs">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserProgress.Designer.cs">
+      <DependentUpon>UserProgress.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="aboutUs.resx">
       <DependentUpon>aboutUs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CalendarDay.resx">
+      <DependentUpon>CalendarDay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CalendarMonth.resx">
       <DependentUpon>CalendarMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarWeek.resx">
+      <DependentUpon>CalendarWeek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChronotypeExplanation.resx">
+      <DependentUpon>ChronotypeExplanation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -228,14 +297,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainPanel.resx">
-      <DependentUpon>MainPanel.cs</DependentUpon>
+    <EmbeddedResource Include="GoaLIcon.resx">
+      <DependentUpon>GoaLIcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoalPanelDashboardDisplay.resx">
+      <DependentUpon>GoalPanelDashboardDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewMainPanel.resx">
       <DependentUpon>NewMainPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PopUpCalendar.resx">
-      <DependentUpon>PopUpCalendar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -245,8 +314,26 @@
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TaskAccomplishments.resx">
+      <DependentUpon>TaskAccomplishments.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaskBar.resx">
       <DependentUpon>TaskBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskDailiesAccomplishments.resx">
+      <DependentUpon>TaskDailiesAccomplishments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskDaily.resx">
+      <DependentUpon>TaskDaily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskDailyInDashboard.resx">
+      <DependentUpon>TaskDailyInDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDailyTask.resx">
+      <DependentUpon>UCDailyTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCWeekDays.resx">
+      <DependentUpon>UCWeekDays.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
@@ -256,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlDays.resx">
       <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProgress.resx">
+      <DependentUpon>UserProgress.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -414,6 +504,180 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\circleIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aboutUs-ZenAibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aboutUS-ZenAibo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aboutUs-ZenAibo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check %28Done%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_edit %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Taskbar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Deadline-inputTask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Deadline-taskType.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Deadline-taskList4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Deadline-taskList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Deadline-taskList2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Deadline-taskList3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_User-Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Profile-Accomplishement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Profile-accomplishmentList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Profile-accomplishementList2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_Upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_Trash %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutUs_Pipol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutUs_Pipol1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutUs_Pipol2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_DashboardGoals.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_DashboardGoals1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutUs_Pipol21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutUs_Pipol3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutUs_Credits.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELA PE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\423036643_424820603307224_5215437000114989819_n %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\342018830_768278394828232_8630967630097587536_n %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Motivation1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChronotypeExplanationFInalNa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile_Container.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_GOAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpICON_GOAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpICON_GOAL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpICON_GOAL2 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpICON_GOAL3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPressed_GOAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_CALENDARMay29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnlargedNewTimeLineForWolf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskAcadsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskHomeResIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskETNIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskAPNIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskCareerIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskGymIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskSmallAPNIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DailyTaskOthersIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Motivation2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Motivation5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Motivation4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Motivation3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_Motivation21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_CALENDARMay30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UCDailyTask2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_CALENDARJun2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard_CALENDARJun1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

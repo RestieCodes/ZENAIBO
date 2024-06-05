@@ -49,22 +49,10 @@ namespace FINAL_PROJECT
                     break;
 
                 case 3:
-                    picBoxTaskTypeIcon.Image = Properties.Resources.Untitled_design___2024_04_29T021726_290;
-                    break;
-
-                case 4:
-                    picBoxTaskTypeIcon.Image = Properties.Resources.Untitled_design___2024_04_29T022707_602;
-                    break;
-
-                case 5:
                     picBoxTaskTypeIcon.Image = Properties.Resources.Untitled_design___2024_04_29T022658_810;
                     break;
 
-                case 6:
-                    picBoxTaskTypeIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023527_334;
-                    break;
-
-                case 7:
+                case 4:
                     picBoxTaskTypeIcon.Image = Properties.Resources.Untitled_design___2024_04_29T023639_486;
                     break;
             }   
@@ -73,13 +61,13 @@ namespace FINAL_PROJECT
 
         private void btnAddTask_Click(object sender, EventArgs e)
         {
-            if (txtBoxTitle.Text == string.Empty || txtBoxDescription.Text == string.Empty || listBoxTaskType.SelectedIndex == -1)
+            if (txtBoxTitle1.Text == string.Empty || txtBoxDescription1.Text == string.Empty || listBoxTaskType.SelectedIndex == -1)
             {
                 MessageBox.Show("Please Fill Up All the Information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                TempStorage.AddTask(txtBoxTitle.Text, txtBoxDescription.Text, listBoxTaskType.Text, dtpSetDate.Value.ToString("MM"), dtpSetDate.Value.ToString("dd"), dtpSetDate.Value.ToString("yyyy"), listBoxTaskType.SelectedIndex);
+                TempStorage.AddTask(txtBoxTitle1.Text, txtBoxDescription1.Text, listBoxTaskType.Text, dtpSetDate.Value.ToString("MM"), dtpSetDate.Value.ToString("dd"), dtpSetDate.Value.ToString("yyyy"), listBoxTaskType.SelectedIndex);
                 taskbarCtn.Controls.Clear();
                 for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
                 {
@@ -95,8 +83,8 @@ namespace FINAL_PROJECT
 
         private void ResetTextCtn()
         {
-            txtBoxTitle.Text = string.Empty;
-            txtBoxDescription.Text = string.Empty;
+            txtBoxTitle1.Text = string.Empty;
+            txtBoxDescription1.Text = string.Empty;
             picBoxTaskTypeIcon.Image = null;
             listBoxTaskType.SelectedIndex = -1;
         }
@@ -107,10 +95,7 @@ namespace FINAL_PROJECT
             {
                 checkBoxCareer.Checked = false;
                 checkBoxGym.Checked = false;
-                checkBoxEntertainment.Checked = false;
-                checkBoxHomeRes.Checked = false;
                 checkBoxAppointment.Checked = false;
-                checkBoxSmallTask.Checked = false;
                 checkBoxOther.Checked = false;
 
                 taskbarCtn.Controls.Clear();
@@ -145,10 +130,7 @@ namespace FINAL_PROJECT
             {
                 checkBoxAcads.Checked = false;
                 checkBoxGym.Checked = false;
-                checkBoxEntertainment.Checked = false;
-                checkBoxHomeRes.Checked = false;
                 checkBoxAppointment.Checked = false;
-                checkBoxSmallTask.Checked = false;
                 checkBoxOther.Checked = false;
 
                 taskbarCtn.Controls.Clear();
@@ -180,10 +162,7 @@ namespace FINAL_PROJECT
             {
                 checkBoxAcads.Checked = false;
                 checkBoxCareer.Checked = false;
-                checkBoxEntertainment.Checked = false;
-                checkBoxHomeRes.Checked = false;
                 checkBoxAppointment.Checked = false;
-                checkBoxSmallTask.Checked = false;
                 checkBoxOther.Checked = false;
 
                 taskbarCtn.Controls.Clear();
@@ -209,76 +188,7 @@ namespace FINAL_PROJECT
             }
         }
 
-        private void checkBoxEntertainment_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxEntertainment.Checked == true)
-            {
-                checkBoxAcads.Checked = false;
-                checkBoxCareer.Checked = false;
-                checkBoxGym.Checked = false;
-                checkBoxHomeRes.Checked = false;
-                checkBoxAppointment.Checked = false;
-                checkBoxSmallTask.Checked = false;
-                checkBoxOther.Checked = false;
-
-                taskbarCtn.Controls.Clear();
-                garbageCollect();
-                for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
-                {
-                    TaskBar taskBar = new TaskBar();
-                    taskBar.EtnOnly(TempStorage.TaskStorage[i]);
-                    taskBar.DisplayContent(TempStorage.TaskStorage[i]);
-                    taskbarCtn.Controls.Add(taskBar);
-                }
-            }
-            else
-            {
-                taskbarCtn.Controls.Clear();
-                garbageCollect();
-                for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
-                {
-                    TaskBar taskBar = new TaskBar();
-                    taskBar.DisplayContent(TempStorage.TaskStorage[i]);
-                    taskbarCtn.Controls.Add(taskBar);
-                }
-            }
-        }
-
-        private void checkBoxHomeRes_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxHomeRes.Checked == true)
-            {
-                checkBoxAcads.Checked = false;
-                checkBoxCareer.Checked = false;
-                checkBoxGym.Checked = false;
-                checkBoxEntertainment.Checked = false;
-                checkBoxAppointment.Checked = false;
-                checkBoxSmallTask.Checked = false;
-                checkBoxOther.Checked = false;
-
-                taskbarCtn.Controls.Clear();
-                garbageCollect();
-                for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
-                {
-                    TaskBar taskBar = new TaskBar();
-                    taskBar.HomeResOnly(TempStorage.TaskStorage[i]);
-                    taskBar.DisplayContent(TempStorage.TaskStorage[i]);
-                    taskbarCtn.Controls.Add(taskBar);
-                }
-            }
-            else
-            {
-                taskbarCtn.Controls.Clear();
-                garbageCollect();
-                for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
-                {
-                    TaskBar taskBar = new TaskBar();
-                    taskBar.DisplayContent(TempStorage.TaskStorage[i]);
-                    taskbarCtn.Controls.Add(taskBar);
-                }
-            }
-        }
-
+   
         private void checkBoxAppointment_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxAppointment.Checked == true)
@@ -286,9 +196,6 @@ namespace FINAL_PROJECT
                 checkBoxAcads.Checked = false;
                 checkBoxCareer.Checked = false;
                 checkBoxGym.Checked = false;
-                checkBoxEntertainment.Checked = false;
-                checkBoxHomeRes.Checked = false;
-                checkBoxSmallTask.Checked = false;
                 checkBoxOther.Checked = false;
 
                 taskbarCtn.Controls.Clear();
@@ -314,41 +221,7 @@ namespace FINAL_PROJECT
             }
         }
 
-        private void checkBoxSmallTask_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxSmallTask.Checked == true)
-            {
-                checkBoxAcads.Checked = false;
-                checkBoxCareer.Checked = false;
-                checkBoxGym.Checked = false;
-                checkBoxEntertainment.Checked = false;
-                checkBoxHomeRes.Checked = false;
-                checkBoxAppointment.Checked = false;
-                checkBoxOther.Checked = false;
-
-                taskbarCtn.Controls.Clear();
-                garbageCollect();
-                for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
-                {
-                    TaskBar taskBar = new TaskBar();
-                    taskBar.SmallTaskOnly(TempStorage.TaskStorage[i]);
-                    taskBar.DisplayContent(TempStorage.TaskStorage[i]);
-                    taskbarCtn.Controls.Add(taskBar);
-                }
-            }
-            else
-            {
-                taskbarCtn.Controls.Clear();
-                garbageCollect();
-                for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
-                {
-                    TaskBar taskBar = new TaskBar();
-                    taskBar.DisplayContent(TempStorage.TaskStorage[i]);
-                    taskbarCtn.Controls.Add(taskBar);
-                }
-            }
-        }
-
+       
         private void checkBoxOther_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxOther.Checked == true)
@@ -356,10 +229,7 @@ namespace FINAL_PROJECT
                 checkBoxAcads.Checked = false;
                 checkBoxCareer.Checked = false;
                 checkBoxGym.Checked = false;
-                checkBoxEntertainment.Checked = false;
-                checkBoxHomeRes.Checked = false;
                 checkBoxAppointment.Checked = false;
-                checkBoxSmallTask.Checked = false;
 
                 taskbarCtn.Controls.Clear();
                 garbageCollect();
@@ -394,12 +264,21 @@ namespace FINAL_PROJECT
 
         private void btnSaveChanges_Click(object sender, EventArgs e)
         {
-            TempStorage.SaveChanges(txtBoxTitle.Text, txtBoxDescription.Text, listBoxTaskType.Text, dtpSetDate.Value.ToString("MM"), dtpSetDate.Value.ToString("dd"), dtpSetDate.Value.ToString("yyyy"), listBoxTaskType.SelectedIndex, lblUserSearch.Text);
+            Deadline.Deadline_instance.lblHeader.Text = "EDIT GOAL";
+            TempStorage.SaveChanges(txtBoxTitle1.Text, txtBoxDescription1.Text, listBoxTaskType.Text, dtpSetDate.Value.ToString("MM"), dtpSetDate.Value.ToString("dd"), dtpSetDate.Value.ToString("yyyy"), listBoxTaskType.SelectedIndex, lblUserSearch.Text);
             btnSaveChanges.Visible = false;
+            deleteIcon.Visible = false;
             btnAddTask.Visible = true;
             ResetTextCtn();
 
+            checkBoxAcads.Checked = false;
+            checkBoxCareer.Checked = false;
+            checkBoxGym.Checked = false;
+            checkBoxAppointment.Checked = false;
+            checkBoxOther.Checked = false;
+
             taskbarCtn.Controls.Clear();
+
             garbageCollect();
             for (int i = 0; i < TempStorage.TaskStorage.Count; i++)
             {
@@ -408,6 +287,7 @@ namespace FINAL_PROJECT
                 taskBar.DisplayContent(TempStorage.TaskStorage[i]);
                 taskbarCtn.Controls.Add(taskBar);
             }
+
         }
 
         private void deleteIcon_Click(object sender, EventArgs e)
@@ -427,6 +307,21 @@ namespace FINAL_PROJECT
                 taskBar.DisplayContent(TempStorage.TaskStorage[i]);
                 taskbarCtn.Controls.Add(taskBar);
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void taskbarCtn_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

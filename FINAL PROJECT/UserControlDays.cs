@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,34 +18,42 @@ namespace FINAL_PROJECT
             InitializeComponent();
         }
 
-        private void UserControlDays_Load(object sender, EventArgs e)
+        public void DisplayGoal(string date, int day)
         {
-            
-        }
-
-        public void Days(int numday) 
-        {
-            lbDays.Text = numday+"";
-        
-        }
-
-        public void IconTrigger(int[] array)
-        {
-            for (int i = 0; i < array.Length; i++) 
+            DateTime now = DateTime.Now;
+            string dayInString;
+            if (day < 10)
             {
-                if (lbDays.Text == array[i].ToString())
+                dayInString = "0" + day;
+            }
+            else 
+            {
+                dayInString = day.ToString();
+            }
+
+            lbDays.Text = day + "";
+            string Date = dayInString + " " + date;
+            string monthNow = now.Day + " " + DateTimeFormatInfo.CurrentInfo.GetMonthName(now.Month) + " " + now.Year;
+
+            if (Date == monthNow)
+            {
+                this.BackColor = Color.BlueViolet;
+                lbDays.ForeColor = Color.White;
+            }
+
+            
+
+            for (int i = 0; i < TempStorage.TaskStorage.Count; i++) 
+            {
+                
+                if (Date == TempStorage.TaskStorage[i].Item5 + " " + DateTimeFormatInfo.CurrentInfo.GetMonthName(Convert.ToInt32(TempStorage.TaskStorage[i].Item4)) + " " + TempStorage.TaskStorage[i].Item6)
                 {
-                    /*picBoxEmpty.Image = Properties.Resources.academicIcon;*/
+                    GoaLIcon goalICon = new GoaLIcon();
+                    goalICon.Display(TempStorage.TaskStorage[i].Item7);
+                    flowLayoutPanelCTN.Controls.Add(goalICon);
                 }
             }
             
-        }
-
-        private void picBoxEmpty_Click(object sender, EventArgs e)
-        {
-            PopUpCalendar popUpCalendar = new PopUpCalendar();
-            popUpCalendar.label1.Text = lbDays.Text;
-            popUpCalendar.Show();
         }
     }
 }
